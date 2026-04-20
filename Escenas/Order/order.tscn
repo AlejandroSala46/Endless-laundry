@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c3w3ql0galbxj"]
+
+[ext_resource type="Script" uid="uid://di8fdnnpu3r3x" path="res://Escenas/Order/Order.gd" id="1_c1hkj"]
+[ext_resource type="Texture2D" uid="uid://eee4pyfdfi48" path="res://Sprites/Sprite general pantalones.png" id="2_c1hkj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8luv3"]
+atlas = ExtResource("2_c1hkj")
+region = Rect2(0, 0, 313, 367)
+
+[node name="Order" type="HBoxContainer" unique_id=246941270]
+offset_right = 331.0
+offset_bottom = 109.0
+size_flags_horizontal = 3
+script = ExtResource("1_c1hkj")
+
+[node name="Order_item" type="VBoxContainer" parent="." unique_id=645121865]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Order_item_sprite" type="TextureRect" parent="Order_item" unique_id=147830352]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = SubResource("AtlasTexture_8luv3")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="Order_requisitos" type="VBoxContainer" parent="." unique_id=1248628882]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1603283991]
+layout_mode = 2
+color = Color(1, 0, 1, 1)

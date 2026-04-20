@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dkghiumu7fk60"]
+
+[ext_resource type="Script" uid="uid://d0kxxeqndhk4s" path="res://Scripts/Generar_order.gd" id="1_wmjee"]
+[ext_resource type="Texture2D" uid="uid://eee4pyfdfi48" path="res://Sprites/Sprite general pantalones.png" id="2_in4g4"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ripk3"]
+
+[node name="escena_principal" type="Node2D" unique_id=827037202]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1149585697]
+visible = false
+position = Vector2(128.99988, 368)
+scale = Vector2(253.08, 729.68005)
+texture = SubResource("CanvasTexture_ripk3")
+
+[node name="Button" type="Button" parent="." unique_id=1760836133]
+offset_left = 536.0
+offset_top = 153.0
+offset_right = 942.0
+offset_bottom = 281.0
+text = "Nueva orden"
+script = ExtResource("1_wmjee")
+
+[node name="ListaOrdenes" type="VBoxContainer" parent="." unique_id=665411235]
+offset_right = 250.0
+offset_bottom = 648.0
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2074103088]
+offset_left = 850.0
+offset_top = 447.0
+offset_right = 1043.0
+offset_bottom = 549.0
+texture = ExtResource("2_in4g4")
+expand_mode = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
