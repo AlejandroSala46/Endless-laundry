@@ -1,13 +1,13 @@
 class_name Pantalon
 extends Ropa
 
-var tmp_spritePath = "res://Sprites/Sprite general pantalones.png"
+var tmp_spritePath = "res://Sprites/Ropa/pantalones/pantalones.png"
 func _init():
 	super(TipoRopa.PANTALON, "Pantalón", tmp_spritePath)
 
 func _init_servicios():
 	servicios = {
-		"lavar": true,
-		"planchar": true,
-		"secar": true
+		"lavar": false,
+		"planchar": false,
+		"secar": false
 	}

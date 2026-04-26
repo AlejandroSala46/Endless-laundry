@@ -1,7 +1,7 @@
 class_name Camiseta
 extends Ropa
 
-var tmp_spritePath = "res://Sprites/Sprite general pantalones.png"
+var tmp_spritePath = "res://Sprites/Ropa/polo/polo rojo/camiseta polo roja.png"
 
 func _init():
 	super(TipoRopa.CAMISETA, "Camiseta", tmp_spritePath)

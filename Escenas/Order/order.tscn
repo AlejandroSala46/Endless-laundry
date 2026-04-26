@@ -1,32 +1,61 @@
 [gd_scene format=3 uid="uid://c3w3ql0galbxj"]
 
 [ext_resource type="Script" uid="uid://di8fdnnpu3r3x" path="res://Escenas/Order/Order.gd" id="1_c1hkj"]
-[ext_resource type="Texture2D" uid="uid://eee4pyfdfi48" path="res://Sprites/Sprite general pantalones.png" id="2_c1hkj"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8luv3"]
-atlas = ExtResource("2_c1hkj")
-region = Rect2(0, 0, 313, 367)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4bdad"]
+bg_color = Color(0.66246575, 0.4279829, 0.09398141, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.14767182, 0.14767179, 0.14767179, 1)
+shadow_size = 1
+shadow_offset = Vector2(2, 0)
 
-[node name="Order" type="HBoxContainer" unique_id=246941270]
-offset_right = 331.0
-offset_bottom = 109.0
-size_flags_horizontal = 3
+[node name="Order" type="Control" unique_id=169109847]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 13
 script = ExtResource("1_c1hkj")
 
-[node name="Order_item" type="VBoxContainer" parent="." unique_id=645121865]
+[node name="OrderBorder" type="PanelContainer" parent="." unique_id=1073928124]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4bdad")
+
+[node name="OrderHbox" type="HBoxContainer" parent="OrderBorder" unique_id=175982720]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Order_item" type="VBoxContainer" parent="OrderBorder/OrderHbox" unique_id=645121865]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Order_item_sprite" type="TextureRect" parent="OrderBorder/OrderHbox/Order_item" unique_id=147830352]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Order_requisitos" type="VBoxContainer" parent="OrderBorder/OrderHbox" unique_id=1248628882]
 layout_mode = 2
 size_flags_horizontal = 3
-
-[node name="Order_item_sprite" type="TextureRect" parent="Order_item" unique_id=147830352]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-texture = SubResource("AtlasTexture_8luv3")
-expand_mode = 5
-stretch_mode = 4
-
-[node name="Order_requisitos" type="VBoxContainer" parent="." unique_id=1248628882]
-layout_mode = 2
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1603283991]
-layout_mode = 2
-color = Color(1, 0, 1, 1)
+mouse_filter = 2
+alignment = 1

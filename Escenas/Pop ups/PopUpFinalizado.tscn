@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ccs54pbx1g7y3"]
+
+[ext_resource type="Script" uid="uid://byun7rg6mx8jw" path="res://Escenas/Pop ups/pop_up_finalizado.gd" id="1_r6vhn"]
+
+[node name="PopupFinalizado" type="Control" unique_id=1399250705]
+layout_mode = 3
+anchor_right = 0.3
+anchor_bottom = 0.05
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_r6vhn")
+
+[node name="Panel" type="Panel" parent="." unique_id=1686323174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel" unique_id=2073950804]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

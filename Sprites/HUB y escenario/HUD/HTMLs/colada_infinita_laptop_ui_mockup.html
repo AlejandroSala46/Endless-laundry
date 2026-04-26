@@ -1,0 +1,522 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  .laptop-frame {
+    background: #2a2a2a;
+    border-radius: 12px 12px 4px 4px;
+    padding: 12px 12px 8px 12px;
+    max-width: 760px;
+    margin: 1rem auto;
+    font-family: 'Courier New', monospace;
+  }
+  .screen-bezel {
+    background: #111;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  .screen {
+    background: #1a3a1a;
+    min-height: 520px;
+    position: relative;
+    overflow: hidden;
+    border: 2px inset #333;
+  }
+  
+  .wallpaper {
+    position: absolute; inset: 0;
+    background: #1a3a1a;
+    background-image: 
+      repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(0,80,0,0.15) 19px, rgba(0,80,0,0.15) 20px),
+      repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(0,80,0,0.08) 19px, rgba(0,80,0,0.08) 20px);
+  }
+  
+  .desktop-icons {
+    position: absolute; top: 8px; left: 8px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .dicon {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    cursor: pointer; width: 52px;
+  }
+  .dicon-img {
+    width: 32px; height: 32px;
+    background: #2a5c2a;
+    border: 1px solid #4a8c4a;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    image-rendering: pixelated;
+  }
+  .dicon span {
+    font-size: 9px; color: #90ee90;
+    text-align: center; line-height: 1.2;
+    text-shadow: 1px 1px 0 #000;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .window {
+    position: absolute;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow: 2px 2px 0 #000;
+    min-width: 520px;
+  }
+  .window.main-window {
+    top: 20px; left: 60px;
+    width: 640px;
+  }
+  
+  .titlebar {
+    background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
+    height: 18px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 2px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .titlebar-text {
+    font-size: 11px; color: #fff;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .titlebar-text .icon { font-size: 10px; }
+  .titlebar-btns {
+    display: flex; gap: 2px;
+  }
+  .tbtn {
+    width: 16px; height: 14px;
+    background: #c0c0c0;
+    border: 1px solid;
+    border-color: #fff #808080 #808080 #fff;
+    font-size: 9px; font-weight: bold;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; color: #000;
+    font-family: 'Courier New', monospace;
+  }
+  .tbtn:active { border-color: #808080 #fff #fff #808080; }
+  
+  .menubar {
+    background: #c0c0c0;
+    border-bottom: 1px solid #808080;
+    display: flex; gap: 0;
+    padding: 0 4px;
+  }
+  .menuitem {
+    font-size: 11px; padding: 2px 8px;
+    cursor: pointer; color: #000;
+    font-family: 'Courier New', monospace;
+  }
+  .menuitem:hover { background: #000080; color: #fff; }
+  .menuitem.active { background: #000080; color: #fff; }
+  
+  .tabs {
+    background: #c0c0c0;
+    display: flex; gap: 4px; padding: 4px 4px 0;
+    border-bottom: 2px solid #808080;
+  }
+  .tab {
+    padding: 3px 12px;
+    font-size: 11px;
+    background: #a0a0a0;
+    border: 1px solid;
+    border-color: #fff #808080 #c0c0c0 #fff;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    color: #000;
+    border-bottom: none;
+    margin-bottom: -2px;
+  }
+  .tab.active {
+    background: #c0c0c0;
+    border-color: #fff #808080 transparent #fff;
+    z-index: 1;
+    position: relative;
+    font-weight: bold;
+  }
+  .tab:hover:not(.active) { background: #b0b0b0; }
+  
+  .content-area {
+    background: #f0f0f0;
+    padding: 8px;
+    min-height: 380px;
+  }
+  
+  .panel-row {
+    display: grid; grid-template-columns: 200px 1fr;
+    gap: 8px; height: 365px;
+  }
+  
+  .side-panel {
+    background: #fff;
+    border: 2px inset #808080;
+    overflow-y: auto;
+    font-size: 10px;
+    font-family: 'Courier New', monospace;
+  }
+  .side-panel-title {
+    background: #000080;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+  }
+  .asset-item {
+    padding: 4px 6px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex; align-items: center; gap: 6px;
+    cursor: pointer;
+  }
+  .asset-item:hover { background: #000080; color: #fff; }
+  .asset-item .asset-icon { font-size: 12px; width: 16px; text-align: center; }
+  .asset-info { flex: 1; }
+  .asset-name { font-size: 10px; }
+  .asset-count {
+    font-size: 9px;
+    background: #c0c0c0;
+    padding: 0 3px;
+    border: 1px solid #808080;
+    color: #000;
+  }
+  .asset-item:hover .asset-count { background: #0000a0; color: #fff; border-color: #4040c0; }
+  
+  .main-panel {
+    display: flex; flex-direction: column; gap: 6px;
+    overflow-y: auto;
+  }
+  
+  .inmueble-card {
+    background: #fff;
+    border: 2px inset #808080;
+    padding: 0;
+  }
+  .inmueble-header {
+    background: #808080;
+    padding: 2px 6px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 8px;
+  }
+  .inmueble-header.operativa { background: #008000; }
+  .inmueble-header.saturada { background: #808000; }
+  .inmueble-header.bloqueada { background: #800000; }
+  .inmueble-header.suspendida { background: #808080; }
+  
+  .inmueble-name {
+    font-size: 10px; font-weight: bold; color: #fff;
+    font-family: 'Courier New', monospace;
+  }
+  .inmueble-status {
+    font-size: 9px; color: #fff;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+  }
+  .inmueble-body {
+    padding: 6px; display: grid;
+    grid-template-columns: 1fr 1fr; gap: 4px;
+  }
+  .stat-row {
+    display: flex; align-items: center; gap: 4px;
+    font-size: 9px; font-family: 'Courier New', monospace;
+  }
+  .stat-label { color: #808080; width: 70px; }
+  .stat-val { color: #000; font-weight: bold; }
+  .stat-val.green { color: #006600; }
+  .stat-val.red { color: #800000; }
+  .stat-val.orange { color: #806000; }
+  
+  .progress-bar-wrap {
+    grid-column: 1/-1;
+    height: 8px; background: #c0c0c0;
+    border: 1px inset #808080;
+    margin-top: 2px;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: repeating-linear-gradient(
+      90deg, #008000 0px, #008000 8px, #004400 8px, #004400 10px
+    );
+  }
+  
+  .action-btn {
+    font-size: 9px; padding: 2px 6px;
+    background: #c0c0c0;
+    border: 1px solid; border-color: #fff #808080 #808080 #fff;
+    cursor: pointer; color: #000;
+    font-family: 'Courier New', monospace;
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 2px;
+  }
+  .action-btn:hover { background: #a0a0a0; }
+  .action-btn:active { border-color: #808080 #fff #fff #808080; }
+  
+  .statusbar {
+    background: #c0c0c0;
+    border-top: 1px solid #808080;
+    display: flex; gap: 0; padding: 2px 4px;
+  }
+  .statusbar-item {
+    font-size: 9px; padding: 0 8px;
+    border-right: 1px solid #808080;
+    font-family: 'Courier New', monospace;
+    color: #000;
+  }
+  .statusbar-item.money { color: #006600; font-weight: bold; }
+  
+  .taskbar {
+    background: #c0c0c0;
+    height: 22px;
+    display: flex; align-items: center;
+    border-top: 2px solid #fff;
+    position: relative;
+    z-index: 10;
+  }
+  .start-btn {
+    height: 18px; margin: 2px;
+    background: #c0c0c0;
+    border: 1px solid; border-color: #fff #808080 #808080 #fff;
+    padding: 0 6px;
+    font-size: 10px; font-weight: bold;
+    cursor: pointer; display: flex; align-items: center; gap: 3px;
+    font-family: 'Courier New', monospace;
+  }
+  .taskbar-apps { display: flex; gap: 2px; padding: 0 4px; flex: 1; }
+  .taskbar-app {
+    height: 16px; padding: 0 6px;
+    background: #a0a0a0;
+    border: 1px solid; border-color: #808080 #fff #fff #808080;
+    font-size: 9px; cursor: pointer; display: flex; align-items: center;
+    font-family: 'Courier New', monospace; color: #000;
+  }
+  .taskbar-app.active {
+    background: #c0c0c0;
+    border-color: #808080 #fff #fff #808080;
+    font-weight: bold;
+  }
+  .taskbar-clock {
+    height: 16px; padding: 0 8px;
+    background: #c0c0c0;
+    border: 1px inset #808080;
+    font-size: 9px; display: flex; align-items: center;
+    font-family: 'Courier New', monospace;
+    margin: 0 2px;
+  }
+  
+  .sticker {
+    position: absolute;
+    font-size: 8px;
+    background: #ffff00;
+    padding: 2px 4px;
+    border: 1px solid #888;
+    transform: rotate(-6deg);
+    font-family: 'Courier New', monospace;
+    z-index: 5;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 1px 1px 0 #888;
+  }
+  
+  .laptop-bottom {
+    background: #333;
+    height: 20px;
+    border-radius: 0 0 8px 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .touchpad-strip {
+    width: 100px; height: 10px;
+    background: #444;
+    border-radius: 4px;
+    border: 1px solid #555;
+  }
+  
+  .section-label {
+    font-size: 9px; color: #808080;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    padding: 4px 6px 2px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2px;
+  }
+</style>
+
+<div class="laptop-frame">
+  <div class="screen-bezel">
+    <div class="screen">
+      <div class="wallpaper"></div>
+      
+      <div class="sticker" style="bottom:40px; right:70px; transform:rotate(4deg); background:#ff6600; color:#fff;">MADE IN BARRIO</div>
+      <div class="sticker" style="bottom:55px; right:10px; transform:rotate(-8deg); background:#ffff00; color:#000;">WIFI NO FUNCIONA</div>
+      <div class="sticker" style="bottom:30px; right:130px; transform:rotate(2deg); background:#00aaff; color:#fff; font-size:7px;">AMD SEMPRON</div>
+      
+      <div class="desktop-icons">
+        <div class="dicon">
+          <div class="dicon-img">PC</div>
+          <span>Mi PC</span>
+        </div>
+        <div class="dicon">
+          <div class="dicon-img">BD</div>
+          <span>Papelera</span>
+        </div>
+        <div class="dicon">
+          <div class="dicon-img">IE</div>
+          <span>Internet Explorer</span>
+        </div>
+      </div>
+      
+      <div class="window main-window">
+        <div class="titlebar">
+          <div class="titlebar-text">
+            <span class="icon">PC</span>
+            <span>Gestor Colada Pro v2.1 - [LAVANDERIA CENTRAL]</span>
+          </div>
+          <div class="titlebar-btns">
+            <div class="tbtn">_</div>
+            <div class="tbtn">[]</div>
+            <div class="tbtn">X</div>
+          </div>
+        </div>
+        <div class="menubar">
+          <div class="menuitem">Archivo</div>
+          <div class="menuitem active">Negocios</div>
+          <div class="menuitem">Gangas</div>
+          <div class="menuitem">Prestige</div>
+          <div class="menuitem">Ayuda</div>
+        </div>
+        <div class="tabs">
+          <div class="tab active">Activos</div>
+          <div class="tab">Inmuebles</div>
+          <div class="tab">Lavanderias</div>
+          <div class="tab">Resumen $</div>
+        </div>
+        <div class="content-area">
+          <div class="panel-row">
+            
+            <div class="side-panel">
+              <div class="side-panel-title">INVENTARIO ACTIVOS</div>
+              <div class="section-label">Maquinaria</div>
+              <div class="asset-item">
+                <div class="asset-icon">LV</div>
+                <div class="asset-info"><div class="asset-name">Lavadora domestica</div></div>
+                <div class="asset-count">x12</div>
+              </div>
+              <div class="asset-item">
+                <div class="asset-icon">LI</div>
+                <div class="asset-info"><div class="asset-name">Lavadora industrial</div></div>
+                <div class="asset-count">x3</div>
+              </div>
+              <div class="asset-item">
+                <div class="asset-icon">SC</div>
+                <div class="asset-info"><div class="asset-name">Secadora</div></div>
+                <div class="asset-count">x8</div>
+              </div>
+              <div class="asset-item">
+                <div class="asset-icon">PL</div>
+                <div class="asset-info"><div class="asset-name">Plancha industrial</div></div>
+                <div class="asset-count">x2</div>
+              </div>
+              <div class="asset-item">
+                <div class="asset-icon">PG</div>
+                <div class="asset-info"><div class="asset-name">Plegadora</div></div>
+                <div class="asset-count">x4</div>
+              </div>
+              <div class="section-label">Personal</div>
+              <div class="asset-item">
+                <div class="asset-icon">EM</div>
+                <div class="asset-info"><div class="asset-name">Empleado</div></div>
+                <div class="asset-count">x23</div>
+              </div>
+              <div class="section-label">Sin asignar</div>
+              <div class="asset-item" style="background:#fffbe6;">
+                <div class="asset-icon">LV</div>
+                <div class="asset-info"><div class="asset-name">Lavadora domestica</div></div>
+                <div class="asset-count" style="background:#ffcc00; border-color:#aa8800;">x4 LIBRE</div>
+              </div>
+              <div class="asset-item" style="background:#fffbe6;">
+                <div class="asset-icon">EM</div>
+                <div class="asset-info"><div class="asset-name">Empleado</div></div>
+                <div class="asset-count" style="background:#ffcc00; border-color:#aa8800;">x5 LIBRE</div>
+              </div>
+            </div>
+            
+            <div class="main-panel">
+              
+              <div class="inmueble-card">
+                <div class="inmueble-header operativa">
+                  <div class="inmueble-name">LOCAL BARRIO — Calle Pino 4</div>
+                  <div class="inmueble-status">● OPERATIVA</div>
+                </div>
+                <div class="inmueble-body">
+                  <div class="stat-row"><span class="stat-label">Tipo:</span><span class="stat-val">Serv. completo</span></div>
+                  <div class="stat-row"><span class="stat-label">Ingresos/h:</span><span class="stat-val green">47.20 EUR</span></div>
+                  <div class="stat-row"><span class="stat-label">Lavadoras:</span><span class="stat-val">6 dom.</span></div>
+                  <div class="stat-row"><span class="stat-label">Empleados:</span><span class="stat-val">8</span></div>
+                  <div class="stat-row"><span class="stat-label">Capacidad:</span><span class="stat-val orange">78%</span></div>
+                  <div class="stat-row"><span class="stat-label">Ganga:</span><span class="stat-val">Los Italiani</span></div>
+                  <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:78%"></div></div>
+                  <div class="action-btn">[ Gestionar activos ] &nbsp;&nbsp; [ Suspender ]</div>
+                </div>
+              </div>
+              
+              <div class="inmueble-card">
+                <div class="inmueble-header saturada">
+                  <div class="inmueble-name">LOCAL COMERCIAL — Av. Libertad 22</div>
+                  <div class="inmueble-status">● SATURADA</div>
+                </div>
+                <div class="inmueble-body">
+                  <div class="stat-row"><span class="stat-label">Tipo:</span><span class="stat-val">Lavanderia rapida</span></div>
+                  <div class="stat-row"><span class="stat-label">Ingresos/h:</span><span class="stat-val orange">61.50 EUR (-30%)</span></div>
+                  <div class="stat-row"><span class="stat-label">Lavadoras:</span><span class="stat-val">4 dom. + 1 ind.</span></div>
+                  <div class="stat-row"><span class="stat-label">Empleados:</span><span class="stat-val">10</span></div>
+                  <div class="stat-row"><span class="stat-label">Capacidad:</span><span class="stat-val red">102% SATUR.</span></div>
+                  <div class="stat-row"><span class="stat-label">Ganga:</span><span class="stat-val">-</span></div>
+                  <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:100%; background: repeating-linear-gradient(90deg,#800000 0px,#800000 8px,#500000 8px,#500000 10px);"></div></div>
+                  <div class="action-btn">[ Asignar mas activos ] &nbsp;&nbsp; [ Ver detalle ]</div>
+                </div>
+              </div>
+              
+              <div class="inmueble-card">
+                <div class="inmueble-header" style="background:#555;">
+                  <div class="inmueble-name">NAVE INDUSTRIAL — Poligono Sur</div>
+                  <div class="inmueble-status">○ SUSPENDIDA</div>
+                </div>
+                <div class="inmueble-body">
+                  <div class="stat-row"><span class="stat-label">Tipo:</span><span class="stat-val" style="color:#808080;">Sin determinar</span></div>
+                  <div class="stat-row"><span class="stat-label">Ingresos/h:</span><span class="stat-val" style="color:#808080;">0.00 EUR</span></div>
+                  <div class="stat-row"><span class="stat-label">Lavadoras:</span><span class="stat-val">2 ind.</span></div>
+                  <div class="stat-row"><span class="stat-label">Empleados:</span><span class="stat-val">0</span></div>
+                  <div class="stat-row" style="grid-column:1/-1;"><span class="stat-label">Nota:</span><span class="stat-val" style="color:#808080; font-style:italic;">Activos libres disponibles para asignar</span></div>
+                  <div class="action-btn">[ Activar lavanderia ] &nbsp;&nbsp; [ Reasignar activos ]</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="statusbar">
+          <div class="statusbar-item money">Efectivo: 3.847 EUR</div>
+          <div class="statusbar-item money">Banco: 12.340 EUR</div>
+          <div class="statusbar-item">Inmuebles: 3</div>
+          <div class="statusbar-item">Activos: 52 (9 libres)</div>
+          <div class="statusbar-item">Pastillas: x87</div>
+          <div class="statusbar-item" style="margin-left:auto; border-right:none;">NY | Real Life</div>
+        </div>
+      </div>
+      
+      <div class="taskbar" style="position:absolute; bottom:0; width:100%;">
+        <div class="start-btn">Inicio</div>
+        <div class="taskbar-apps">
+          <div class="taskbar-app active">Gestor Colada Pro</div>
+          <div class="taskbar-app">WinAMP</div>
+        </div>
+        <div class="taskbar-clock">14:32</div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="laptop-bottom">
+    <div class="touchpad-strip"></div>
+  </div>
+</div>
