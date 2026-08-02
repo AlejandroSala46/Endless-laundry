@@ -1,0 +1,9 @@
+Contruccion pestañas y escitorio del PC
+
+El escritorio tendrá aplicaciones que servirán como grupos de pestañas véase;
+       - Internet; dentro pues amazon, casino, web de viajes, banco, etc
+       - MyStats; dentro pues sistema de inventario interno para suministros y material, estadísticas de todo tu    
+                  negocio, gestion de empleados y negocios con layaout visual, graficos de barras etc
+       - Minijuegos propios de pc; Sneak, buscaminas, solitario
+
+Las pestañas generales de las aplicaciones ocuparan bien bien el 80% de la pantalla del pc, tendrán su barra de tareas abajo para poder switchear entre ellas
