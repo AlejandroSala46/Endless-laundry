@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3vgol6ax71p8"
-path="res://.godot/imported/secuencia animacion lavadora tambor.png-44c5c6031139c006c78fab1bdb334192.ctex"
+path="res://.godot/imported/secuencia animacion lavadora tambor.png-80153d35ceebe3ce7d5bc15015b9565e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estaciones/Lavadora/Concept/secuencia animacion lavadora tambor.png"
-dest_files=["res://.godot/imported/secuencia animacion lavadora tambor.png-44c5c6031139c006c78fab1bdb334192.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Concept/secuencia animacion lavadora tambor.png"
+dest_files=["res://.godot/imported/secuencia animacion lavadora tambor.png-80153d35ceebe3ce7d5bc15015b9565e.ctex"]
 
 [params]
 

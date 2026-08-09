@@ -1,130 +1,685 @@
-[gd_scene format=3 uid="uid://dkghiumu7fk60"]
+[gd_scene format=4 uid="uid://dkghiumu7fk60"]
 
-[ext_resource type="Texture2D" uid="uid://mr6ye4fgbp0a" path="res://Sprites/HUB y escenario/escenario de fondo.png" id="1_nq4yo"]
+[ext_resource type="Script" uid="uid://leme311cgc6e" path="res://Scripts/toggleMenus.gd" id="1_lghfr"]
+[ext_resource type="Script" uid="uid://bl81fo5tjbfm7" path="res://Scripts/Autoloads/MainScript/MainScript.gd" id="1_vpoi7"]
 [ext_resource type="Script" uid="uid://d0kxxeqndhk4s" path="res://Scripts/Generar_order.gd" id="1_wmjee"]
-[ext_resource type="Texture2D" uid="uid://cvpruifw6dqrs" path="res://Sprites/HUB y escenario/alfombra amarilla.png" id="2_qdk5u"]
-[ext_resource type="Texture2D" uid="uid://bkvrmduktdm5j" path="res://Sprites/HUB y escenario/comida gato.png" id="3_6l5hk"]
-[ext_resource type="Script" uid="uid://bj55cpojmkf07" path="res://Scripts/Electrodomesticos/washingMachine.gd" id="3_61u37"]
-[ext_resource type="Texture2D" uid="uid://dx10al2git6e1" path="res://Sprites/flecha.png" id="3_ktfp7"]
-[ext_resource type="Texture2D" uid="uid://dm55nxh1bw8wo" path="res://Sprites/HUB y escenario/Mesa con portatil de gestion.png" id="5_ktfp7"]
-[ext_resource type="Script" uid="uid://kyexg0ikykiv" path="res://Scripts/Electrodomesticos/ordersComputer.gd" id="6_io4tg"]
-[ext_resource type="Texture2D" uid="uid://bxae0gwxj450j" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-2.png" id="7_7c6kg"]
-[ext_resource type="Texture2D" uid="uid://c3ygwq4g1rg5i" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-3.png" id="8_n837r"]
-[ext_resource type="Texture2D" uid="uid://cro7hbspy1fvw" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-4.png" id="9_qdk5u"]
-[ext_resource type="Texture2D" uid="uid://qqgjfomyso14" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-5.png" id="10_6l5hk"]
-[ext_resource type="Texture2D" uid="uid://5qivl1to251e" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-6.png" id="11_np1b7"]
-[ext_resource type="Texture2D" uid="uid://c4hyp253a12gv" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-7.png" id="12_rowg2"]
-[ext_resource type="Texture2D" uid="uid://cheu2mjkimd1h" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-8.png" id="13_i6st7"]
-[ext_resource type="Texture2D" uid="uid://r5acr1f6r8hs" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-9.png" id="14_lghfr"]
-[ext_resource type="Texture2D" uid="uid://db1qet1sm70a8" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-10.png" id="15_lw68p"]
-[ext_resource type="Texture2D" uid="uid://dlwum6fsrlqlt" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-11.png" id="16_ojjmx"]
-[ext_resource type="Texture2D" uid="uid://dhovvtmjk2bgs" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-12.png" id="17_pku31"]
-[ext_resource type="Texture2D" uid="uid://dntwou3kk21ky" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-13.png" id="18_vpoi7"]
-[ext_resource type="Texture2D" uid="uid://c01d815thyr70" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-14.png" id="19_dp5ec"]
-[ext_resource type="Texture2D" uid="uid://dfg0dfqwlamv8" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-15.png" id="20_unjnf"]
-[ext_resource type="Texture2D" uid="uid://c8ywqvg1o4373" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-16.png" id="21_c4r05"]
-[ext_resource type="Texture2D" uid="uid://by2ctsjsbs3ca" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-17.png" id="22_jalqo"]
-[ext_resource type="Texture2D" uid="uid://dx5tweousqaex" path="res://Sprites/Animaciones/Lavadora/Lavadora animación Godoy/secuencia_animacion_lavadora_tambor-1.png" id="23_knqih"]
-[ext_resource type="Texture2D" uid="uid://jjclfy4jg81x" path="res://Sprites/HUB y escenario/tendedero.png" id="26_np1b7"]
-[ext_resource type="Script" uid="uid://co0774rvae2s8" path="res://Scripts/Electrodomesticos/dryer.gd" id="27_rowg2"]
+[ext_resource type="Texture2D" uid="uid://bmkebj4wu2j0b" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/pared.png" id="3_2fpae"]
+[ext_resource type="Texture2D" uid="uid://bnug0yxt3tpd4" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Buzon/buzon default vacio.png" id="3_s8rtn"]
+[ext_resource type="Texture2D" uid="uid://1ymual4xpakr" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/calendario/calendario 2 .png" id="4_im7a6"]
+[ext_resource type="Texture2D" uid="uid://epabha28yxkp" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero1.png" id="4_y0dkq"]
+[ext_resource type="Texture2D" uid="uid://b6ric2hij1q3g" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero3.png" id="5_6prrp"]
+[ext_resource type="Texture2D" uid="uid://hyh261akmosv" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Reloj y brazo/brazo mas reloj.png" id="5_jst3s"]
+[ext_resource type="Script" uid="uid://dkymkmktq431m" path="res://Scripts/Estaciones/cestaOrders.gd" id="6_io4tg"]
+[ext_resource type="Texture2D" uid="uid://bjpqhds5mv3dc" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/cartera y cartilla/pantalon/pantalon bolsillos llenos.png" id="6_sevjg"]
+[ext_resource type="Texture2D" uid="uid://bs470bfke4bux" path="res://Sprites/HUD superior, Decoracion y Eventos/Eventos/Personajes/referencia actual con personaje.png" id="7_cmu8w"]
+[ext_resource type="Texture2D" uid="uid://bki04ofvnkka8" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order1.png" id="7_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://df5bnlpon4rbt" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order10.png" id="8_xf20b"]
+[ext_resource type="Texture2D" uid="uid://b2e0yqiv5elr" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order11.png" id="9_ctmxg"]
+[ext_resource type="Texture2D" uid="uid://c3pbvuomk23q4" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order12.png" id="10_5ix5f"]
+[ext_resource type="Texture2D" uid="uid://dwgta65c3qkvb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order13.png" id="11_teepr"]
+[ext_resource type="Texture2D" uid="uid://u5lwids5yoh7" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order14.png" id="12_te5ia"]
+[ext_resource type="Texture2D" uid="uid://ch48vcd6rmblx" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order15.png" id="13_1hpky"]
+[ext_resource type="Texture2D" uid="uid://1u3ky6q5v5n1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order16.png" id="14_es1pb"]
+[ext_resource type="Texture2D" uid="uid://c661wejmjxdfv" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order17.png" id="15_fb3eu"]
+[ext_resource type="Texture2D" uid="uid://fxcxcmx1isop" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico barras.png" id="16_l6pdd"]
+[ext_resource type="Texture2D" uid="uid://cj2pg6x4utw88" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico de puntos.png" id="17_s8rtn"]
+[ext_resource type="Texture2D" uid="uid://d221r0pqpfqwk" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it(vacio).png" id="18_im7a6"]
+[ext_resource type="Texture2D" uid="uid://i1u3uxb1336y" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it.png" id="19_jst3s"]
+[ext_resource type="Texture2D" uid="uid://dlth0tyt42ag3" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/cubo animacion/cesto llenandose1.png" id="20_sevjg"]
+[ext_resource type="Texture2D" uid="uid://dgsbxk35jmy8f" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0001.png" id="21_cmu8w"]
+[ext_resource type="Texture2D" uid="uid://cf6o21ok0ce58" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0002.png" id="22_iift3"]
+[ext_resource type="Texture2D" uid="uid://dck8chvr11v13" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0003.png" id="23_sh2c6"]
+[ext_resource type="Texture2D" uid="uid://bixfwrhhsikv8" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0004.png" id="24_08o7r"]
+[ext_resource type="Texture2D" uid="uid://c8egn7qg1k8qx" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0005.png" id="25_qp240"]
+[ext_resource type="Texture2D" uid="uid://0ohgx5bnr7bm" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0006.png" id="26_jfh6g"]
+[ext_resource type="Texture2D" uid="uid://cu71lm6oxmp33" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0007.png" id="27_p8a7i"]
+[ext_resource type="Texture2D" uid="uid://ny01mxq4lybm" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0008.png" id="28_kqh3y"]
+[ext_resource type="Texture2D" uid="uid://dat81b8d1bgt0" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0009.png" id="29_bc7is"]
+[ext_resource type="Texture2D" uid="uid://r6adtd80rox1" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0010.png" id="30_qjuwq"]
+[ext_resource type="Texture2D" uid="uid://dj3drqa3v1ocx" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/ducto solo.png" id="32_iy0j5"]
+[ext_resource type="Texture2D" uid="uid://c6bwhllcaxmbp" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/Planta baja sin suelo.png" id="34_f52rh"]
+[ext_resource type="Texture2D" uid="uid://dp43klwjo2uk4" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/Estados ropa/palo con ropa0.png" id="35_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://cp4vg6b1ag75q" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/suelo luz y lampara.png" id="35_kjym6"]
+[ext_resource type="Texture2D" uid="uid://c0axt5nlo8mjf" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta.png" id="37_n07oa"]
+[ext_resource type="Texture2D" uid="uid://5j8xjdisps3p" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta con ONDA.png" id="37_y0dkq"]
+[ext_resource type="Texture2D" uid="uid://dgjjlegj60jyn" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/el suelo.png" id="38_j6pyv"]
+[ext_resource type="Texture2D" uid="uid://be4cvbds2diss" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta cerrada.png" id="38_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://dhfe8hyrspgb4" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/alfombra amarilla.png" id="41_p53fh"]
+[ext_resource type="Texture2D" uid="uid://ubvuqhyb4aj" path="res://Sprites/Estaciones/Mesa/MESA.png" id="41_te5ia"]
+[ext_resource type="Texture2D" uid="uid://b3v8u6k36qmr1" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/comida gato.png" id="42_demfi"]
+[ext_resource type="Texture2D" uid="uid://c80xf58bwl3sh" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/gato naranja.png" id="43_fjpio"]
+[ext_resource type="Texture2D" uid="uid://bqrym5dwjn7up" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 1.png" id="45_demfi"]
+[ext_resource type="Script" uid="uid://tvnvbhcjft35" path="res://Scripts/Estaciones/Orders/boardOrders.gd" id="45_hqb0a"]
+[ext_resource type="Texture2D" uid="uid://bbmcpa7188nca" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 2.png" id="46_fjpio"]
+[ext_resource type="Texture2D" uid="uid://dilxhf1loeg1d" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Tablon.png" id="46_rxux7"]
+[ext_resource type="Texture2D" uid="uid://denk88inl7ad2" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/cartel de Ordenes/cartel+celo.png" id="47_e6y1u"]
+[ext_resource type="Texture2D" uid="uid://bf5op68l5q8wo" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 3.png" id="47_rxux7"]
+[ext_resource type="Script" uid="uid://bss8ja05ocjsf" path="res://Scripts/Estaciones/Plancha/plancha_menu.gd" id="48_2fpae"]
+[ext_resource type="FontFile" uid="uid://dpia6vn2x23jt" path="res://Tipografias/Chalkiez-Regular.otf" id="48_54ank"]
+[ext_resource type="Texture2D" uid="uid://vhp7w4evghkr" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 4.png" id="48_e6y1u"]
+[ext_resource type="Texture2D" uid="uid://byn6kl4ocokvs" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/fondo minjuego planchar.png" id="49_0i1av"]
+[ext_resource type="Texture2D" uid="uid://be1fxsx1xcbon" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 5.png" id="49_dg016"]
+[ext_resource type="Texture2D" uid="uid://bnosjtboje6eu" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda1.png" id="50_te5ia"]
+[ext_resource type="Texture2D" uid="uid://bjy4srkp66ykq" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/esquina.png" id="50_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://tn2rbrso21t1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda4.png" id="51_1hpky"]
+[ext_resource type="Texture2D" uid="uid://baabxjo6i200c" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Inventario/Antiguo/Cuadro Invenatario.png" id="51_dg016"]
+[ext_resource type="Texture2D" uid="uid://y3dxq47iqbap" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 1.png" id="51_s3wxp"]
+[ext_resource type="FontFile" uid="uid://bt3ujeqwnh0k6" path="res://Tipografias/CrayonHandRegular2016Demo.ttf" id="52_6prrp"]
+[ext_resource type="Texture2D" uid="uid://7ikd0ux15yjb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/check.png" id="52_es1pb"]
+[ext_resource type="Texture2D" uid="uid://c7iqoqgq4ebon" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 2.png" id="52_kgko8"]
+[ext_resource type="Texture2D" uid="uid://cstit041chd7p" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/burbuja FIFO/burbuja FIFO plancha fuego.png" id="52_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://cfopi1mi8rbqs" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha sola.png" id="53_s3wxp"]
+[ext_resource type="Texture2D" uid="uid://vsyn0ef4qcx3" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 3.png" id="53_sra2k"]
+[ext_resource type="Script" uid="uid://scnyl7lqhupa" path="res://Scripts/Estaciones/WashingMachine/washing_machine_menu.gd" id="54_a1vdb"]
+[ext_resource type="Texture2D" uid="uid://b5aj1p7fk0yhl" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 4.png" id="54_hcqax"]
+[ext_resource type="Texture2D" uid="uid://cg3oyeebnc4gh" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/plancha cursor/plancha cursor.png" id="54_kgko8"]
+[ext_resource type="Texture2D" uid="uid://dvdjgfr4xwdjy" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 5.png" id="55_74fj6"]
+[ext_resource type="Texture2D" uid="uid://nav12jxb2mba" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/lavadora tapadera abierta0.png" id="56_sra2k"]
+[ext_resource type="Texture2D" uid="uid://blew1rg8pbk6q" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa cerrada.png" id="58_6prrp"]
+[ext_resource type="Texture2D" uid="uid://cm40ra72txn6j" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/Suavizante rojo/Sprite-0001.png" id="58_74fj6"]
+[ext_resource type="Texture2D" uid="uid://dmwasqkaln6ph" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0001.png" id="59_4nopa"]
+[ext_resource type="Texture2D" uid="uid://bl3d4dktw8tjf" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/onda tapadera lavadora.png" id="59_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://dk6cs4c8jdvac" path="res://Sprites/Estaciones/Entregas/carretillas.png" id="60_dg016"]
+[ext_resource type="Texture2D" uid="uid://bonrcxtud6rsd" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha.png" id="60_fb3eu"]
+[ext_resource type="Texture2D" uid="uid://b51rpebs07sr8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0004.png" id="60_ui7nk"]
+[ext_resource type="Script" uid="uid://cycwm3wtgjho" path="res://Scripts/Estaciones/Entregas/entregas.gd" id="60_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://dhxlor5rqs1hf" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0002.png" id="61_22kop"]
+[ext_resource type="Texture2D" uid="uid://dd4v46uflulyt" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha onda.png" id="61_l6pdd"]
+[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="61_sra2k"]
+[ext_resource type="Texture2D" uid="uid://bq5uidhqw7j73" path="res://Sprites/Estaciones/Entregas/carretilla de lado.png" id="61_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://xd6wq3lu1350" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0003.png" id="62_132vf"]
+[ext_resource type="Texture2D" uid="uid://doe76quyah22v" path="res://Sprites/Estaciones/Entregas/caja abierta.png" id="62_s3wxp"]
+[ext_resource type="Texture2D" uid="uid://erm6awsuhuv4" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0001.png" id="63_tqits"]
+[ext_resource type="Texture2D" uid="uid://bubigij5ie1by" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0004.png" id="64_s6ls7"]
+[ext_resource type="Texture2D" uid="uid://doo4gu0tgxyay" path="res://Sprites/Estaciones/Entregas/carretilla de pie.png" id="65_hcqax"]
+[ext_resource type="Texture2D" uid="uid://cut57030lclm2" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0002.png" id="65_jkfeb"]
+[ext_resource type="Texture2D" uid="uid://bnum1g7f2hp88" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0003.png" id="66_kstcu"]
+[ext_resource type="Texture2D" uid="uid://cviknhvu2fvda" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0004.png" id="67_ivsh6"]
+[ext_resource type="Texture2D" uid="uid://cd26hce3c5vto" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0001.png" id="68_msm21"]
+[ext_resource type="Texture2D" uid="uid://xi7nul0gxqng" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0012.png" id="69_ghoq6"]
+[ext_resource type="Texture2D" uid="uid://bwtl73krajc3u" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0013.png" id="70_nm7tr"]
+[ext_resource type="Script" uid="uid://fmrekvfcx5sj" path="res://Scripts/Estaciones/montacargas.gd" id="75_7q0k4"]
+[ext_resource type="Texture2D" uid="uid://gcb00ydj8oc7" path="res://Sprites/Estaciones/Mesa/Mesa/Vision Mesa Cerca.png" id="84_cmu8w"]
+[ext_resource type="Script" uid="uid://00om35dskvaa" path="res://Scripts/Estaciones/Computer/computerMenuGeneral.gd" id="84_jfh6g"]
+[ext_resource type="Texture2D" uid="uid://7rl0relao0ax" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/pc antiguo.png" id="86_kqh3y"]
+[ext_resource type="Texture2D" uid="uid://ddhnx80jy1ueh" path="res://Sprites/Estaciones/Mesa/Telefono/telefono.png" id="86_sh2c6"]
+[ext_resource type="Texture2D" uid="uid://d3xagk1p5dv2e" path="res://Sprites/Estaciones/Mesa/Apps-Assets pc/windows-start-button-logo.png" id="88_08o7r"]
+[ext_resource type="Texture2D" uid="uid://dof2lbbvoskco" path="res://Sprites/Estaciones/Mesa/contadora/contadora 2.png" id="88_bc7is"]
+[ext_resource type="Script" uid="uid://dogocw8x6q8f2" path="res://Scripts/Estaciones/Computer/computer_pc.gd" id="89_qjuwq"]
+[ext_resource type="FontFile" uid="uid://bcyhmn32wccy5" path="res://Tipografias/FiveFontsatFreddy's-Regular.ttf" id="89_qp240"]
+[ext_resource type="Texture2D" uid="uid://cvhwbxq7rkmy0" path="res://Sprites/Estaciones/Mesa/Fondos de pantalla/Fondo windows.jpg" id="90_jfh6g"]
+[ext_resource type="Script" uid="uid://drpb0mifiipt1" path="res://Scripts/Estaciones/Computer/Apps/Shop/shopButtonWallpaper.gd" id="92_qjuwq"]
+[ext_resource type="Texture2D" uid="uid://0wctb7v2nheb" path="res://Sprites/Estaciones/Mesa/portatil/Apps/cariito.png" id="93_7q0k4"]
+[ext_resource type="Texture2D" uid="uid://dtspgrbexjbu" path="res://Sprites/Estaciones/Mesa/portatil/Sistema de ventanas/marco vacio.png" id="94_iy0j5"]
+[ext_resource type="Texture2D" uid="uid://bhnlp11q333uf" path="res://Sprites/Estaciones/Entregas/caja carton 2 cerrada.png" id="94_rxux7"]
+[ext_resource type="Shader" uid="uid://m5xpo444bsv8" path="res://Scripts/Shaders/crt.gdshader" id="95_bc7is"]
+[ext_resource type="Texture2D" uid="uid://bbxwachxkm121" path="res://Sprites/Estaciones/Entregas/caja carton 2.png" id="95_e6y1u"]
+[ext_resource type="Script" uid="uid://c7x3fq8tk0ytf" path="res://Scripts/Inventory/inventario_mainScript.gd" id="98_kgko8"]
+[ext_resource type="Texture2D" uid="uid://cji1hac78fsd6" path="res://Sprites/Estaciones/Modo construccion/componentes/rack vacio.png" id="101_sra2k"]
+
+[sub_resource type="Theme" id="Theme_iift3"]
+default_font_size = 0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sh2c6"]
+atlas = ExtResource("7_cmu8w")
+region = Rect2(1674, 266, 246, 814)
+
+[sub_resource type="Animation" id="Animation_f52rh"]
+resource_name = "NewOrder"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, ExtResource("7_jmtjy"), ExtResource("8_xf20b"), ExtResource("9_ctmxg"), ExtResource("10_5ix5f"), ExtResource("11_teepr"), ExtResource("12_te5ia"), ExtResource("13_1hpky"), ExtResource("14_es1pb"), ExtResource("15_fb3eu"), null]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_kjym6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6f3mp"]
+_data = {
+&"NewOrder": SubResource("Animation_f52rh"),
+&"RESET": SubResource("Animation_kjym6")
+}
+
+[sub_resource type="Animation" id="Animation_ctmxg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cesto/Cesto_texture/Cloth_falling:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("21_cmu8w")]
+}
+
+[sub_resource type="Animation" id="Animation_5ix5f"]
+resource_name = "cloth_falling"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cesto/Cesto_texture/Cloth_falling:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("21_cmu8w"), ExtResource("22_iift3"), ExtResource("23_sh2c6"), ExtResource("24_08o7r"), ExtResource("25_qp240"), ExtResource("26_jfh6g"), ExtResource("27_p8a7i"), ExtResource("28_kqh3y"), ExtResource("29_bc7is"), ExtResource("30_qjuwq"), ExtResource("21_cmu8w")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_teepr"]
+_data = {
+&"RESET": SubResource("Animation_ctmxg"),
+&"cloth_falling": SubResource("Animation_5ix5f")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc7is"]
+atlas = ExtResource("32_iy0j5")
+region = Rect2(0, 73, 79, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p85sc"]
+atlas = ExtResource("35_kjym6")
+region = Rect2(116, 5, 757, 680)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6prrp"]
+atlas = ExtResource("37_n07oa")
+region = Rect2(99, 0, 782, 707)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmtjy"]
+atlas = ExtResource("37_y0dkq")
+region = Rect2(83, 0, 812, 721)
+filter_clip = true
+
+[sub_resource type="Animation" id="Animation_xf20b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("AtlasTexture_6prrp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tabla:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-2.0000062]
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctmxg"]
+atlas = ExtResource("38_jmtjy")
+region = Rect2(100, 0, 782, 710)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ix5f"]
+atlas = ExtResource("37_n07oa")
+region = Rect2(99, 0, 782, 707)
+
+[sub_resource type="Animation" id="Animation_teepr"]
+resource_name = "montacargas_bajando"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [SubResource("AtlasTexture_ctmxg"), SubResource("AtlasTexture_5ix5f")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tabla:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-200.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_te5ia"]
+resource_name = "montacargas_subiendo"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Door:texture_normal")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("AtlasTexture_ctmxg")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tabla:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.23333333, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -200.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1hpky"]
+_data = {
+&"RESET": SubResource("Animation_xf20b"),
+&"montacargas_bajando": SubResource("Animation_teepr"),
+&"montacargas_subiendo": SubResource("Animation_te5ia")
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6pyv"]
+resource_name = "Floor"
+texture = ExtResource("38_j6pyv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4nopa"]
+texture = ExtResource("45_demfi")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ui7nk"]
+texture = ExtResource("46_fjpio")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_22kop"]
+texture = ExtResource("47_rxux7")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_132vf"]
+texture = ExtResource("48_e6y1u")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tqits"]
+texture = ExtResource("49_dg016")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s6ls7"]
+resource_name = "Not available"
+texture = ExtResource("38_j6pyv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n07oa"]
+resource_name = "OCCUPIED"
+texture = ExtResource("38_j6pyv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/modulate = Color(1, 0.42996454, 0.40488002, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jkfeb"]
+texture = ExtResource("50_wqrbv")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kstcu"]
+texture = ExtResource("51_s3wxp")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ivsh6"]
+texture = ExtResource("52_kgko8")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_msm21"]
+texture = ExtResource("53_sra2k")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ghoq6"]
+texture = ExtResource("54_hcqax")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nm7tr"]
+texture = ExtResource("55_74fj6")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_p53fh"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_j6pyv")
+sources/2 = SubResource("TileSetAtlasSource_n07oa")
+sources/4 = SubResource("TileSetAtlasSource_jkfeb")
+sources/5 = SubResource("TileSetAtlasSource_kstcu")
+sources/6 = SubResource("TileSetAtlasSource_ivsh6")
+sources/7 = SubResource("TileSetAtlasSource_msm21")
+sources/8 = SubResource("TileSetAtlasSource_ghoq6")
+sources/9 = SubResource("TileSetAtlasSource_nm7tr")
+sources/10 = SubResource("TileSetAtlasSource_4nopa")
+sources/11 = SubResource("TileSetAtlasSource_ui7nk")
+sources/12 = SubResource("TileSetAtlasSource_22kop")
+sources/13 = SubResource("TileSetAtlasSource_132vf")
+sources/14 = SubResource("TileSetAtlasSource_tqits")
+sources/15 = SubResource("TileSetAtlasSource_s6ls7")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hpky"]
+atlas = ExtResource("41_te5ia")
+region = Rect2(62, 111, 936, 762)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i6st7"]
-atlas = ExtResource("2_qdk5u")
-region = Rect2(0, 0, 500, 500)
+atlas = ExtResource("41_p53fh")
+region = Rect2(0, 0, 357, 177)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_np1b7"]
-load_path = "res://.godot/imported/gato naranja.png-bb048a945a49282ff406abe9e9ef8ecf.ctex"
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s3wxp"]
+bg_color = Color(0.60038817, 0.60038817, 0.60038817, 0.47000003)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2vb1"]
-bg_color = Color(0.4700758, 0.47007585, 0.47007567, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.41981313, 0.4198132, 0.4198129, 1)
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+[sub_resource type="Animation" id="Animation_sra2k"]
+resource_name = "Entregas_in"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("61_wqrbv"), ExtResource("60_dg016")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [200.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ButtonEntregas:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dx2a"]
-bg_color = Color(0.37413922, 0.37413934, 0.374139, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.37413922, 0.37413934, 0.374139, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="Animation" id="Animation_hcqax"]
+resource_name = "Entregas_out"
+length = 0.53333336
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("61_wqrbv")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 200.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ButtonEntregas:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
-[sub_resource type="LabelSettings" id="LabelSettings_5bxwv"]
-font_size = 25
-font_color = Color(0, 0, 0, 1)
-outline_color = Color(0.2159017, 0.21590173, 0.2159017, 1)
-shadow_size = 7
-shadow_color = Color(0.20784314, 0.20784314, 0.20784314, 0.1882353)
-shadow_offset = Vector2(2, 1)
+[sub_resource type="Animation" id="Animation_74fj6"]
+resource_name = "Hover_in"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("62_s3wxp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../ButtonEntregas:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.033333335, 0.19999999),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [170.0, 28.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ButtonEntregas:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(60, 60)]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rmg5h"]
-bg_color = Color(0.37413922, 0.37413934, 0.374139, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.37413922, 0.37413934, 0.374139, 1)
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
+[sub_resource type="Animation" id="Animation_ui7nk"]
+resource_name = "Hover_out"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("65_hcqax")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../ButtonEntregas:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [28.0, 170.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ButtonEntregas:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.20000002),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(60, 60), Vector2(0, 0)]
+}
 
-[sub_resource type="LabelSettings" id="LabelSettings_uvm74"]
-font_size = 25
-font_color = Color(0, 0, 0, 1)
-outline_color = Color(0.2159017, 0.21590173, 0.2159017, 1)
-shadow_size = 7
-shadow_color = Color(0.20784314, 0.20784314, 0.20784314, 0.1882353)
-shadow_offset = Vector2(2, 1)
+[sub_resource type="Animation" id="Animation_4nopa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("60_dg016")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../ButtonEntregas:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [28.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../ButtonEntregas:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../ButtonEntregas:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 59.000046)]
+}
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5u6kw"]
-bg_color = Color(0.4700758, 0.47007585, 0.47007567, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_color = Color(0.41981313, 0.4198132, 0.4198129, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ui7nk"]
+_data = {
+&"Entregas_in": SubResource("Animation_sra2k"),
+&"Entregas_out": SubResource("Animation_hcqax"),
+&"Hover_in": SubResource("Animation_74fj6"),
+&"Hover_out": SubResource("Animation_ui7nk"),
+&"RESET": SubResource("Animation_4nopa")
+}
 
-[sub_resource type="LabelSettings" id="LabelSettings_wgiwt"]
-font_size = 25
-font_color = Color(0, 0, 0, 1)
-outline_color = Color(0.2159017, 0.21590173, 0.2159017, 1)
-shadow_size = 7
-shadow_color = Color(0.20784314, 0.20784314, 0.20784314, 0.1882353)
-shadow_offset = Vector2(2, 1)
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1vdb"]
+atlas = ExtResource("46_rxux7")
+region = Rect2(39, 62, 1402, 392)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ktfp7"]
-load_path = "res://.godot/imported/boton-de-encendido-apagado.png-f302e00210571af95f8e5c43f10f7085.ctex"
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hqb0a"]
+texture = SubResource("AtlasTexture_a1vdb")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcemr"]
-bg_color = Color(0.84257764, 0.6222583, 0.61540425, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.41981313, 0.4198132, 0.4198129, 1)
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fpae"]
+atlas = ExtResource("47_e6y1u")
+region = Rect2(10, 38, 230, 171)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx18j"]
-bg_color = Color(0.84257764, 0.6222583, 0.61540425, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_color = Color(0.41981313, 0.4198132, 0.4198129, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y0dkq"]
+texture = SubResource("AtlasTexture_2fpae")
 
 [sub_resource type="LabelSettings" id="LabelSettings_oonr4"]
 font_size = 25
@@ -134,76 +689,278 @@ shadow_size = 7
 shadow_color = Color(0.20784314, 0.20784314, 0.20784314, 0.1882353)
 shadow_offset = Vector2(2, 1)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8dx2a"]
-atlas = ExtResource("5_ktfp7")
-region = Rect2(129, 111, 244, 278)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p8a7i"]
+texture = ExtResource("49_0i1av")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lghfr"]
-atlas = ExtResource("23_knqih")
-region = Rect2(342, 184, 574, 882)
-
-[sub_resource type="Animation" id="Animation_l0yrg"]
-length = 0.16666667
+[sub_resource type="Animation" id="Animation_7q0k4"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture_normal")
+tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [SubResource("AtlasTexture_lghfr")]
+"update": 0,
+"values": [Vector2(1, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:texture_normal:region")
+tracks/1/path = NodePath("../ClothNormal:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Rect2(342, 184, 574, 882)]
+"values": [Vector2(1, 1)]
 }
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ioa66"]
-load_path = "res://.godot/imported/secuencia_animacion_lavadora_tambor-1.png-0e0bbb4c48528b7147b503233c2b6e01.ctex"
-
-[sub_resource type="Animation" id="Animation_4i3gj"]
-resource_name = "washingMachine"
-length = 3.0
+[sub_resource type="Animation" id="Animation_iy0j5"]
+resource_name = "fade_in"
+length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture_normal")
+tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.20000002, 0.26666668, 0.33333334, 0.40000004, 0.4666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8000001, 0.86666673, 0.9333334, 1, 1.0666667, 1.1333333, 1.2, 1.2666667, 1.3333334, 1.4, 1.4666667, 1.5333333, 1.6, 1.6666666, 1.7333333, 1.8, 1.8666667, 1.9333332, 1.9999999, 2.0666666, 2.1333332, 2.1999998, 2.2666667, 2.3333335, 2.4, 2.4666667, 2.5333335, 2.6000001, 2.6666667, 2.7333336, 2.8, 2.8666666, 2.9333334, 3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [SubResource("CompressedTexture2D_ioa66"), ExtResource("7_7c6kg"), ExtResource("8_n837r"), ExtResource("9_qdk5u"), ExtResource("10_6l5hk"), ExtResource("11_np1b7"), ExtResource("12_rowg2"), ExtResource("13_i6st7"), ExtResource("14_lghfr"), ExtResource("15_lw68p"), ExtResource("16_ojjmx"), ExtResource("17_pku31"), ExtResource("18_vpoi7"), ExtResource("19_dp5ec"), ExtResource("20_unjnf"), ExtResource("21_c4r05"), ExtResource("22_jalqo"), ExtResource("17_pku31"), ExtResource("18_vpoi7"), ExtResource("19_dp5ec"), ExtResource("20_unjnf"), ExtResource("21_c4r05"), ExtResource("22_jalqo"), ExtResource("17_pku31"), ExtResource("18_vpoi7"), ExtResource("19_dp5ec"), ExtResource("20_unjnf"), ExtResource("21_c4r05"), ExtResource("22_jalqo"), ExtResource("17_pku31"), ExtResource("18_vpoi7"), ExtResource("19_dp5ec"), ExtResource("20_unjnf"), ExtResource("21_c4r05"), ExtResource("15_lw68p"), ExtResource("21_c4r05"), ExtResource("15_lw68p"), ExtResource("14_lghfr"), ExtResource("13_i6st7"), ExtResource("12_rowg2"), ExtResource("11_np1b7"), ExtResource("10_6l5hk"), ExtResource("9_qdk5u"), ExtResource("8_n837r"), ExtResource("7_7c6kg"), ExtResource("23_knqih")]
+"values": [Vector2(0, 0), Vector2(1, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".:texture_normal")
+tracks/1/path = NodePath("../ClothNormal:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"update": 1,
-"values": []
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1f7rr"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f52rh"]
 _data = {
-&"RESET": SubResource("Animation_l0yrg"),
-&"washingMachine": SubResource("Animation_4i3gj")
+&"RESET": SubResource("Animation_7q0k4"),
+&"fade_in": SubResource("Animation_iy0j5")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bc7is"]
+texture = ExtResource("51_dg016")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjuwq"]
+atlas = ExtResource("52_wqrbv")
+region = Rect2(81, 66, 80, 78)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7q0k4"]
+texture = SubResource("AtlasTexture_qjuwq")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8a7i"]
+atlas = ExtResource("54_kgko8")
+region = Rect2(344, 80, 566, 1053)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q0k4"]
+atlas = ExtResource("56_sra2k")
+region = Rect2(0, 0, 752, 611)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf20b"]
+atlas = ExtResource("58_6prrp")
+region = Rect2(68, 252, 630, 304)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teepr"]
+atlas = ExtResource("59_jmtjy")
+region = Rect2(53, 252, 660, 319)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjuwq"]
+bg_color = Color(0.17254902, 0.54509807, 0.8745098, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4r05"]
+atlas = ExtResource("58_74fj6")
+region = Rect2(21, 10, 29, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iy0j5"]
+atlas = ExtResource("59_4nopa")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f52rh"]
+atlas = ExtResource("60_ui7nk")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54e80"]
+atlas = ExtResource("61_22kop")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6m81b"]
+atlas = ExtResource("62_132vf")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vpoi7"]
+bg_color = Color(0.972549, 0.3254902, 0.2, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6f3mp"]
+atlas = ExtResource("63_tqits")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n07oa"]
+atlas = ExtResource("64_s6ls7")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54ank"]
+atlas = ExtResource("65_jkfeb")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt4kw"]
+atlas = ExtResource("66_kstcu")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk1rj"]
+atlas = ExtResource("67_ivsh6")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p53fh"]
+atlas = ExtResource("68_msm21")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j681q"]
+atlas = ExtResource("69_ghoq6")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajai0"]
+atlas = ExtResource("70_nm7tr")
+region = Rect2(16, 32, 448, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22kop"]
+atlas = ExtResource("101_sra2k")
+region = Rect2(87.31879, 26, 1317.6814, 342)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i1av"]
+atlas = ExtResource("94_rxux7")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dg016"]
+atlas = ExtResource("95_e6y1u")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp240"]
+atlas = ExtResource("84_cmu8w")
+region = Rect2(92, 632, 1246, 280)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jfh6g"]
+atlas = ExtResource("86_kqh3y")
+region = Rect2(59, 55, 1179, 1143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjym6"]
+atlas = ExtResource("88_bc7is")
+region = Rect2(120, 220, 1001, 799)
+
+[sub_resource type="Theme" id="Theme_6f3mp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqh3y"]
+bg_color = Color(0.65012825, 0.6501283, 0.65012825, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.74978, 0.74978, 0.74977994, 1)
+border_blend = true
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bc7is"]
+bg_color = Color(0.58103293, 0.581033, 0.58103275, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.40069768, 0.40069777, 0.40069747, 1)
+border_blend = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6pyv"]
+atlas = ExtResource("94_iy0j5")
+region = Rect2(64, 41, 1409, 944)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qjuwq"]
+shader = ExtResource("95_bc7is")
+shader_parameter/brightness = 1.02
+shader_parameter/contrast = 1.08
+shader_parameter/saturation = 1.1
+shader_parameter/gamma = 1.05
+shader_parameter/curvature = 0.0
+shader_parameter/corner_soften = 0.0
+shader_parameter/vignette = 0.0
+shader_parameter/scanline_strength = 0.0850000040375
+shader_parameter/scanline_density = 0.9810000228475
+shader_parameter/interlace_strength = 0.362000017195
+shader_parameter/mask_strength = 0.4730000224675
+shader_parameter/mask_scale = 0.5
+shader_parameter/chroma_offset_px = 0.0
+shader_parameter/luma_smear_px = 0.0
+shader_parameter/jitter_px = 0.0
+shader_parameter/wobble_px = 0.0
+shader_parameter/tape_noise = 0.0
+shader_parameter/tape_lines = 0.0
+shader_parameter/roll_speed = 0.0
+shader_parameter/roll_strength = 0.0
+shader_parameter/glow_strength = 0.0
+shader_parameter/glow_threshold = 0.0
+
+[sub_resource type="Animation" id="Animation_wqrbv"]
+resource_name = "PC_Close"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1000.0]
+}
+
+[sub_resource type="Animation" id="Animation_s3wxp"]
+resource_name = "PC_Open"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1000.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_kgko8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sra2k"]
+_data = {
+&"PC_Close": SubResource("Animation_wqrbv"),
+&"PC_Open": SubResource("Animation_s3wxp"),
+&"RESET": SubResource("Animation_kgko8")
 }
 
 [node name="escena_principal" type="Control" unique_id=1850726888]
@@ -214,336 +971,1269 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_vpoi7")
+metadata/_edit_use_anchors_ = true
 
-[node name="wallpaper" type="TextureRect" parent="." unique_id=660924240]
+[node name="Paneles" type="Control" parent="." unique_id=321594189]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Paneles" unique_id=1760836133]
+layout_mode = 0
+offset_top = 162.0
+offset_right = 100.0
+offset_bottom = 216.0
+text = "Nueva ord"
+script = ExtResource("1_wmjee")
+metadata/_edit_use_anchors_ = true
+
+[node name="WashingMachine" type="Button" parent="Paneles" unique_id=1916285922]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 54.0
+text = "Crear lav"
+
+[node name="Dryer" type="Button" parent="Paneles" unique_id=1127858624]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 100.0
+offset_bottom = 108.0
+text = "Crear tend"
+
+[node name="Plancha" type="Button" parent="Paneles" unique_id=2138458125]
+layout_mode = 0
+offset_top = 108.0
+offset_right = 100.0
+offset_bottom = 162.0
+text = "Crear plan
+"
+
+[node name="Buzon" type="TextureRect" parent="Paneles" unique_id=531680817]
+layout_mode = 0
+offset_left = 939.0
+offset_right = 1411.0
+offset_bottom = 217.0
+texture = ExtResource("3_s8rtn")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Calendario" type="TextureRect" parent="Paneles" unique_id=184889965]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 447.0
+offset_bottom = 217.0
+texture = ExtResource("4_im7a6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Brazo-reloj" type="TextureRect" parent="Paneles" unique_id=1553360755]
+layout_mode = 0
+offset_left = 446.0
+offset_right = 937.0
+offset_bottom = 217.0
+texture = ExtResource("5_jst3s")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Culo" type="TextureRect" parent="Paneles" unique_id=911655070]
+layout_mode = 0
+offset_left = 1415.0
+offset_top = -1.0
+offset_right = 1917.0
+offset_bottom = 216.0
+theme = SubResource("Theme_iift3")
+texture = ExtResource("6_sevjg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Panel-Lateral" type="TextureRect" parent="Paneles" unique_id=22635553]
+layout_mode = 0
+offset_left = 1541.0
+offset_top = 215.0
+offset_right = 1919.0
+offset_bottom = 1081.0
+texture = SubResource("AtlasTexture_sh2c6")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Pared" type="TextureRect" parent="." unique_id=1653978717]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 216.0
+offset_right = -385.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_2fpae")
+expand_mode = 1
+
+[node name="Tablero" type="TextureButton" parent="Pared" unique_id=1644301831]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.25
+anchor_left = 0.8652344
+anchor_top = 0.065972224
+anchor_right = 0.98235154
+anchor_bottom = 0.2048611
+offset_left = 0.8652344
+offset_top = 0.2638893
+offset_right = 0.8652344
+offset_bottom = 0.2638855
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_y0dkq")
+texture_hover = ExtResource("5_6prrp")
+ignore_texture_size = true
+stretch_mode = 6
+script = ExtResource("6_io4tg")
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="Pared/Tablero" unique_id=426616283]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09172171
+anchor_top = 0.1125
+anchor_right = 0.7671271
+anchor_bottom = 0.575
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="NewOrder" type="TextureRect" parent="Pared/Tablero" unique_id=1703172981]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.2001201
+anchor_top = 0.0375
+anchor_right = 0.016676676
+anchor_bottom = 0.3375
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pared/Tablero/NewOrder" unique_id=589361849]
+libraries/ = SubResource("AnimationLibrary_6f3mp")
+
+[node name="Grafico Decoracion" type="TextureRect" parent="Pared/Tablero" unique_id=1571680558]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7754654
+anchor_top = 0.1
+anchor_right = 0.89993995
+anchor_bottom = 0.325
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("16_l6pdd")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Grafico puntos" type="TextureRect" parent="Pared/Tablero" unique_id=705498310]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75878876
+anchor_top = 0.2875
+anchor_right = 0.9332933
+anchor_bottom = 0.5625
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("17_s8rtn")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Post It decoracion" type="TextureRect" parent="Pared/Tablero" unique_id=828070885]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.60869867
+anchor_top = 0.5875
+anchor_right = 0.78380376
+anchor_bottom = 0.775
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("18_im7a6")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Post It decoracion2" type="TextureRect" parent="Pared/Tablero" unique_id=1730938323]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4002402
+anchor_top = 0.5875
+anchor_right = 0.52471477
+anchor_bottom = 0.775
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("19_jst3s")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Cesto" type="Control" parent="Pared/Tablero" unique_id=429057]
+z_index = 1
+layout_mode = 1
+anchor_left = -0.08900019
+anchor_top = 2.0260465
+anchor_right = 0.26599985
+anchor_bottom = 2.6980464
+metadata/_edit_use_anchors_ = true
+
+[node name="Cesto_texture" type="TextureRect" parent="Pared/Tablero/Cesto" unique_id=1913929299]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.078345224
+anchor_top = -0.6727575
+anchor_right = 1.0783452
+anchor_bottom = 0.3272425
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_sevjg")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloth_falling" type="TextureRect" parent="Pared/Tablero/Cesto/Cesto_texture" unique_id=1915114618]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.14102075
+anchor_top = -2.927741
+anchor_right = 1.2153939
+anchor_bottom = 1.0212666
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("21_cmu8w")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pared/Tablero/Cesto/Cesto_texture/Cloth_falling" unique_id=1510002999]
+root_node = NodePath("../../../..")
+libraries/ = SubResource("AnimationLibrary_teepr")
+
+[node name="Ducto" type="TextureRect" parent="Pared/Tablero/Cesto" unique_id=1725098665]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.10097063
+anchor_top = -3.7309797
+anchor_right = 1.3126183
+anchor_bottom = -3.1882915
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_bc7is")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Montacargas" type="Control" parent="Pared" unique_id=1015866336]
+clip_contents = true
+layout_mode = 1
+anchor_left = 0.70553744
+anchor_top = 8.0751815e-05
+anchor_right = 0.8514658
+anchor_bottom = 0.23263887
+offset_top = -0.06944847
+offset_bottom = -0.06944275
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("75_7q0k4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="TextureRect" parent="Pared/Montacargas" unique_id=1823250337]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("34_f52rh")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Tabla" type="TextureRect" parent="Pared/Montacargas" unique_id=978913926]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.023148289
+anchor_top = -0.010810845
+anchor_right = 0.99824184
+anchor_bottom = 0.87027025
+offset_top = 0.16216254
+offset_bottom = 0.16215515
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_p85sc")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Cesto" type="TextureRect" parent="Pared/Montacargas/Tabla" unique_id=1929950461]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.004532502
+anchor_top = 0.13496932
+anchor_right = 0.9609269
+anchor_bottom = 0.89030993
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("35_jmtjy")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Door" type="TextureButton" parent="Pared/Montacargas" unique_id=1339135130]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.031249864
+anchor_right = 0.9285713
+anchor_bottom = 0.9150001
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_6prrp")
+texture_hover = SubResource("AtlasTexture_jmtjy")
+ignore_texture_size = true
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pared/Montacargas" unique_id=1005715106]
+libraries/ = SubResource("AnimationLibrary_1hpky")
+
+[node name="FloorTileMap" type="TileMapLayer" parent="." unique_id=298114961]
+tile_map_data = PackedByteArray("AAAgAA0ADwAAAAAAAAAgAA4ADwAAAAAAAAAgAA8ADwAAAAAAAAAeABAAAAAAAAAAAAAeAA8AAAAAAAAAAAAeAA4AAAAAAAAAAAAeAA0AAAAAAAAAAAAdAA0AAAAAAAAAAAAcAA0AAAAAAAAAAAAbAA0AAAAAAAAAAAAaAA0AAAAAAAAAAAAZAA0AAAAAAAAAAAAYAA0AAAAAAAAAAAAXAA0AAAAAAAAAAAAWAA0AAAAAAAAAAAAVAA0AAAAAAAAAAAAUAA0AAAAAAAAAAAATAA0AAAAAAAAAAAASAA0AAAAAAAAAAAARAA0AAAAAAAAAAAAQAA0AAAAAAAAAAAAPAA0AAAAAAAAAAAAOAA0AAAAAAAAAAAANAA0AAAAAAAAAAAAMAA0AAAAAAAAAAAALAA0AAAAAAAAAAAAKAA0AAAAAAAAAAAAJAA0AAAAAAAAAAAAIAA0AAAAAAAAAAAAHAA0AAAAAAAAAAAAGAA0AAAAAAAAAAAAFAA0AAAAAAAAAAAAEAA0AAAAAAAAAAAADAA0AAAAAAAAAAAACAA0AAAAAAAAAAAABAA0AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA8AAAAAAAAAAAAAABAAAAAAAAAAAAAAABEAAAAAAAAAAAAAABIAAAAAAAAAAAAAABMAAAAAAAAAAAAAABQAAAAAAAAAAAAAABUAAAAAAAAAAAAAABYAAAAAAAAAAAAAABcAAAAAAAAAAAAAABgAAAAAAAAAAAAAABkAAAAAAAAAAAAAABoAAAAAAAAAAAAAABsAAAAAAAAAAAAAABwAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAB4AAAAAAAAAAAAAAB8AAAAAAAAAAAAAACAAAAAAAAAAAAAAACEAAAAAAAAAAAABACEAAAAAAAAAAAABACAAAAAAAAAAAAABAB8AAAAAAAAAAAABAB4AAAAAAAAAAAABAB0AAAAAAAAAAAABABwAAAAAAAAAAAABABsAAAAAAAAAAAABABoAAAAAAAAAAAABABkAAAAAAAAAAAABABgAAAAAAAAAAAABABcAAAAAAAAAAAABABYAAAAAAAAAAAABABUAAAAAAAAAAAABABQAAAAAAAAAAAABABMAAAAAAAAAAAABABIAAAAAAAAAAAABABEAAAAAAAAAAAABABAAAAAAAAAAAAABAA8AAAAAAAAAAAABAA4AAAAAAAAAAAACAA4AAAAAAAAAAAACAA8AAAAAAAAAAAACABAAAAAAAAAAAAACABEAAAAAAAAAAAACABIAAAAAAAAAAAACABMAAAAAAAAAAAACABQAAAAAAAAAAAACABUAAAAAAAAAAAACABYAAAAAAAAAAAACABcAAAAAAAAAAAACABgAAAAAAAAAAAACABkAAAAAAAAAAAACABoAAAAAAAAAAAACABsAAAAAAAAAAAACABwAAAAAAAAAAAACAB0AAAAAAAAAAAACAB4AAAAAAAAAAAACAB8AAAAAAAAAAAACACAAAAAAAAAAAAACACEAAAAAAAAAAAADACEAAAAAAAAAAAADACAAAAAAAAAAAAADAB8AAAAAAAAAAAADAB4AAAAAAAAAAAADAB0AAAAAAAAAAAADABwAAAAAAAAAAAADABsAAAAAAAAAAAADABoAAAAAAAAAAAADABkAAAAAAAAAAAADABgAAAAAAAAAAAADABcAAAAAAAAAAAADABYAAAAAAAAAAAADABUAAAAAAAAAAAADABQAAAAAAAAAAAADABMAAAAAAAAAAAADABIAAAAAAAAAAAADABEAAAAAAAAAAAADABAAAAAAAAAAAAADAA8AAAAAAAAAAAADAA4AAAAAAAAAAAAEAA4AAAAAAAAAAAAEAA8AAAAAAAAAAAAEABAAAAAAAAAAAAAEABEAAAAAAAAAAAAEABIAAAAAAAAAAAAEABMAAAAAAAAAAAAEABQAAAAAAAAAAAAEABUAAAAAAAAAAAAEABYAAAAAAAAAAAAEABcAAAAAAAAAAAAEABgAAAAAAAAAAAAEABkAAAAAAAAAAAAEABoAAAAAAAAAAAAEABsAAAAAAAAAAAAEABwAAAAAAAAAAAAEAB0AAAAAAAAAAAAEAB4AAAAAAAAAAAAEAB8AAAAAAAAAAAAEACAAAAAAAAAAAAAEACEAAAAAAAAAAAAFACEAAAAAAAAAAAAFACAAAAAAAAAAAAAFAB8AAAAAAAAAAAAFAB4AAAAAAAAAAAAFAB0AAAAAAAAAAAAFABwAAAAAAAAAAAAFABsAAAAAAAAAAAAFABoAAAAAAAAAAAAFABkAAAAAAAAAAAAFABgAAAAAAAAAAAAFABcAAAAAAAAAAAAFABYAAAAAAAAAAAAFABUAAAAAAAAAAAAFABQAAAAAAAAAAAAFABMAAAAAAAAAAAAFABIAAAAAAAAAAAAFABEAAAAAAAAAAAAFABAAAAAAAAAAAAAFAA8AAAAAAAAAAAAFAA4AAAAAAAAAAAAGAA4AAAAAAAAAAAAGAA8AAAAAAAAAAAAGABAAAAAAAAAAAAAGABEAAAAAAAAAAAAGABIAAAAAAAAAAAAGABMAAAAAAAAAAAAGABQAAAAAAAAAAAAGABUAAAAAAAAAAAAGABYAAAAAAAAAAAAGABcAAAAAAAAAAAAGABgAAAAAAAAAAAAGABkAAAAAAAAAAAAGABoAAAAAAAAAAAAGABsAAAAAAAAAAAAGABwAAAAAAAAAAAAGAB0AAAAAAAAAAAAGAB4AAAAAAAAAAAAGAB8AAAAAAAAAAAAGACAAAAAAAAAAAAAGACEAAAAAAAAAAAAHACEAAAAAAAAAAAAHACAAAAAAAAAAAAAHAB8AAAAAAAAAAAAHAB4AAAAAAAAAAAAHAB0AAAAAAAAAAAAHABwAAAAAAAAAAAAHABsAAAAAAAAAAAAHABoAAAAAAAAAAAAHABkAAAAAAAAAAAAHABgAAAAAAAAAAAAHABcAAAAAAAAAAAAHABYAAAAAAAAAAAAHABUAAAAAAAAAAAAHABQAAAAAAAAAAAAHABMAAAAAAAAAAAAHABIAAAAAAAAAAAAHABEAAAAAAAAAAAAHABAAAAAAAAAAAAAHAA8AAAAAAAAAAAAHAA4AAAAAAAAAAAAIAA4AAAAAAAAAAAAIAA8AAAAAAAAAAAAIABAAAAAAAAAAAAAIABEAAAAAAAAAAAAIABIAAAAAAAAAAAAIABMAAAAAAAAAAAAIABQAAAAAAAAAAAAIABUAAAAAAAAAAAAIABYAAAAAAAAAAAAIABcAAAAAAAAAAAAIABgAAAAAAAAAAAAIABkAAAAAAAAAAAAIABoAAAAAAAAAAAAIABsAAAAAAAAAAAAIABwAAAAAAAAAAAAIAB0AAAAAAAAAAAAIAB4AAAAAAAAAAAAIAB8AAAAAAAAAAAAIACAAAAAAAAAAAAAIACEAAAAAAAAAAAAJACEAAAAAAAAAAAAJACAAAAAAAAAAAAAJAB8AAAAAAAAAAAAJAB4AAAAAAAAAAAAJAB0AAAAAAAAAAAAJABwAAAAAAAAAAAAJABsAAAAAAAAAAAAJABoAAAAAAAAAAAAJABkAAAAAAAAAAAAJABgAAAAAAAAAAAAJABcAAAAAAAAAAAAJABYAAAAAAAAAAAAJABUAAAAAAAAAAAAJABQAAAAAAAAAAAAJABMAAAAAAAAAAAAJABIAAAAAAAAAAAAJABEAAAAAAAAAAAAJABAAAAAAAAAAAAAJAA8AAAAAAAAAAAAJAA4AAAAAAAAAAAAKAA4AAAAAAAAAAAAKAA8AAAAAAAAAAAAKABAAAAAAAAAAAAAKABEAAAAAAAAAAAAKABIAAAAAAAAAAAAKABMAAAAAAAAAAAAKABQAAAAAAAAAAAAKABUAAAAAAAAAAAAKABYAAAAAAAAAAAAKABcAAAAAAAAAAAAKABgAAAAAAAAAAAAKABkAAAAAAAAAAAAKABoAAAAAAAAAAAAKABsAAAAAAAAAAAAKABwAAAAAAAAAAAAKAB0AAAAAAAAAAAAKAB4AAAAAAAAAAAAKAB8AAAAAAAAAAAAKACAAAAAAAAAAAAAKACEAAAAAAAAAAAALACEAAAAAAAAAAAALACAAAAAAAAAAAAALAB8AAAAAAAAAAAALAB4AAAAAAAAAAAALAB0AAAAAAAAAAAALABwAAAAAAAAAAAALABsAAAAAAAAAAAALABoAAAAAAAAAAAALABkAAAAAAAAAAAALABgAAAAAAAAAAAALABcAAAAAAAAAAAALABYAAAAAAAAAAAALABUAAAAAAAAAAAALABQAAAAAAAAAAAALABMAAAAAAAAAAAALABIAAAAAAAAAAAALABEAAAAAAAAAAAALABAAAAAAAAAAAAALAA8AAAAAAAAAAAALAA4AAAAAAAAAAAAMAA4AAAAAAAAAAAAMAA8AAAAAAAAAAAAMABAAAAAAAAAAAAAMABEAAAAAAAAAAAAMABIAAAAAAAAAAAAMABMAAAAAAAAAAAAMABQAAAAAAAAAAAAMABUAAAAAAAAAAAAMABYAAAAAAAAAAAAMABcAAAAAAAAAAAAMABgAAAAAAAAAAAAMABkAAAAAAAAAAAAMABoAAAAAAAAAAAAMABsAAAAAAAAAAAAMABwAAAAAAAAAAAAMAB0AAAAAAAAAAAAMAB4AAAAAAAAAAAAMAB8AAAAAAAAAAAAMACAAAAAAAAAAAAAMACEAAAAAAAAAAAANACEAAAAAAAAAAAANACAAAAAAAAAAAAANAB8AAAAAAAAAAAANAB4AAAAAAAAAAAANAB0AAAAAAAAAAAANABwAAAAAAAAAAAANABsAAAAAAAAAAAANABoAAAAAAAAAAAANABkAAAAAAAAAAAANABgAAAAAAAAAAAANABcAAAAAAAAAAAANABYAAAAAAAAAAAANABUAAAAAAAAAAAANABQAAAAAAAAAAAANABMAAAAAAAAAAAANABIAAAAAAAAAAAANABEAAAAAAAAAAAANABAAAAAAAAAAAAANAA8AAAAAAAAAAAANAA4AAAAAAAAAAAAOAA4AAAAAAAAAAAAOAA8AAAAAAAAAAAAOABAAAAAAAAAAAAAOABEAAAAAAAAAAAAOABIAAAAAAAAAAAAOABMAAAAAAAAAAAAOABQAAAAAAAAAAAAOABUAAAAAAAAAAAAOABYAAAAAAAAAAAAOABcAAAAAAAAAAAAOABgAAAAAAAAAAAAOABkAAAAAAAAAAAAOABoAAAAAAAAAAAAOABsAAAAAAAAAAAAOABwAAAAAAAAAAAAOAB0AAAAAAAAAAAAOAB4AAAAAAAAAAAAOAB8AAAAAAAAAAAAOACAAAAAAAAAAAAAOACEAAAAAAAAAAAAPACEAAAAAAAAAAAAPACAAAAAAAAAAAAAPAB8AAAAAAAAAAAAPAB4AAAAAAAAAAAAPAB0AAAAAAAAAAAAPABwAAAAAAAAAAAAPABsAAAAAAAAAAAAPABoAAAAAAAAAAAAPABkAAAAAAAAAAAAPABgAAAAAAAAAAAAPABcAAAAAAAAAAAAPABYAAAAAAAAAAAAPABUAAAAAAAAAAAAPABQAAAAAAAAAAAAPABMAAAAAAAAAAAAPABIAAAAAAAAAAAAPABEAAAAAAAAAAAAPABAAAAAAAAAAAAAPAA8AAAAAAAAAAAAPAA4AAAAAAAAAAAAQAA4AAAAAAAAAAAAQAA8AAAAAAAAAAAAQABAAAAAAAAAAAAAQABEAAAAAAAAAAAAQABIAAAAAAAAAAAAQABMAAAAAAAAAAAAQABQAAAAAAAAAAAAQABUAAAAAAAAAAAAQABYAAAAAAAAAAAAQABcAAAAAAAAAAAAQABgAAAAAAAAAAAAQABkAAAAAAAAAAAAQABoAAAAAAAAAAAAQABsAAAAAAAAAAAAQABwAAAAAAAAAAAAQAB0AAAAAAAAAAAAQAB4AAAAAAAAAAAAQAB8AAAAAAAAAAAAQACAAAAAAAAAAAAAQACEAAAAAAAAAAAARACEAAAAAAAAAAAARACAAAAAAAAAAAAARAB8AAAAAAAAAAAARAB4AAAAAAAAAAAARAB0AAAAAAAAAAAARABwAAAAAAAAAAAARABsAAAAAAAAAAAARABoAAAAAAAAAAAARABkAAAAAAAAAAAARABgAAAAAAAAAAAARABcAAAAAAAAAAAARABYAAAAAAAAAAAARABUAAAAAAAAAAAARABQAAAAAAAAAAAARABMAAAAAAAAAAAARABIAAAAAAAAAAAARABEAAAAAAAAAAAARABAAAAAAAAAAAAARAA8AAAAAAAAAAAARAA4AAAAAAAAAAAASAA4AAAAAAAAAAAASAA8AAAAAAAAAAAASABAAAAAAAAAAAAASABEAAAAAAAAAAAASABIAAAAAAAAAAAASABMAAAAAAAAAAAASABQAAAAAAAAAAAASABUAAAAAAAAAAAASABYAAAAAAAAAAAASABcAAAAAAAAAAAASABgAAAAAAAAAAAASABkAAAAAAAAAAAASABoAAAAAAAAAAAASABsAAAAAAAAAAAASABwAAAAAAAAAAAASAB0AAAAAAAAAAAASAB4AAAAAAAAAAAASAB8AAAAAAAAAAAASACAAAAAAAAAAAAASACEAAAAAAAAAAAATACEAAAAAAAAAAAATACAAAAAAAAAAAAATAB8AAAAAAAAAAAATAB4AAAAAAAAAAAATAB0AAAAAAAAAAAATABwAAAAAAAAAAAATABsAAAAAAAAAAAATABoAAAAAAAAAAAATABkAAAAAAAAAAAATABgAAAAAAAAAAAATABcAAAAAAAAAAAATABYAAAAAAAAAAAATABUAAAAAAAAAAAATABQAAAAAAAAAAAATABMAAAAAAAAAAAATABIAAAAAAAAAAAATABEAAAAAAAAAAAATABAAAAAAAAAAAAATAA8AAAAAAAAAAAATAA4AAAAAAAAAAAAUAA4AAAAAAAAAAAAUAA8AAAAAAAAAAAAUABAAAAAAAAAAAAAUABEAAAAAAAAAAAAUABIAAAAAAAAAAAAUABMAAAAAAAAAAAAUABQAAAAAAAAAAAAUABUAAAAAAAAAAAAUABYAAAAAAAAAAAAUABcAAAAAAAAAAAAUABgAAAAAAAAAAAAUABkAAAAAAAAAAAAUABoAAAAAAAAAAAAUABsAAAAAAAAAAAAUABwAAAAAAAAAAAAUAB0AAAAAAAAAAAAUAB4AAAAAAAAAAAAUAB8AAAAAAAAAAAAUACAAAAAAAAAAAAAUACEAAAAAAAAAAAAVACEAAAAAAAAAAAAVACAAAAAAAAAAAAAVAB8AAAAAAAAAAAAVAB4AAAAAAAAAAAAVAB0AAAAAAAAAAAAVABwAAAAAAAAAAAAVABsAAAAAAAAAAAAVABoAAAAAAAAAAAAVABkAAAAAAAAAAAAVABgAAAAAAAAAAAAVABcAAAAAAAAAAAAVABYAAAAAAAAAAAAVABUAAAAAAAAAAAAVABQAAAAAAAAAAAAVABMAAAAAAAAAAAAVABIAAAAAAAAAAAAVABEAAAAAAAAAAAAVABAAAAAAAAAAAAAVAA8AAAAAAAAAAAAVAA4AAAAAAAAAAAAWAA4AAAAAAAAAAAAWAA8AAAAAAAAAAAAWABAAAAAAAAAAAAAWABEAAAAAAAAAAAAWABIAAAAAAAAAAAAWABMAAAAAAAAAAAAWABQAAAAAAAAAAAAWABUAAAAAAAAAAAAWABYAAAAAAAAAAAAWABcAAAAAAAAAAAAWABgAAAAAAAAAAAAWABkAAAAAAAAAAAAWABoAAAAAAAAAAAAWABsAAAAAAAAAAAAWABwAAAAAAAAAAAAWAB0AAAAAAAAAAAAWAB4AAAAAAAAAAAAWAB8AAAAAAAAAAAAWACAAAAAAAAAAAAAWACEAAAAAAAAAAAAXACEAAAAAAAAAAAAXACAAAAAAAAAAAAAXAB8AAAAAAAAAAAAXAB4AAAAAAAAAAAAXAB0AAAAAAAAAAAAXABwAAAAAAAAAAAAXABsAAAAAAAAAAAAXABoAAAAAAAAAAAAXABkAAAAAAAAAAAAXABgAAAAAAAAAAAAXABcAAAAAAAAAAAAXABYAAAAAAAAAAAAXABUAAAAAAAAAAAAXABQAAAAAAAAAAAAXABMAAAAAAAAAAAAXABIAAAAAAAAAAAAXABEAAAAAAAAAAAAXABAAAAAAAAAAAAAXAA8AAAAAAAAAAAAXAA4AAAAAAAAAAAAYAA4AAAAAAAAAAAAYAA8AAAAAAAAAAAAYABAAAAAAAAAAAAAYABEAAAAAAAAAAAAYABIAAAAAAAAAAAAYABMAAAAAAAAAAAAYABQAAAAAAAAAAAAYABUAAAAAAAAAAAAYABYAAAAAAAAAAAAYABcAAAAAAAAAAAAYABgAAAAAAAAAAAAYABkAAAAAAAAAAAAYABoAAAAAAAAAAAAYABsAAAAAAAAAAAAYABwAAAAAAAAAAAAYAB0AAAAAAAAAAAAYAB4AAAAAAAAAAAAYAB8AAAAAAAAAAAAYACAAAAAAAAAAAAAYACEAAAAAAAAAAAAZACEAAAAAAAAAAAAZACAAAAAAAAAAAAAZAB8AAAAAAAAAAAAZAB4AAAAAAAAAAAAZAB0AAAAAAAAAAAAZABwAAAAAAAAAAAAZABsAAAAAAAAAAAAZABoAAAAAAAAAAAAZABkAAAAAAAAAAAAZABgAAAAAAAAAAAAZABcAAAAAAAAAAAAZABYAAAAAAAAAAAAZABUAAAAAAAAAAAAZABQAAAAAAAAAAAAZABMAAAAAAAAAAAAZABIAAAAAAAAAAAAZABEAAAAAAAAAAAAZABAAAAAAAAAAAAAZAA8AAAAAAAAAAAAZAA4AAAAAAAAAAAAaAA4AAAAAAAAAAAAaAA8AAAAAAAAAAAAaABAAAAAAAAAAAAAaABEAAAAAAAAAAAAaABIAAAAAAAAAAAAaABMAAAAAAAAAAAAaABQAAAAAAAAAAAAaABUAAAAAAAAAAAAaABYAAAAAAAAAAAAaABcAAAAAAAAAAAAaABgAAAAAAAAAAAAaABkAAAAAAAAAAAAaABoAAAAAAAAAAAAaABsAAAAAAAAAAAAaABwAAAAAAAAAAAAaAB0AAAAAAAAAAAAaAB4AAAAAAAAAAAAaAB8AAAAAAAAAAAAaACAAAAAAAAAAAAAaACEAAAAAAAAAAAAbACEAAAAAAAAAAAAbACAAAAAAAAAAAAAbAB8AAAAAAAAAAAAbAB4AAAAAAAAAAAAbAB0AAAAAAAAAAAAbABwAAAAAAAAAAAAbABsAAAAAAAAAAAAbABoAAAAAAAAAAAAbABkAAAAAAAAAAAAbABgAAAAAAAAAAAAbABcAAAAAAAAAAAAbABYAAAAAAAAAAAAbABUAAAAAAAAAAAAbABQAAAAAAAAAAAAbABMAAAAAAAAAAAAbABIAAAAAAAAAAAAbABEAAAAAAAAAAAAbABAAAAAAAAAAAAAbAA8AAAAAAAAAAAAbAA4AAAAAAAAAAAAcAA4AAAAAAAAAAAAcAA8AAAAAAAAAAAAcABAAAAAAAAAAAAAcABEAAAAAAAAAAAAcABIAAAAAAAAAAAAcABMAAAAAAAAAAAAcABQAAAAAAAAAAAAcABUAAAAAAAAAAAAcABYAAAAAAAAAAAAcABcAAAAAAAAAAAAcABgAAAAAAAAAAAAcABkAAAAAAAAAAAAcABoAAAAAAAAAAAAcABsAAAAAAAAAAAAcABwAAAAAAAAAAAAcAB0AAAAAAAAAAAAcAB4AAAAAAAAAAAAcAB8AAAAAAAAAAAAcACAAAAAAAAAAAAAcACEAAAAAAAAAAAAdACEAAAAAAAAAAAAdACAAAAAAAAAAAAAdAB8AAAAAAAAAAAAdAB4AAAAAAAAAAAAdAB0AAAAAAAAAAAAdABwAAAAAAAAAAAAdABsAAAAAAAAAAAAdABoAAAAAAAAAAAAdABkAAAAAAAAAAAAdABgAAAAAAAAAAAAdABcAAAAAAAAAAAAdABYAAAAAAAAAAAAdABUAAAAAAAAAAAAdABQAAAAAAAAAAAAdABMAAAAAAAAAAAAdABIAAAAAAAAAAAAdABEAAAAAAAAAAAAdABAAAAAAAAAAAAAdAA8AAAAAAAAAAAAdAA4AAAAAAAAAAAAeABEAAAAAAAAAAAAeABIAAAAAAAAAAAAeABMAAAAAAAAAAAAeABQAAAAAAAAAAAAeABUAAAAAAAAAAAAeABYAAAAAAAAAAAAeABcAAAAAAAAAAAAeABgAAAAAAAAAAAAeABkAAAAAAAAAAAAeABoAAAAAAAAAAAAeABsAAAAAAAAAAAAeABwAAAAAAAAAAAAeAB0AAAAAAAAAAAAeAB4AAAAAAAAAAAAeAB8AAAAAAAAAAAAeACAAAAAAAAAAAAAeACEAAAAAAAAAAAAfACEAAAAAAAAAAAAfACAAAAAAAAAAAAAfAB8AAAAAAAAAAAAfAB4AAAAAAAAAAAAfAB0AAAAAAAAAAAAfABwAAAAAAAAAAAAfABsAAAAAAAAAAAAfABoAAAAAAAAAAAAfABkAAAAAAAAAAAAfABgAAAAAAAAAAAAfABcAAAAAAAAAAAAfABYAAAAAAAAAAAAfABUABAAAAAAAAAAfABQADAAAAAAAAAAfABMACgAAAAAAAAAgABMADwAAAAAAAAAgABQADwAAAAAAAAAgABUABQAAAAAAAAAgABYAAAAAAAAAAAAgABcAAAAAAAAAAAAgABgAAAAAAAAAAAAgABkAAAAAAAAAAAAgABoAAAAAAAAAAAAgABsAAAAAAAAAAAAgABwAAAAAAAAAAAAgAB0AAAAAAAAAAAAgAB4AAAAAAAAAAAAgAB8AAAAAAAAAAAAgACAAAAAAAAAAAAAgACEAAAAAAAAAAAAhACEAAAAAAAAAAAAhACAAAAAAAAAAAAAhAB8AAAAAAAAAAAAhAB4AAAAAAAAAAAAhAB0AAAAAAAAAAAAhABwAAAAAAAAAAAAhABsAAAAAAAAAAAAhABoAAAAAAAAAAAAhABkAAAAAAAAAAAAhABgAAAAAAAAAAAAhABcAAAAAAAAAAAAhABYAAAAAAAAAAAAhABUABQAAAAAAAAAhABQADwAAAAAAAAAhABMADwAAAAAAAAAhABAADwAAAAAAAAAhAA8ADwAAAAAAAAAhAA4ADwAAAAAAAAAhAA0ADwAAAAAAAAAiAA0ADwAAAAAAAAAiAA4ADwAAAAAAAAAiAA8ADwAAAAAAAAAiABQADwAAAAAAAAAiABUABQAAAAAAAAAiABYAAAAAAAAAAAAiABcAAAAAAAAAAAAiABgAAAAAAAAAAAAiABkAAAAAAAAAAAAiABoAAAAAAAAAAAAiABsAAAAAAAAAAAAiABwAAAAAAAAAAAAiAB0AAAAAAAAAAAAiAB4AAAAAAAAAAAAiAB8AAAAAAAAAAAAiACAAAAAAAAAAAAAiACEAAAAAAAAAAAAjACEAAAAAAAAAAAAjACAAAAAAAAAAAAAjAB8AAAAAAAAAAAAjAB4AAAAAAAAAAAAjAB0AAAAAAAAAAAAjABwAAAAAAAAAAAAjABsAAAAAAAAAAAAjABoAAAAAAAAAAAAjABkAAAAAAAAAAAAjABgAAAAAAAAAAAAjABcAAAAAAAAAAAAjABYAAAAAAAAAAAAjABUABQAAAAAAAAAjABQADwAAAAAAAAAjAA8ADwAAAAAAAAAjAA4ADwAAAAAAAAAjAA0ADwAAAAAAAAAkAA0ADwAAAAAAAAAkAA4ADwAAAAAAAAAkAA8ADwAAAAAAAAAkABAADwAAAAAAAAAkABQADwAAAAAAAAAkABUABQAAAAAAAAAkABYAAAAAAAAAAAAkABcAAAAAAAAAAAAkABgAAAAAAAAAAAAkABkAAAAAAAAAAAAkABoAAAAAAAAAAAAkABsAAAAAAAAAAAAkABwAAAAAAAAAAAAkAB0AAAAAAAAAAAAkAB4AAAAAAAAAAAAkAB8AAAAAAAAAAAAkACAAAAAAAAAAAAAkACEAAAAAAAAAAAAlACEAAAAAAAAAAAAlACAAAAAAAAAAAAAlAB8AAAAAAAAAAAAlAB4AAAAAAAAAAAAlAB0AAAAAAAAAAAAlABwAAAAAAAAAAAAlABsAAAAAAAAAAAAlABoAAAAAAAAAAAAlABkAAAAAAAAAAAAlABgAAAAAAAAAAAAlABcAAAAAAAAAAAAlABYAAAAAAAAAAAAlABUABQAAAAAAAAAlABQADwAAAAAAAAAlABAADwAAAAAAAAAlAA8ADwAAAAAAAAAlAA4ADwAAAAAAAAAlAA0ADwAAAAAAAAAmAA0ADwAAAAAAAAAmAA4ADwAAAAAAAAAmAA8ADwAAAAAAAAAmABAADwAAAAAAAAAmABUABQAAAAAAAAAmABYAAAAAAAAAAAAmABcAAAAAAAAAAAAmABgAAAAAAAAAAAAmABkAAAAAAAAAAAAmABoAAAAAAAAAAAAmABsAAAAAAAAAAAAmABwAAAAAAAAAAAAmAB0AAAAAAAAAAAAmAB4AAAAAAAAAAAAmAB8AAAAAAAAAAAAmACAAAAAAAAAAAAAmACEAAAAAAAAAAAAnACEAAAAAAAAAAAAnACAAAAAAAAAAAAAnAB8AAAAAAAAAAAAnAB4AAAAAAAAAAAAnAB0AAAAAAAAAAAAnABwAAAAAAAAAAAAnABsAAAAAAAAAAAAnABoAAAAAAAAAAAAnABkAAAAAAAAAAAAnABgAAAAAAAAAAAAnABcAAAAAAAAAAAAnABYAAAAAAAAAAAAnABUABQAAAAAAAAAnABAADwAAAAAAAAAnAA8ADwAAAAAAAAAnAA4ADwAAAAAAAAAnAA0ADwAAAAAAAAAoAA0ADwAAAAAAAAAoAA4ADwAAAAAAAAAoAA8ADwAAAAAAAAAoABAADwAAAAAAAAAoABYAAAAAAAAAAAAoABcAAAAAAAAAAAAoABgAAAAAAAAAAAAoABkAAAAAAAAAAAAoABoAAAAAAAAAAAAoABsAAAAAAAAAAAAoABwAAAAAAAAAAAAoAB0AAAAAAAAAAAAoAB4AAAAAAAAAAAAoAB8AAAAAAAAAAAAoACAAAAAAAAAAAAAoACEAAAAAAAAAAAApACEAAAAAAAAAAAApACAAAAAAAAAAAAApAB8AAAAAAAAAAAApAB4AAAAAAAAAAAApAB0AAAAAAAAAAAApABwAAAAAAAAAAAApABsAAAAAAAAAAAApABoAAAAAAAAAAAApABkAAAAAAAAAAAApABgAAAAAAAAAAAApABcAAAAAAAAAAAApABIADwAAAAAAAAApABAADwAAAAAAAAApAA8ADwAAAAAAAAApAA4ADwAAAAAAAAApAA0ADwAAAAAAAAAqAA0ADwAAAAAAAAAqAA4ADwAAAAAAAAAqAA8ADwAAAAAAAAAqABAADwAAAAAAAAAqABcAAAAAAAAAAAAqABgAAAAAAAAAAAAqABkAAAAAAAAAAAAqABoAAAAAAAAAAAAqABsAAAAAAAAAAAAqABwAAAAAAAAAAAAqAB0AAAAAAAAAAAAqAB4AAAAAAAAAAAAqAB8AAAAAAAAAAAAqACAAAAAAAAAAAAAqACEAAAAAAAAAAAArACEAAAAAAAAAAAArACAAAAAAAAAAAAArAB8AAAAAAAAAAAArAB4AAAAAAAAAAAArAB0AAAAAAAAAAAArABwAAAAAAAAAAAArABsAAAAAAAAAAAArABoAAAAAAAAAAAArABkAAAAAAAAAAAArABgAAAAAAAAAAAArABEADwAAAAAAAAArABAADwAAAAAAAAArAA8ADwAAAAAAAAArAA4ADwAAAAAAAAArAA0ADwAAAAAAAAAsAA0ADwAAAAAAAAAsAA4ADwAAAAAAAAAsAA8ADwAAAAAAAAAsABAADwAAAAAAAAAsABEADwAAAAAAAAAsABIADwAAAAAAAAAsABMADwAAAAAAAAAsABgAAAAAAAAAAAAsABkAAAAAAAAAAAAsABoAAAAAAAAAAAAsABsAAAAAAAAAAAAsABwAAAAAAAAAAAAsAB0AAAAAAAAAAAAsAB4AAAAAAAAAAAAsAB8AAAAAAAAAAAAsACAAAAAAAAAAAAAsACEAAAAAAAAAAAAtACEAAAAAAAAAAAAtACAAAAAAAAAAAAAtAB8AAAAAAAAAAAAtAB4AAAAAAAAAAAAtAB0AAAAAAAAAAAAtABwAAAAAAAAAAAAtABsAAAAAAAAAAAAtABoAAAAAAAAAAAAtABkAAAAAAAAAAAAtABgAAAAAAAAAAAAtABQADwAAAAAAAAAtABMADwAAAAAAAAAtABIADwAAAAAAAAAtABEADwAAAAAAAAAtABAADwAAAAAAAAAtAA8ADwAAAAAAAAAtAA4ADwAAAAAAAAAtAA0ADwAAAAAAAAAuAA0ADwAAAAAAAAAuAA4ADwAAAAAAAAAuAA8ADwAAAAAAAAAuABAADwAAAAAAAAAuABEADwAAAAAAAAAuABIADwAAAAAAAAAuABMADwAAAAAAAAAuABQADwAAAAAAAAAuABUABQAAAAAAAAAuABYAAAAAAAAAAAAuABcAAAAAAAAAAAAuABgAAAAAAAAAAAAuABkAAAAAAAAAAAAuABoAAAAAAAAAAAAuABsAAAAAAAAAAAAuABwAAAAAAAAAAAAuAB0AAAAAAAAAAAAuAB4AAAAAAAAAAAAuAB8AAAAAAAAAAAAuACAAAAAAAAAAAAAuACEAAAAAAAAAAAAvACEAAAAAAAAAAAAvACAAAAAAAAAAAAAvAB8AAAAAAAAAAAAvAB4AAAAAAAAAAAAvAB0AAAAAAAAAAAAvABwAAAAAAAAAAAAvABsAAAAAAAAAAAAvABoAAAAAAAAAAAAvABkAAAAAAAAAAAAvABgAAAAAAAAAAAAvABcAAAAAAAAAAAAvABYAAAAAAAAAAAAvABUABQAAAAAAAAAvABQADwAAAAAAAAAvABMADwAAAAAAAAAvABIADwAAAAAAAAAvABEADwAAAAAAAAAvABAADwAAAAAAAAAvAA8ADwAAAAAAAAAvAA4ADwAAAAAAAAAvAA0ADwAAAAAAAAAfAA0ADAAAAAAAAAAfAA4ACwAAAAAAAAAfAA8ACgAAAAAAAAAfABAACwAAAAAAAAAgABAADwAAAAAAAAAgABEADwAAAAAAAAAhABEADwAAAAAAAAAiABEADwAAAAAAAAAiABIADwAAAAAAAAAjABIADwAAAAAAAAAkABIADwAAAAAAAAAkABEADwAAAAAAAAAjABEADwAAAAAAAAAjABAADwAAAAAAAAAiABAADwAAAAAAAAAlABEADwAAAAAAAAAfABEACgAAAAAAAAAgABIADwAAAAAAAAAhABIADwAAAAAAAAAlABIADwAAAAAAAAAmABIADwAAAAAAAAAnABIADwAAAAAAAAAfABIACwAAAAAAAAAoABIADwAAAAAAAAAqABIADwAAAAAAAAArABIADwAAAAAAAAAmABEADwAAAAAAAAAnABEADwAAAAAAAAAoABEADwAAAAAAAAApABEADwAAAAAAAAAqABEADwAAAAAAAAAjABMADwAAAAAAAAAkABMADwAAAAAAAAAlABMADwAAAAAAAAAmABMADwAAAAAAAAAnABMADwAAAAAAAAAoABMADwAAAAAAAAAqABMADwAAAAAAAAApABMADwAAAAAAAAAiABMADwAAAAAAAAArABQADwAAAAAAAAAqABQADwAAAAAAAAApABQADwAAAAAAAAAoABQADwAAAAAAAAAnABQADwAAAAAAAAAmABQADwAAAAAAAAArABMADwAAAAAAAAAoABUABQAAAAAAAAApABUABQAAAAAAAAAqABUABQAAAAAAAAArABUABQAAAAAAAAAsABQADwAAAAAAAAAtABUABQAAAAAAAAAsABUABQAAAAAAAAArABYAAAAAAAAAAAAqABYAAAAAAAAAAAApABYAAAAAAAAAAAAsABYAAAAAAAAAAAAtABYAAAAAAAAAAAAsABcAAAAAAAAAAAArABcAAAAAAAAAAAAtABcAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_p53fh")
+
+[node name="OccupiedFloorTileMap" type="TileMapLayer" parent="FloorTileMap" unique_id=1324845469]
+tile_set = SubResource("TileSet_p53fh")
+
+[node name="PreviewFloorTileMap" type="TileMapLayer" parent="FloorTileMap" unique_id=1981614019]
+tile_set = SubResource("TileSet_p53fh")
+
+[node name="Floor" type="Control" parent="." unique_id=121491582]
+layout_mode = 1
+anchor_top = 0.38425925
+anchor_right = 0.80260414
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Decoracion" type="Control" parent="Floor" unique_id=1378477840]
+layout_mode = 1
+anchor_left = -0.039584685
+anchor_right = 0.9604153
+anchor_bottom = 1.0
+offset_top = 216.0
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Ordenador" type="TextureRect" parent="Floor/Decoracion" unique_id=502218104]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.005191434
+anchor_top = -0.4180451
+anchor_right = 0.14990269
+anchor_bottom = -0.13684219
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = SubResource("AtlasTexture_1hpky")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AlfombraAmarilla" type="TextureRect" parent="Floor/Decoracion" unique_id=192995104]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.28098637
+anchor_top = 0.030075189
+anchor_right = 0.7155567
+anchor_bottom = 0.34465837
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_i6st7")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="ComidaGato" type="TextureRect" parent="Floor/Decoracion" unique_id=678095202]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8922777
+anchor_top = 0.5112782
+anchor_right = 0.99221283
+anchor_bottom = 0.7050308
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("42_demfi")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="GatoNaranja" type="TextureButton" parent="Floor/Decoracion" unique_id=1419010924]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.862427
+anchor_top = 0.39097744
+anchor_right = 1.003052
+anchor_bottom = 0.51250523
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("43_fjpio")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Estaciones" type="Node2D" parent="Floor" unique_id=1812007473]
+y_sort_enabled = true
+metadata/_edit_lock_ = true
+
+[node name="Eventos" type="Control" parent="Floor" unique_id=991853854]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Entregas" type="Control" parent="Floor/Eventos" unique_id=1684997743]
+clip_contents = true
+anchors_preset = 0
+offset_left = 1392.0
+offset_right = 1535.0
+offset_bottom = 247.0
+script = ExtResource("60_wqrbv")
+
+[node name="ButtonEntregas" type="Button" parent="Floor/Eventos/Entregas" unique_id=1134152657]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.27272728
+anchor_top = 0.11336032
+anchor_right = 0.6923077
+anchor_bottom = 0.35222673
+offset_bottom = 4.5776367e-05
+grow_horizontal = 2
+pivot_offset_ratio = Vector2(0.5, 1)
+mouse_filter = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_s3wxp")
+icon = ExtResource("61_sra2k")
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Carretilla" type="TextureRect" parent="Floor/Eventos/Entregas" unique_id=1556836682]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.40890688
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -0.00018310547
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("60_dg016")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Floor/Eventos/Entregas/Carretilla" unique_id=780775823]
+libraries/ = SubResource("AnimationLibrary_ui7nk")
+
+[node name="wallpaper" type="Control" parent="." unique_id=1202944221]
+layout_mode = 1
+anchor_top = 0.2
 anchor_right = 0.8
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_nq4yo")
-expand_mode = 4
-stretch_mode = 6
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
-[node name="Decoracion" type="Control" parent="wallpaper" unique_id=1378477840]
+[node name="Electrodomesticos" type="Control" parent="wallpaper" unique_id=216974489]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="AlfombraAmarilla" type="TextureRect" parent="wallpaper/Decoracion" unique_id=192995104]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -250.0
-offset_top = -500.0
-offset_right = 250.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = SubResource("AtlasTexture_i6st7")
-stretch_mode = 5
-
-[node name="ComidaGato" type="TextureRect" parent="wallpaper/Decoracion" unique_id=678095202]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.8
-anchor_right = 0.2
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_6l5hk")
-expand_mode = 1
-
-[node name="GatoNaranja" type="TextureButton" parent="wallpaper/Decoracion" unique_id=1419010924]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.31
-anchor_top = 0.586
-anchor_right = 0.69
-anchor_bottom = 0.724
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = SubResource("CompressedTexture2D_np1b7")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="Button" type="Button" parent="wallpaper" unique_id=1760836133]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_right = 1.3
-anchor_bottom = 0.2
-grow_horizontal = 0
-text = "Nueva orden"
-script = ExtResource("1_wmjee")
+mouse_filter = 2
+script = ExtResource("1_lghfr")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Menus" type="Control" parent="wallpaper" unique_id=3369909]
 layout_mode = 1
-anchor_top = 0.7
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
-[node name="Lavadora" type="Control" parent="wallpaper/Menus" unique_id=1868432322]
+[node name="Estaciones" type="Control" parent="wallpaper/Menus" unique_id=478998262]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_lock_ = true
+
+[node name="Tablero Menu" type="Control" parent="wallpaper/Menus/Estaciones" unique_id=1261218842]
 visible = false
 layout_mode = 1
-anchors_preset = 15
+anchor_left = 0.0009765625
+anchor_top = 0.6412037
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.9982639
+offset_top = 3.0517578e-05
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("45_hqb0a")
+metadata/_edit_use_anchors_ = true
 
-[node name="MenuPanel" type="Panel" parent="wallpaper/Menus/Lavadora" unique_id=432696262]
+[node name="MenuPanel" type="Panel" parent="wallpaper/Menus/Estaciones/Tablero Menu" unique_id=97530409]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_k2vb1")
+theme_override_styles/panel = SubResource("StyleBoxTexture_hqb0a")
+metadata/_edit_use_anchors_ = true
 
-[node name="PanelToClean" type="Panel" parent="wallpaper/Menus/Lavadora/MenuPanel" unique_id=2073773143]
+[node name="Scroll" type="ScrollContainer" parent="wallpaper/Menus/Estaciones/Tablero Menu/MenuPanel" unique_id=2010617742]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.01
-anchor_top = 0.2
-anchor_right = 0.4
-anchor_bottom = 0.95
-theme_override_styles/panel = SubResource("StyleBoxFlat_8dx2a")
-
-[node name="Scroll" type="ScrollContainer" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelToClean" unique_id=797365846]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchor_left = 0.0708899
+anchor_top = 0.19384614
+anchor_right = 0.94720966
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
 
-[node name="Grid" type="GridContainer" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelToClean/Scroll" unique_id=981117379]
+[node name="Grid" type="GridContainer" parent="wallpaper/Menus/Estaciones/Tablero Menu/MenuPanel/Scroll" unique_id=182117843]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelToClean" unique_id=47569681]
+[node name="LabelPanel" type="Panel" parent="wallpaper/Menus/Estaciones/Tablero Menu" unique_id=1749837503]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.082
-anchor_bottom = 0.42600003
-offset_left = -5.0
-offset_top = -37.99997
-offset_right = 79.074005
-offset_bottom = -76.697975
-text = "To clean"
-label_settings = SubResource("LabelSettings_5bxwv")
-horizontal_alignment = 1
-vertical_alignment = 1
+anchor_left = 0.007820135
+anchor_top = 0.07131261
+anchor_right = 0.11848218
+anchor_bottom = 0.42294517
+rotation = -0.11451487
+theme_override_styles/panel = SubResource("StyleBoxTexture_y0dkq")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="wallpaper/Menus/Lavadora/MenuPanel" unique_id=575409414]
+[node name="Label" type="Label" parent="wallpaper/Menus/Estaciones/Tablero Menu/LabelPanel" unique_id=1600686187]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.42
-anchor_top = 0.4
-anchor_right = 0.48
-anchor_bottom = 0.6
+anchor_left = -0.07546418
+anchor_top = 0.31098267
+anchor_right = 0.9245358
+anchor_bottom = 1.3109827
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_ktfp7")
-expand_mode = 1
-
-[node name="PanelCleaned" type="Panel" parent="wallpaper/Menus/Lavadora/MenuPanel" unique_id=1817146634]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.2
-anchor_right = 0.89
-anchor_bottom = 0.95
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_rmg5h")
-
-[node name="Scroll" type="ScrollContainer" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelCleaned" unique_id=660760756]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_vertical = 3
-
-[node name="Grid" type="GridContainer" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelCleaned/Scroll" unique_id=1212880980]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="wallpaper/Menus/Lavadora/MenuPanel/PanelCleaned" unique_id=1870973430]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.082
-anchor_bottom = 0.42600003
-offset_left = -5.0
-offset_top = -37.99997
-offset_right = 79.074005
-offset_bottom = -76.697975
-text = "Cleaned"
-label_settings = SubResource("LabelSettings_uvm74")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LabelPanel" type="Panel" parent="wallpaper/Menus/Lavadora" unique_id=1087356882]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = -0.3
-anchor_right = 0.4
-anchor_bottom = 0.011
-theme_override_styles/panel = SubResource("StyleBoxFlat_5u6kw")
-
-[node name="Label" type="Label" parent="wallpaper/Menus/Lavadora/LabelPanel" unique_id=641129697]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.082
-anchor_bottom = 0.42600003
-offset_left = 23.0
-offset_top = 6.0
-offset_right = 171.074
-offset_bottom = 25.995998
-text = "LAVADORA"
-label_settings = SubResource("LabelSettings_wgiwt")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="OnOff" type="TextureButton" parent="wallpaper/Menus/Lavadora" unique_id=2102044686]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.926
-anchor_top = 0.367
-anchor_right = 0.97
-anchor_bottom = 0.7
-grow_horizontal = 0
-grow_vertical = 2
-texture_normal = SubResource("CompressedTexture2D_ktfp7")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="Orders" type="Control" parent="wallpaper/Menus" unique_id=1261218842]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MenuPanel" type="Panel" parent="wallpaper/Menus/Orders" unique_id=97530409]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_bcemr")
-
-[node name="Scroll" type="ScrollContainer" parent="wallpaper/Menus/Orders/MenuPanel" unique_id=2010617742]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.02
-anchor_top = 0.2
-anchor_right = 0.98
-anchor_bottom = 0.95
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_vertical = 3
-
-[node name="Grid" type="GridContainer" parent="wallpaper/Menus/Orders/MenuPanel/Scroll" unique_id=182117843]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="LabelPanel" type="Panel" parent="wallpaper/Menus/Orders" unique_id=1749837503]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = -0.3
-anchor_right = 0.4
-anchor_bottom = 0.011
-theme_override_styles/panel = SubResource("StyleBoxFlat_hx18j")
-
-[node name="Label" type="Label" parent="wallpaper/Menus/Orders/LabelPanel" unique_id=1600686187]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.082
-anchor_bottom = 0.42600003
-offset_left = 23.0
-offset_top = 6.0
-offset_right = 171.074
-offset_bottom = 25.995998
+rotation = -0.36879766
+theme_override_fonts/font = ExtResource("48_54ank")
 text = "Orders"
 label_settings = SubResource("LabelSettings_oonr4")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Orders" type="TextureButton" parent="wallpaper" unique_id=1942339025]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.8
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.7
-size_flags_horizontal = 3
-size_flags_vertical = 3
-texture_normal = SubResource("AtlasTexture_8dx2a")
-ignore_texture_size = true
-stretch_mode = 6
-script = ExtResource("6_io4tg")
-
-[node name="WashingMachine" type="Control" parent="wallpaper" unique_id=1877460202]
-texture_filter = 3
-layout_mode = 1
-anchor_right = 0.278
-anchor_bottom = 0.321
-
-[node name="WashingMachine buttone" type="TextureButton" parent="wallpaper/WashingMachine" unique_id=1155899015]
+[node name="CloseButton" type="TextureButton" parent="wallpaper/Menus/Estaciones/Tablero Menu" unique_id=1681931017]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -1.5258789e-05
+offset_left = 1458.5
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = -232.5
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-texture_normal = SubResource("AtlasTexture_lghfr")
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("50_te5ia")
+texture_hover = ExtResource("51_1hpky")
 ignore_texture_size = true
 stretch_mode = 5
-script = ExtResource("3_61u37")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="wallpaper/WashingMachine/WashingMachine buttone" unique_id=1691239655]
-libraries/ = SubResource("AnimationLibrary_1f7rr")
-
-[node name="Dryer" type="TextureButton" parent="wallpaper" unique_id=1274120991]
+[node name="TextureRect" type="TextureRect" parent="wallpaper/Menus/Estaciones/Tablero Menu/CloseButton" unique_id=195058514]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.3
-anchor_right = 0.6
-anchor_bottom = 0.3
+anchor_left = 0.26666668
+anchor_top = 0.14666666
+anchor_right = 0.6666667
+anchor_bottom = 0.82666665
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("52_es1pb")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Plancha Menu" type="Control" parent="wallpaper/Menus/Estaciones" unique_id=1373248617]
+visible = false
+layout_mode = 1
+anchor_left = 0.30208334
+anchor_top = 0.3784722
+anchor_right = 0.66536456
+anchor_bottom = 0.99999994
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("48_2fpae")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloth" type="Panel" parent="wallpaper/Menus/Estaciones/Plancha Menu" unique_id=1320256524]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_p8a7i")
+metadata/_edit_use_anchors_ = true
+
+[node name="ClothNormal" type="TextureRect" parent="wallpaper/Menus/Estaciones/Plancha Menu/Cloth" unique_id=1031317164]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ClothArrugada" type="TextureRect" parent="wallpaper/Menus/Estaciones/Plancha Menu/Cloth" unique_id=1466660370]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="wallpaper/Menus/Estaciones/Plancha Menu/Cloth/ClothArrugada" unique_id=1567423522]
+libraries/ = SubResource("AnimationLibrary_f52rh")
+
+[node name="ProgressBar" type="ProgressBar" parent="wallpaper/Menus/Estaciones/Plancha Menu" unique_id=1459624148]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.9032258
+anchor_top = 0.32511222
+anchor_right = 0.9743854
+anchor_bottom = 0.77432126
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("52_6prrp")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/background = SubResource("StyleBoxTexture_bc7is")
+theme_override_styles/fill = SubResource("StyleBoxTexture_7q0k4")
+fill_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Plancha" type="TextureRect" parent="wallpaper/Menus/Estaciones/Plancha Menu/ProgressBar" unique_id=962332786]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8454546
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("53_s3wxp")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Mouse" type="TextureRect" parent="wallpaper/Menus/Estaciones/Plancha Menu" unique_id=259621177]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.109318994
+anchor_bottom = 0.16573559
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_p8a7i")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CloseButton" type="TextureButton" parent="wallpaper/Menus/Estaciones/Plancha Menu" unique_id=123449150]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 483.0
+offset_top = 71.0
+offset_right = 4.0
+offset_bottom = -362.99994
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("60_fb3eu")
+texture_hover = ExtResource("61_l6pdd")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="WashingMachine Menu" type="Control" parent="wallpaper/Menus/Estaciones" unique_id=780542953]
+visible = false
+layout_mode = 1
+anchor_left = 0.25
+anchor_top = 0.38657406
+anchor_right = 0.7011719
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("54_a1vdb")
+metadata/_edit_use_anchors_ = true
+
+[node name="StationBase" type="TextureRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu" unique_id=348590293]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_7q0k4")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TapaAbierta" type="TextureButton" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/StationBase" unique_id=1278836568]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.09956711
+anchor_top = 0.40188685
+anchor_right = 0.9047619
+anchor_bottom = 0.8264152
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_xf20b")
+texture_hover = SubResource("AtlasTexture_teepr")
+ignore_texture_size = true
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Detergent" type="Control" parent="wallpaper/Menus/Estaciones/WashingMachine Menu" unique_id=787302219]
+layout_mode = 1
+anchor_left = 0.66810966
+anchor_top = 0.14150946
+anchor_right = 0.7171717
+anchor_bottom = 0.32075474
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="ColorRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Detergent" unique_id=100622780]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.04761905
+anchor_right = 0.875
+anchor_bottom = 0.95238096
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Level" type="ProgressBar" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Detergent/Background" unique_id=127478750]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0.3254902, 0.2, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_qjuwq")
+fill_mode = 3
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Limit" type="ColorRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Detergent/Background" unique_id=242777662]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.15997314
+offset_right = 0.15974045
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+color = Color(1, 0, 0, 0.4862745)
+
+[node name="Sprite" type="TextureRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Detergent" unique_id=241599011]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.037037037
+anchor_right = 0.962963
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_c4r05")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="TextureButton" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Detergent" unique_id=1322120876]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.000001
+anchor_top = 0.41558447
+anchor_right = 4.25926
+anchor_bottom = 0.6748437
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_iy0j5")
+texture_pressed = SubResource("AtlasTexture_f52rh")
+texture_hover = SubResource("AtlasTexture_54e80")
+texture_disabled = SubResource("AtlasTexture_6m81b")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Softener" type="Control" parent="wallpaper/Menus/Estaciones/WashingMachine Menu" unique_id=1091425965]
+layout_mode = 1
+anchor_left = 0.7186147
+anchor_top = 0.14150946
+anchor_right = 0.77056277
+anchor_bottom = 0.32264155
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="ColorRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Softener" unique_id=1641658470]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14285715
+anchor_top = 0.04761905
+anchor_right = 0.85714287
+anchor_bottom = 0.95238096
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Level" type="ProgressBar" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Softener/Background" unique_id=133471427]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0.3254902, 0.2, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_vpoi7")
+fill_mode = 3
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Limit" type="ColorRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Softener/Background" unique_id=4019284]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.15997314
+offset_right = 0.15974045
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+color = Color(1, 0, 0, 0.4862745)
+
+[node name="Sprite" type="TextureRect" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Softener" unique_id=1774061472]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_c4r05")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="TextureButton" parent="wallpaper/Menus/Estaciones/WashingMachine Menu/Softener" unique_id=1027149418]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.8749993
+anchor_top = 0.72839504
+anchor_right = 3.0361884
+anchor_bottom = 0.9876543
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_6f3mp")
+texture_pressed = SubResource("AtlasTexture_n07oa")
+texture_hover = SubResource("AtlasTexture_54ank")
+texture_disabled = SubResource("AtlasTexture_bt4kw")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="OnOff" type="TextureButton" parent="wallpaper/Menus/Estaciones/WashingMachine Menu" unique_id=1994409328]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8138528
+anchor_top = 0.13773581
+anchor_right = 0.8773449
+anchor_bottom = 0.18867922
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_lk1rj")
+texture_pressed = SubResource("AtlasTexture_p53fh")
+texture_hover = SubResource("AtlasTexture_j681q")
+texture_disabled = SubResource("AtlasTexture_ajai0")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Inventario" type="Control" parent="wallpaper/Menus" unique_id=1886647745]
+layout_mode = 1
+anchor_top = 0.5555556
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("98_kgko8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="TextureRect" parent="wallpaper/Menus/Inventario" unique_id=1757222912]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_22kop")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="wallpaper/Menus/Inventario/Fondo" unique_id=69305517]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.046875
+anchor_top = 0.18749994
+anchor_right = 0.94921875
+anchor_bottom = 0.7864583
+offset_right = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical_scroll_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="wallpaper/Menus/Inventario/Fondo/ScrollContainer" unique_id=1526672189]
+layout_mode = 2
+
+[node name="Box inventario" type="TextureButton" parent="wallpaper/Menus/Inventario" unique_id=2020084958]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.014973958
+anchor_top = 0.63541675
+anchor_right = 0.078125
+anchor_bottom = 1.0805994
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = SubResource("AtlasTexture_0i1av")
+texture_hover = SubResource("AtlasTexture_dg016")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Computer" type="Control" parent="wallpaper" unique_id=725943243]
+visible = false
+z_index = 2
+layout_mode = 1
+anchor_right = 1.25
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("84_jfh6g")
+metadata/_edit_use_anchors_ = true
+
+[node name="Preview" type="Control" parent="wallpaper/Computer" unique_id=1513223326]
+layout_mode = 1
+anchor_right = 0.8
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Table" type="TextureRect" parent="wallpaper/Computer/Preview" unique_id=1020942949]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.055338543
+anchor_top = 0.7060185
+anchor_right = 0.93815106
+anchor_bottom = 1.017361
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_qp240")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Computer" type="TextureButton" parent="wallpaper/Computer/Preview" unique_id=1535335475]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21080178
+anchor_top = 0.4530417
+anchor_right = 0.50041634
+anchor_bottom = 0.9302428
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0017259592
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_jfh6g")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Phone" type="TextureRect" parent="wallpaper/Computer/Preview" unique_id=748867993]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6354167
+anchor_top = 0.7175926
+anchor_right = 0.83463544
+anchor_bottom = 0.9780093
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("86_sh2c6")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Phone2" type="TextureRect" parent="wallpaper/Computer/Preview" unique_id=69935633]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.53059894
+anchor_top = 0.5833333
+anchor_right = 0.6901042
+anchor_bottom = 0.9016204
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_kjym6")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Computer2" type="TextureButton" parent="wallpaper/Computer/Preview" unique_id=179472761]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.79427075
+anchor_top = 0.8935185
+anchor_right = 0.8398345
+anchor_bottom = 0.95961684
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0017259592
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("52_es1pb")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PC Window" type="Control" parent="wallpaper/Computer" unique_id=1606536869]
+visible = false
+layout_mode = 1
+anchor_right = 0.8
+anchor_bottom = 1.0
+offset_bottom = -0.0029296875
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PC Screen" type="Control" parent="wallpaper/Computer/PC Window" unique_id=1518144884]
+layout_mode = 1
+anchor_left = 0.09309896
+anchor_top = 0.11689816
+anchor_right = 0.9036458
+anchor_bottom = 0.8819444
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("89_qjuwq")
+metadata/_edit_use_anchors_ = true
+
+[node name="Windows" type="Control" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=450589769]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wallpaper" type="TextureRect" parent="wallpaper/Computer/PC Window/PC Screen/Windows" unique_id=195716877]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("90_jfh6g")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Apps" type="HBoxContainer" parent="wallpaper/Computer/PC Window/PC Screen/Windows/Wallpaper" unique_id=650517230]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.008
+anchor_right = 0.13000001
+anchor_bottom = 0.61800003
+offset_left = 5.0
+offset_top = -0.023600101
+offset_right = 0.1499939
+offset_bottom = -0.07312012
+
+[node name="Shop" type="TextureButton" parent="wallpaper/Computer/PC Window/PC Screen/Windows/Wallpaper/Apps" unique_id=191538511]
+custom_minimum_size = Vector2(40, 100)
+layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
-texture_normal = ExtResource("26_np1b7")
+size_flags_vertical = 0
+size_flags_stretch_ratio = 20.0
+theme = SubResource("Theme_6f3mp")
+texture_normal = ExtResource("93_7q0k4")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("92_qjuwq")
+
+[node name="Label" type="Label" parent="wallpaper/Computer/PC Window/PC Screen/Windows/Wallpaper/Apps/Shop" unique_id=1512401727]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "TIENDA"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="task bar" type="Panel" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=1336238991]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.95
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kqh3y")
+metadata/_edit_use_anchors_ = true
+
+[node name="Startbutton" type="TextureButton" parent="wallpaper/Computer/PC Window/PC Screen/task bar" unique_id=924577213]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.07
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("88_08o7r")
 ignore_texture_size = true
 stretch_mode = 6
-script = ExtResource("27_rowg2")
+metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="wallpaper/Button" to="wallpaper/Button" method="_on_pressed"]
-[connection signal="pressed" from="wallpaper/Menus/Lavadora/OnOff" to="wallpaper/WashingMachine/WashingMachine buttone" method="_on_on_off_pressed"]
-[connection signal="pressed" from="wallpaper/Orders" to="wallpaper/Orders" method="_on_pressed"]
-[connection signal="pressed" from="wallpaper/WashingMachine/WashingMachine buttone" to="wallpaper/WashingMachine/WashingMachine buttone" method="_on_pressed"]
-[connection signal="pressed" from="wallpaper/Dryer" to="wallpaper/Dryer" method="_on_pressed"]
+[node name="AppsHBox" type="HBoxContainer" parent="wallpaper/Computer/PC Window/PC Screen/task bar" unique_id=2075182043]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08
+anchor_right = 0.7
+anchor_bottom = 1.0
+metadata/_edit_use_anchors_ = true
+
+[node name="DataTimeContainer" type="Panel" parent="wallpaper/Computer/PC Window/PC Screen/task bar" unique_id=1699342205]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_top = 0.1
+anchor_right = 0.99
+anchor_bottom = 0.9
+theme_override_styles/panel = SubResource("StyleBoxFlat_bc7is")
+
+[node name="Label" type="Label" parent="wallpaper/Computer/PC Window/PC Screen/task bar/DataTimeContainer" unique_id=331615022]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7030108
+anchor_top = 0.16954932
+anchor_right = 0.9829777
+anchor_bottom = 1.084846
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("89_qp240")
+theme_override_font_sizes/font_size = 14
+text = "19:23"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Computer borders" type="TextureRect" parent="wallpaper/Computer/PC Window" unique_id=1356332818]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("AtlasTexture_j6pyv")
+expand_mode = 1
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="CanvasLayer" parent="wallpaper/Computer/PC Window/Computer borders" unique_id=1049332310]
+visible = false
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="wallpaper/Computer/PC Window/Computer borders/ColorRect2" unique_id=430274048]
+material = SubResource("ShaderMaterial_qjuwq")
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = 303.0
+offset_right = -527.0
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="wallpaper/Computer/PC Window" unique_id=2044882011]
+libraries/ = SubResource("AnimationLibrary_sra2k")
+
+[connection signal="pressed" from="Paneles/Button" to="Paneles/Button" method="_on_pressed"]
+[connection signal="pressed" from="Pared/Tablero" to="Pared/Tablero" method="_on_pressed"]
+[connection signal="pressed" from="Pared/Montacargas/Door" to="Pared/Montacargas" method="on_door_clicked"]
+[connection signal="mouse_entered" from="Floor/Eventos/Entregas" to="Floor/Eventos/Entregas" method="onMouseEntered"]
+[connection signal="mouse_exited" from="Floor/Eventos/Entregas" to="Floor/Eventos/Entregas" method="onMouseExited"]
+[connection signal="pressed" from="Floor/Eventos/Entregas/ButtonEntregas" to="Floor/Eventos/Entregas" method="buttonEntrega_action"]
+[connection signal="pressed" from="wallpaper/Menus/Estaciones/Plancha Menu/CloseButton" to="wallpaper/Menus/Estaciones/Plancha Menu" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="wallpaper/Menus/Estaciones/WashingMachine Menu/StationBase/TapaAbierta" to="wallpaper/Menus/Estaciones/WashingMachine Menu" method="_on_tapa_abierta_pressed"]
+[connection signal="pressed" from="wallpaper/Menus/Estaciones/WashingMachine Menu/OnOff" to="wallpaper/Menus/Estaciones/WashingMachine Menu" method="toggle_washingMachine_On_Off"]
+[connection signal="pressed" from="wallpaper/Menus/Inventario/Box inventario" to="wallpaper/Menus/Inventario" method="onInventoryButtonClick"]
+[connection signal="pressed" from="wallpaper/Computer/Preview/Computer" to="wallpaper/Computer" method="_on_computer_pressed"]
+[connection signal="pressed" from="wallpaper/Computer/Preview/Computer2" to="wallpaper/Computer" method="_on_exit_pressed"]
+[connection signal="pressed" from="wallpaper/Computer/PC Window/PC Screen/task bar/Startbutton" to="wallpaper/Computer/PC Window/PC Screen" method="_on_startbutton_pressed"]

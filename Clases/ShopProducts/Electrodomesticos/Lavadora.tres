@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://c1s5dy184ohmh"]
+
+[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="1_xv4an"]
+[ext_resource type="Script" uid="uid://6jyfpslh1jbq" path="res://Clases/ShopProducts/Electrodomesticos/ElectrodomesticosData.gd" id="2_muymu"]
+
+[resource]
+script = ExtResource("2_muymu")
+id = "1"
+name = "Lavadora"
+description = "Lavadora basica sin mas coño no comprende tu o que??????"
+scenePath = "res://Escenas/Estaciones/WashingMachine/WashingMachine.tscn"
+icon = ExtResource("1_xv4an")
+price = 79.99
+unlocked = true

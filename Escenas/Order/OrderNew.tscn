@@ -1,0 +1,272 @@
+[gd_scene format=3 uid="uid://c1ay6vi4lcght"]
+
+[ext_resource type="Script" uid="uid://cnv88eglxt1bi" path="res://Scripts/Create_order_new.gd" id="1_po7qf"]
+[ext_resource type="FontFile" uid="uid://bt3ujeqwnh0k6" path="res://Tipografias/CrayonHandRegular2016Demo.ttf" id="2_76nu5"]
+[ext_resource type="Texture2D" uid="uid://vh0ye012mrch" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/deteriorada.png" id="2_ufrvb"]
+[ext_resource type="Texture2D" uid="uid://u7m5n7o8furf" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Chincheta/azul.png" id="3_a1tog"]
+[ext_resource type="FontFile" uid="uid://bcyhmn32wccy5" path="res://Tipografias/FiveFontsatFreddy's-Regular.ttf" id="9_v7nbr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ufrvb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po7qf"]
+atlas = ExtResource("2_ufrvb")
+region = Rect2(16, 8, 185, 233)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drj0l"]
+atlas = ExtResource("3_a1tog")
+region = Rect2(113, 22, 278, 374)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufrvb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1tog"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[node name="OrderNew" type="Panel" unique_id=2081974661]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ufrvb")
+script = ExtResource("1_po7qf")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderTexture" type="TextureRect" parent="." unique_id=1216462024]
+custom_minimum_size = Vector2(225, 280)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_po7qf")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Chincheta" type="TextureRect" parent="OrderTexture" unique_id=788997463]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12222222
+anchor_top = -0.007142857
+anchor_right = 0.25111112
+anchor_bottom = 0.13214286
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_drj0l")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderNumPanel" type="Panel" parent="OrderTexture" unique_id=1692995445]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22429906
+anchor_top = 0.10861423
+anchor_right = 0.88785046
+anchor_bottom = 0.20973782
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ufrvb")
+
+[node name="OrderNumLabel" type="Label" parent="OrderTexture/OrderNumPanel" unique_id=2844947]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.94463223
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_76nu5")
+theme_override_font_sizes/font_size = 22
+text = " #1"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderPreviewGenerator" type="Control" parent="OrderTexture" unique_id=2045588515]
+layout_mode = 1
+anchor_left = 0.22888888
+anchor_top = 0.21071428
+anchor_right = 0.90444446
+anchor_bottom = 0.6142857
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="OrderTexture/OrderPreviewGenerator" unique_id=30319209]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OrderCloth" type="SubViewport" parent="OrderTexture/OrderPreviewGenerator/SubViewportContainer" unique_id=108279285]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(152, 113)
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="OrderTexture/OrderPreviewGenerator/SubViewportContainer/OrderCloth" unique_id=1875596340]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ClothImage" type="TextureRect" parent="OrderTexture/OrderPreviewGenerator/SubViewportContainer/OrderCloth/Control" unique_id=879988963]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026315864
+anchor_right = 0.5657896
+anchor_bottom = 1.0000001
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="GridContainer" parent="OrderTexture/OrderPreviewGenerator/SubViewportContainer/OrderCloth/Control" unique_id=2141725465]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6250002
+anchor_right = 1.0044328
+anchor_bottom = 0.99999994
+metadata/_edit_use_anchors_ = true
+
+[node name="ServiciosHBox" type="HBoxContainer" parent="OrderTexture" unique_id=1274526289]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23333335
+anchor_top = 0.6857143
+anchor_right = 0.9015576
+anchor_bottom = 0.76785713
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderNumPanel2" type="Panel" parent="OrderTexture" unique_id=1471755781]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22888888
+anchor_top = 0.6178572
+anchor_right = 0.89111114
+anchor_bottom = 0.68571436
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_a1tog")
+metadata/_edit_use_anchors_ = true
+
+[node name="ServiciosLabel" type="Label" parent="OrderTexture/OrderNumPanel2" unique_id=125689032]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_76nu5")
+theme_override_font_sizes/font_size = 14
+text = "Location"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderNumPanel3" type="Panel" parent="OrderTexture" unique_id=623430293]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.22444446
+anchor_top = 0.78214294
+anchor_right = 0.88666666
+anchor_bottom = 0.8500001
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_a1tog")
+metadata/_edit_use_anchors_ = true
+
+[node name="Total revenue" type="Label" parent="OrderTexture/OrderNumPanel3" unique_id=931301669]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_76nu5")
+theme_override_font_sizes/font_size = 14
+text = "Total revenue"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="total_money" type="Label" parent="OrderTexture/OrderNumPanel3" unique_id=1332292713]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5637583
+anchor_top = 1.2105258
+anchor_right = 1.1409396
+anchor_bottom = 2.8421035
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.92156863, 0, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("9_v7nbr")
+theme_override_font_sizes/font_size = 14
+text = "17,78$"
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="slash" type="Label" parent="OrderTexture/OrderNumPanel3" unique_id=1878204643]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4832214
+anchor_top = 1.2631569
+anchor_right = 0.55704695
+anchor_bottom = 2.263157
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_76nu5")
+theme_override_font_sizes/font_size = 14
+text = "/"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Money_to_win" type="Label" parent="OrderTexture/OrderNumPanel3" unique_id=323482736]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.020134177
+anchor_top = 1.2105258
+anchor_right = 0.4832214
+anchor_bottom = 2.8421035
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8745098, 0.3019608, 0, 1)
+theme_override_fonts/font = ExtResource("9_v7nbr")
+theme_override_font_sizes/font_size = 14
+text = "5.45$"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+metadata/_edit_use_anchors_ = true

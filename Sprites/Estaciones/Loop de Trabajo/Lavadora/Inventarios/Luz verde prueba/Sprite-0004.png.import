@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cviknhvu2fvda"
-path="res://.godot/imported/Sprite-0004.png-2bb880de0405210179fe18538118d3ab.ctex"
+path="res://.godot/imported/Sprite-0004.png-e452a6baa8e57085afbd451f11df84ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estaciones/Lavadora/Inventario/Luz verde prueba/Sprite-0004.png"
-dest_files=["res://.godot/imported/Sprite-0004.png-2bb880de0405210179fe18538118d3ab.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0004.png"
+dest_files=["res://.godot/imported/Sprite-0004.png-e452a6baa8e57085afbd451f11df84ab.ctex"]
 
 [params]
 

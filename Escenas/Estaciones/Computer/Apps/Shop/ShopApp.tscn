@@ -1,0 +1,287 @@
+[gd_scene format=3 uid="uid://1alf0ysvcwdj"]
+
+[ext_resource type="Texture2D" uid="uid://0wctb7v2nheb" path="res://Sprites/Estaciones/Mesa/portatil/Apps/cariito.png" id="1_3j8qv"]
+[ext_resource type="Script" uid="uid://daj40fbelj6ke" path="res://Scripts/Estaciones/Computer/Apps/Shop/shop_app.gd" id="1_d28uk"]
+[ext_resource type="Script" uid="uid://go0yseg3fsam" path="res://Scripts/Estaciones/Computer/Apps/Shop/ShoppingListCreationgd.gd" id="2_0gald"]
+[ext_resource type="Script" uid="uid://droxrhs574arx" path="res://Scripts/Estaciones/Computer/Apps/Shop/shopping_listGeneral.gd" id="2_rdhwb"]
+[ext_resource type="Script" uid="uid://chcvc5y12s32e" path="res://Scripts/Estaciones/Computer/Apps/Shop/shopping_cart.gd" id="3_ciohr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0gald"]
+bg_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdhwb"]
+bg_color = Color(0.50534403, 0.5053441, 0.50534385, 0.6039216)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.48962224, 0.48962224, 0.48962218, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d28uk"]
+bg_color = Color(0.2784314, 0.2784314, 0.2784314, 0.7647059)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.56078434, 0.56078434, 0.56078434, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3j8qv"]
+bg_color = Color(0.6913568, 0.69135684, 0.6913566, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.55295557, 0.5529556, 0.5529553, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5b8j7"]
+bg_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.32915834, 0.32915843, 0.32915822, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4iqjc"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.13319641, 0.13319641, 0.13319638, 1)
+border_blend = true
+shadow_color = Color(0.13319641, 0.13319641, 0.13319638, 0.6)
+shadow_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7lb43"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+expand_margin_top = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kniiu"]
+bg_color = Color(0.6666667, 0.7372549, 0.8235294, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.21950099, 0.21950105, 0.21950084, 1)
+border_blend = true
+
+[node name="ShopApp" type="Control" unique_id=511187831]
+z_index = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d28uk")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="." unique_id=834516955]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0gald")
+
+[node name="TopActionsBar" type="Control" parent="Panel" unique_id=434792711]
+layout_mode = 1
+anchor_right = 1.0
+anchor_bottom = 0.1
+grow_horizontal = 2
+
+[node name="Logo" type="TextureRect" parent="Panel/TopActionsBar" unique_id=782405053]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.1
+anchor_bottom = 1.0
+texture = ExtResource("1_3j8qv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Panel/TopActionsBar" unique_id=130966635]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_right = 0.4
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+text = "I-BAY +On"
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TopActionsBar" unique_id=244480267]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_top = 0.1
+anchor_right = 0.98
+anchor_bottom = 0.9
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="minimizeButton" type="Button" parent="Panel/TopActionsBar/HBoxContainer" unique_id=681598279]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rdhwb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d28uk")
+text = "_"
+
+[node name="closeButton" type="Button" parent="Panel/TopActionsBar/HBoxContainer" unique_id=365768359]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rdhwb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d28uk")
+text = "X"
+
+[node name="App" type="Panel" parent="Panel" unique_id=945533134]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.1
+anchor_right = 0.99
+anchor_bottom = 0.98
+theme_override_styles/panel = SubResource("StyleBoxFlat_3j8qv")
+
+[node name="ShoppingCart" type="Panel" parent="Panel/App" unique_id=1396123642]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.3
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5b8j7")
+script = ExtResource("3_ciohr")
+
+[node name="Tittle" type="Label" parent="Panel/App/ShoppingCart" unique_id=1179779193]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Mi carrito"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VScrollBar" type="VScrollBar" parent="Panel/App/ShoppingCart" unique_id=1170583149]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.1
+anchor_right = 0.98
+anchor_bottom = 0.8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/App/ShoppingCart/VScrollBar" unique_id=1171680711]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Total Price" type="Label" parent="Panel/App/ShoppingCart" unique_id=802429977]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.8
+anchor_right = 0.5
+anchor_bottom = 0.85
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "TOTAL"
+vertical_alignment = 1
+
+[node name="Total Price2" type="Label" parent="Panel/App/ShoppingCart" unique_id=310061981]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.8
+anchor_right = 0.98
+anchor_bottom = 0.85
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "87.78$"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/App/ShoppingCart" unique_id=406761546]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.9
+anchor_right = 0.98
+anchor_bottom = 0.98
+offset_right = 8.0
+offset_bottom = 8.0
+mouse_default_cursor_shape = 2
+text = "COMPRAR"
+
+[node name="ShoppingList" type="Control" parent="Panel/App" unique_id=232293199]
+layout_mode = 1
+anchor_left = 0.3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = -5.0
+script = ExtResource("2_rdhwb")
+
+[node name="Categories" type="HBoxContainer" parent="Panel/App/ShoppingList" unique_id=1898775938]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.1
+
+[node name="Electrodomesticos" type="Button" parent="Panel/App/ShoppingList/Categories" unique_id=2013729382]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_4iqjc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7lb43")
+keep_pressed_outside = true
+text = "      Electrodomesticos      "
+
+[node name="List" type="Panel" parent="Panel/App/ShoppingList" unique_id=459355113]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kniiu")
+script = ExtResource("2_0gald")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/App/ShoppingList/List" unique_id=2112727361]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/App/ShoppingList/List/ScrollContainer" unique_id=2020110429]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[connection signal="pressed" from="Panel/TopActionsBar/HBoxContainer/minimizeButton" to="." method="toggle_minimizeWindow"]
+[connection signal="pressed" from="Panel/TopActionsBar/HBoxContainer/closeButton" to="." method="closeWindow"]
+[connection signal="pressed" from="Panel/App/ShoppingCart/Button" to="Panel/App/ShoppingCart" method="buy_button"]

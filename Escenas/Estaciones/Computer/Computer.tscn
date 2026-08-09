@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bfy2odloa1r73"]
+
+[ext_resource type="Script" uid="uid://xl84m4w637mr" path="res://Scripts/Estaciones/Computer/computer_station.gd" id="1_g5xva"]
+[ext_resource type="Texture2D" uid="uid://ubvuqhyb4aj" path="res://Sprites/Estaciones/Mesa/MESA.png" id="2_vl34g"]
+[ext_resource type="Texture2D" uid="uid://fguldlfihxqm" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/pc antiguo pequeño.png" id="3_g5xva"]
+[ext_resource type="Texture2D" uid="uid://18figbfe7nu" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/Onda pc antiguo pequeño.png" id="4_vl34g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26k2l"]
+atlas = ExtResource("2_vl34g")
+region = Rect2(62, 111, 936, 762)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7t4dy"]
+atlas = ExtResource("3_g5xva")
+region = Rect2(76, 263, 918, 914)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kpnfn"]
+atlas = ExtResource("4_vl34g")
+region = Rect2(69, 255, 931, 930)
+
+[node name="Computer" type="Node2D" unique_id=1901673836]
+script = ExtResource("1_g5xva")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2077525841]
+texture = SubResource("AtlasTexture_26k2l")
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D" unique_id=1042308765]
+offset_left = -309.0
+offset_top = -529.0
+offset_right = 209.0
+offset_bottom = -118.0
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_7t4dy")
+texture_hover = SubResource("AtlasTexture_kpnfn")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BaseMarker" type="Marker2D" parent="Sprite2D" unique_id=1776343339]
+position = Vector2(-468, 381)
+
+[connection signal="pressed" from="Sprite2D/TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TextureButton" to="." method="pcButtonPressed"]

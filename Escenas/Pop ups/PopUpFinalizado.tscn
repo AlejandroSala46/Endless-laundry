@@ -1,14 +1,35 @@
 [gd_scene format=3 uid="uid://ccs54pbx1g7y3"]
 
-[ext_resource type="Script" uid="uid://byun7rg6mx8jw" path="res://Escenas/Pop ups/pop_up_finalizado.gd" id="1_r6vhn"]
+[ext_resource type="Script" uid="uid://byun7rg6mx8jw" path="res://Scripts/pop_up_finalizado.gd" id="1_r6vhn"]
+[ext_resource type="Texture2D" uid="uid://dbvafd2xvyims" path="res://Sprites/HUD superior, Decoracion y Eventos/cuadro de texto/Bocadillo jabon con punta.png" id="2_a5317"]
+[ext_resource type="FontFile" uid="uid://bcyhmn32wccy5" path="res://Tipografias/FiveFontsatFreddy's-Regular.ttf" id="3_a5317"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5317"]
+atlas = ExtResource("2_a5317")
+region = Rect2(148, 138, 1247, 732)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7kafi"]
+texture = SubResource("AtlasTexture_a5317")
+
+[sub_resource type="FontVariation" id="FontVariation_7kafi"]
+base_font = ExtResource("3_a5317")
+spacing_bottom = -20
 
 [node name="PopupFinalizado" type="Control" unique_id=1399250705]
+custom_minimum_size = Vector2(200, 100)
 layout_mode = 3
-anchor_right = 0.3
-anchor_bottom = 0.05
-size_flags_horizontal = 3
-size_flags_vertical = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1080.0
+offset_bottom = -620.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.1, 1)
+size_flags_horizontal = 6
+size_flags_vertical = 6
 script = ExtResource("1_r6vhn")
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="." unique_id=1686323174]
 layout_mode = 1
@@ -17,14 +38,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7kafi")
 
 [node name="Label" type="Label" parent="Panel" unique_id=2073950804]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = 0.099999994
+anchor_top = 0.14027777
+anchor_right = 0.90384614
+anchor_bottom = 0.7347222
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_7kafi")
+theme_override_font_sizes/font_size = 15
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+metadata/_edit_use_anchors_ = true

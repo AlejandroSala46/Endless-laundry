@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://juljmtcunqb3"
-path="res://.godot/imported/barra detergente.png-370c8dd3449725306c2189ce7d22b751.ctex"
+path="res://.godot/imported/barra detergente.png-f94d5ce958f6353f8fd7cf2ad0e86e45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estaciones/Lavadora/Inventario/Animaciones Niveles/barra detergente.png"
-dest_files=["res://.godot/imported/barra detergente.png-370c8dd3449725306c2189ce7d22b751.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/barra detergente.png"
+dest_files=["res://.godot/imported/barra detergente.png-f94d5ce958f6353f8fd7cf2ad0e86e45.ctex"]
 
 [params]
 

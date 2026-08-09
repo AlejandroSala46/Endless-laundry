@@ -1,0 +1,374 @@
+[gd_scene format=3 uid="uid://j7d5wue8hwv2"]
+
+[ext_resource type="Texture2D" uid="uid://cf7m5ahaq6dr3" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/tabla de planchar vacia.png" id="2_0vv70"]
+[ext_resource type="Script" uid="uid://b4h7tmlvovrwt" path="res://Scripts/Estaciones/Plancha/planchaGeneral.gd" id="2_8dyao"]
+[ext_resource type="Texture2D" uid="uid://dqmd3rc64yxul" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha1.png" id="4_auyea"]
+[ext_resource type="Texture2D" uid="uid://ctxc4iq5viwpp" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha2.png" id="5_wus68"]
+[ext_resource type="Script" uid="uid://b7b3hustpyply" path="res://Scripts/Estaciones/Plancha/planchaSlotIn.gd" id="6_b1rgi"]
+[ext_resource type="Texture2D" uid="uid://b2igkb66xuws2" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha3.png" id="6_qwuye"]
+[ext_resource type="Texture2D" uid="uid://bl8g7320kfiog" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha4.png" id="7_7qnap"]
+[ext_resource type="Script" uid="uid://d37qg3sl4r6xm" path="res://Scripts/Estaciones/Plancha/planchaSlotOut.gd" id="8_b1rgi"]
+[ext_resource type="Texture2D" uid="uid://bix4v60s7aurl" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha5.png" id="8_o1eo8"]
+[ext_resource type="Texture2D" uid="uid://d2ewsy5br2qds" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha6.png" id="9_wkhni"]
+[ext_resource type="Texture2D" uid="uid://bcxqkgbvfd1k1" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha7.png" id="10_rxhrv"]
+[ext_resource type="Texture2D" uid="uid://nkog6uxcgulg" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha8.png" id="11_txyi6"]
+[ext_resource type="Texture2D" uid="uid://b4mxcbkxt3gqn" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha9.png" id="12_mdept"]
+[ext_resource type="Texture2D" uid="uid://iw0tmh0y84im" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha10.png" id="13_iy45j"]
+[ext_resource type="Texture2D" uid="uid://cwgjl28xc4f2n" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha11.png" id="14_fem05"]
+[ext_resource type="Texture2D" uid="uid://b6rdu6wbgptoc" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha12.png" id="15_vfwkr"]
+[ext_resource type="Texture2D" uid="uid://b52riai8jjb8s" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha13.png" id="16_aa3n6"]
+[ext_resource type="Texture2D" uid="uid://djfoinqgpmvd1" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha14.png" id="17_q0cby"]
+[ext_resource type="Texture2D" uid="uid://do5ifpr5q1m2m" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha15.png" id="18_y4cjs"]
+[ext_resource type="Texture2D" uid="uid://bvlyo3oesdlgq" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha16.png" id="19_6sf44"]
+[ext_resource type="Texture2D" uid="uid://xxd3iou8hihp" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha17.png" id="20_tix8i"]
+[ext_resource type="Texture2D" uid="uid://kl651q0godoq" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha18.png" id="21_p5mdx"]
+[ext_resource type="Texture2D" uid="uid://cgl4atnblmcuf" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha19.png" id="22_pw7oh"]
+[ext_resource type="Texture2D" uid="uid://bpxcljsnwgh6v" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha20.png" id="23_l3alq"]
+[ext_resource type="Texture2D" uid="uid://7kn0jeakq4nf" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha21.png" id="24_6vr1e"]
+[ext_resource type="Texture2D" uid="uid://dlcubibpioytu" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha22.png" id="25_h71sq"]
+[ext_resource type="Texture2D" uid="uid://5oknb7881pd6" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha23.png" id="26_ng6d2"]
+[ext_resource type="Texture2D" uid="uid://clr342sx5yefi" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha24.png" id="27_nq1d4"]
+[ext_resource type="Texture2D" uid="uid://caog0qtfh8hwb" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha25.png" id="28_o3rau"]
+[ext_resource type="Texture2D" uid="uid://f8ya61ylhdra" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha26.png" id="29_mm6bq"]
+[ext_resource type="Texture2D" uid="uid://b2xmpxxjt3c8o" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/flecha/animacion flecha/flecha27.png" id="30_n4cuh"]
+[ext_resource type="Texture2D" uid="uid://bq20ljjtnm4qe" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose1.png" id="31_auyea"]
+[ext_resource type="Texture2D" uid="uid://cig8u67t4g6y0" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose2.png" id="32_wus68"]
+[ext_resource type="Texture2D" uid="uid://bg02w2cdmn1b1" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose3.png" id="33_qwuye"]
+[ext_resource type="Texture2D" uid="uid://c6dfh7qt6sid3" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose4.png" id="34_7qnap"]
+[ext_resource type="Texture2D" uid="uid://cqyagwqq1hs57" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose5.png" id="35_o1eo8"]
+[ext_resource type="Texture2D" uid="uid://bl0e3sq5fcjs7" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose6.png" id="36_wkhni"]
+[ext_resource type="Texture2D" uid="uid://bac2ab24d1cml" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose7.png" id="37_rxhrv"]
+[ext_resource type="Texture2D" uid="uid://b6fbn5abipv4c" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose8.png" id="38_txyi6"]
+[ext_resource type="Texture2D" uid="uid://cxyr4eobf6ld0" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose9.png" id="39_mdept"]
+[ext_resource type="Texture2D" uid="uid://b7snq1t51gfj2" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose10.png" id="40_iy45j"]
+[ext_resource type="Texture2D" uid="uid://6uduoc4fevhc" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose11.png" id="41_fem05"]
+[ext_resource type="Texture2D" uid="uid://woyp2tgoasri" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose12.png" id="42_vfwkr"]
+[ext_resource type="Texture2D" uid="uid://c0272ukjo0a7o" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose13.png" id="43_aa3n6"]
+[ext_resource type="Texture2D" uid="uid://8fnlptnmi7cc" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose14.png" id="44_q0cby"]
+[ext_resource type="Texture2D" uid="uid://bkb3p8a0c7jqt" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose15.png" id="45_y4cjs"]
+[ext_resource type="Texture2D" uid="uid://d3roqgqvkim16" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose16.png" id="46_6sf44"]
+[ext_resource type="Texture2D" uid="uid://bl7hh0yj12iph" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose17.png" id="47_tix8i"]
+[ext_resource type="Texture2D" uid="uid://dh23xp35h2t43" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/Animacion/Animacion del slot/inventario amarillo  abriendose y cerrandose18.png" id="48_p5mdx"]
+[ext_resource type="Texture2D" uid="uid://bonrcxtud6rsd" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha.png" id="50_cwunn"]
+[ext_resource type="Texture2D" uid="uid://dd4v46uflulyt" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha onda.png" id="51_m3im0"]
+
+[sub_resource type="Animation" id="Animation_b1rgi"]
+resource_name = "FlechaMov"
+length = 0.8666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.10000001, 0.13333334, 0.16666667, 0.20000002, 0.23333335, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.40000004, 0.4333334, 0.4666667, 0.50000006, 0.53333336, 0.5666667, 0.6, 0.6333333, 0.66666675, 0.70000005, 0.73333335, 0.76666677, 0.8000001, 0.8333334, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_auyea"), ExtResource("5_wus68"), ExtResource("6_qwuye"), ExtResource("7_7qnap"), ExtResource("8_o1eo8"), ExtResource("9_wkhni"), ExtResource("10_rxhrv"), ExtResource("11_txyi6"), ExtResource("12_mdept"), ExtResource("13_iy45j"), ExtResource("14_fem05"), ExtResource("15_vfwkr"), ExtResource("16_aa3n6"), ExtResource("17_q0cby"), ExtResource("18_y4cjs"), ExtResource("19_6sf44"), ExtResource("20_tix8i"), ExtResource("21_p5mdx"), ExtResource("22_pw7oh"), ExtResource("23_l3alq"), ExtResource("24_6vr1e"), ExtResource("25_h71sq"), ExtResource("26_ng6d2"), ExtResource("27_nq1d4"), ExtResource("28_o3rau"), ExtResource("29_mm6bq"), ExtResource("30_n4cuh")]
+}
+
+[sub_resource type="Animation" id="Animation_vrdkd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AspectRatioContainerIn/SlotIn:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("31_auyea")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AspectRatioContainerIn/SlotIn:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AspectRatioContainerOut/SlotOut:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_d3ud6"]
+resource_name = "SlotInClose"
+length = 0.56666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AspectRatioContainerIn/SlotIn:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333336, 0.06666666, 0.099999994, 0.13333333, 0.16666666, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333337, 0.46666667, 0.5, 0.5333333, 0.5666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_auyea"), ExtResource("32_wus68"), ExtResource("33_qwuye"), ExtResource("34_7qnap"), ExtResource("35_o1eo8"), ExtResource("36_wkhni"), ExtResource("37_rxhrv"), ExtResource("38_txyi6"), ExtResource("39_mdept"), ExtResource("40_iy45j"), ExtResource("41_fem05"), ExtResource("42_vfwkr"), ExtResource("43_aa3n6"), ExtResource("44_q0cby"), ExtResource("45_y4cjs"), ExtResource("46_6sf44"), ExtResource("47_tix8i"), ExtResource("48_p5mdx")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AspectRatioContainerIn/SlotIn:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.56666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_af13a"]
+resource_name = "SlotInOpen"
+length = 0.56666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AspectRatioContainerIn/SlotIn:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.10000001, 0.13333334, 0.16666667, 0.20000002, 0.23333335, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.40000004, 0.43333337, 0.4666667, 0.5, 0.53333336, 0.5666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("48_p5mdx"), ExtResource("47_tix8i"), ExtResource("46_6sf44"), ExtResource("45_y4cjs"), ExtResource("44_q0cby"), ExtResource("43_aa3n6"), ExtResource("42_vfwkr"), ExtResource("41_fem05"), ExtResource("40_iy45j"), ExtResource("39_mdept"), ExtResource("38_txyi6"), ExtResource("37_rxhrv"), ExtResource("36_wkhni"), ExtResource("35_o1eo8"), ExtResource("34_7qnap"), ExtResource("33_qwuye"), ExtResource("32_wus68"), ExtResource("31_auyea")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AspectRatioContainerIn/SlotIn:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_m3im0"]
+resource_name = "SlotOutClose"
+length = 0.56666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AspectRatioContainerOut/SlotOut:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333336, 0.06666666, 0.099999994, 0.13333333, 0.16666666, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333337, 0.46666667, 0.5, 0.5333333, 0.5666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_auyea"), ExtResource("32_wus68"), ExtResource("33_qwuye"), ExtResource("34_7qnap"), ExtResource("35_o1eo8"), ExtResource("36_wkhni"), ExtResource("37_rxhrv"), ExtResource("38_txyi6"), ExtResource("39_mdept"), ExtResource("40_iy45j"), ExtResource("41_fem05"), ExtResource("42_vfwkr"), ExtResource("43_aa3n6"), ExtResource("44_q0cby"), ExtResource("45_y4cjs"), ExtResource("46_6sf44"), ExtResource("47_tix8i"), ExtResource("48_p5mdx")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AspectRatioContainerOut/SlotOut:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.56666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_wx84l"]
+resource_name = "SlotOutOpen"
+length = 0.56666666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../AspectRatioContainerOut/SlotOut:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.10000001, 0.13333334, 0.16666667, 0.20000002, 0.23333335, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.40000004, 0.43333337, 0.4666667, 0.5, 0.53333336, 0.5666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("48_p5mdx"), ExtResource("47_tix8i"), ExtResource("46_6sf44"), ExtResource("45_y4cjs"), ExtResource("44_q0cby"), ExtResource("43_aa3n6"), ExtResource("42_vfwkr"), ExtResource("41_fem05"), ExtResource("40_iy45j"), ExtResource("39_mdept"), ExtResource("38_txyi6"), ExtResource("37_rxhrv"), ExtResource("36_wkhni"), ExtResource("35_o1eo8"), ExtResource("34_7qnap"), ExtResource("33_qwuye"), ExtResource("32_wus68"), ExtResource("31_auyea")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AspectRatioContainerOut/SlotOut:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2c3u0"]
+_data = {
+&"FlechaMov": SubResource("Animation_b1rgi"),
+&"RESET": SubResource("Animation_vrdkd"),
+&"SlotInClose": SubResource("Animation_d3ud6"),
+&"SlotInOpen": SubResource("Animation_af13a"),
+&"SlotOutClose": SubResource("Animation_m3im0"),
+&"SlotOutOpen": SubResource("Animation_wx84l")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmqns"]
+atlas = ExtResource("50_cwunn")
+region = Rect2(7, 5, 58, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmnbt"]
+atlas = ExtResource("51_m3im0")
+region = Rect2(14, 26, 64, 79)
+
+[node name="Station" type="Node2D" unique_id=711146598]
+script = ExtResource("2_8dyao")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1839492732]
+texture = ExtResource("2_0vv70")
+region_rect = Rect2(0, 0, 320, 256)
+
+[node name="CenterMarker" type="Marker2D" parent="Sprite2D" unique_id=998821235]
+
+[node name="BaseMarker" type="Marker2D" parent="Sprite2D" unique_id=1323017913]
+position = Vector2(-160, 128)
+
+[node name="Arrow" type="TextureRect" parent="Sprite2D" unique_id=850907227]
+visible = false
+anchors_preset = -1
+anchor_left = -0.1
+anchor_top = -0.7
+anchor_right = 0.1
+anchor_bottom = -0.6
+offset_left = -17.0
+offset_top = 95.2
+offset_right = -17.0
+offset_bottom = 95.2
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_auyea")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayerArrow" type="AnimationPlayer" parent="Sprite2D/Arrow" unique_id=717862244]
+libraries/ = SubResource("AnimationLibrary_2c3u0")
+
+[node name="AspectRatioContainerIn" type="AspectRatioContainer" parent="Sprite2D" unique_id=1061984973]
+anchors_preset = -1
+anchor_left = -0.5
+anchor_top = -0.85
+anchor_right = -0.15
+anchor_bottom = -0.45
+offset_left = 15.0
+offset_top = 88.600006
+offset_right = 15.0
+offset_bottom = 88.600006
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="SlotIn" type="TextureRect" parent="Sprite2D/AspectRatioContainerIn" unique_id=316328005]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("31_auyea")
+expand_mode = 1
+script = ExtResource("6_b1rgi")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloth" type="TextureRect" parent="Sprite2D/AspectRatioContainerIn/SlotIn" unique_id=706652437]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.102564104
+anchor_top = 0.103225894
+anchor_right = 0.9102564
+anchor_bottom = 0.92258066
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayerSlotIn" type="AnimationPlayer" parent="Sprite2D/AspectRatioContainerIn/SlotIn" unique_id=76710446]
+root_node = NodePath("../../../Arrow")
+libraries/ = SubResource("AnimationLibrary_2c3u0")
+
+[node name="AspectRatioContainerOut" type="AspectRatioContainer" parent="Sprite2D" unique_id=209146315]
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = -0.85
+anchor_right = 0.5
+anchor_bottom = -0.45
+offset_left = -58.0
+offset_top = 88.600006
+offset_right = -58.0
+offset_bottom = 88.600006
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="SlotOut" type="TextureRect" parent="Sprite2D/AspectRatioContainerOut" unique_id=680816710]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("31_auyea")
+expand_mode = 1
+script = ExtResource("8_b1rgi")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloth" type="TextureRect" parent="Sprite2D/AspectRatioContainerOut/SlotOut" unique_id=1944846873]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.011718794
+anchor_top = 0.10742184
+anchor_right = 0.81941104
+anchor_bottom = 0.9267766
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayerSlotOut" type="AnimationPlayer" parent="Sprite2D/AspectRatioContainerOut/SlotOut" unique_id=1773120397]
+root_node = NodePath("../../../Arrow")
+libraries/ = SubResource("AnimationLibrary_2c3u0")
+
+[node name="PlanchaButton" type="TextureButton" parent="Sprite2D" unique_id=1862630933]
+anchors_preset = -1
+anchor_left = 0.49682364
+anchor_top = -0.12075353
+anchor_right = 0.6692091
+anchor_bottom = 0.18833369
+offset_left = -58.98358
+offset_top = -68.08708
+offset_right = -58.983612
+offset_bottom = -68.08708
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.007892489
+mouse_default_cursor_shape = 2
+texture_normal = SubResource("AtlasTexture_pmqns")
+texture_hover = SubResource("AtlasTexture_dmnbt")
+ignore_texture_size = true
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Sprite2D/PlanchaButton" to="." method="openMenu_iron"]

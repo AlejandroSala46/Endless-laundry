@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://bernpviq45fky"]
+
+[ext_resource type="Texture2D" uid="uid://dcst17c4gvt3c" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/estados/Tendedero simple/tendedero simple vacio.png" id="2_ee7in"]
+[ext_resource type="Script" uid="uid://co0774rvae2s8" path="res://Scripts/Estaciones/Dryer/dryer.gd" id="2_n5a8m"]
+[ext_resource type="Texture2D" uid="uid://dvcm0gixku4nn" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose3.png" id="4_ee7in"]
+[ext_resource type="Texture2D" uid="uid://p16axpng1ud6" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose2.png" id="5_tolx3"]
+[ext_resource type="Texture2D" uid="uid://bj7nuf6qwb42u" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose1.png" id="6_yg6r7"]
+[ext_resource type="Texture2D" uid="uid://ds6i8o8rtvuf1" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose4.png" id="7_q2cwo"]
+[ext_resource type="Texture2D" uid="uid://byjl2gpbimf4s" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose5.png" id="8_mvqiw"]
+[ext_resource type="Texture2D" uid="uid://mw6u60o7xfqr" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/ventilador/animacion/ventilador con tiras/Ventilador moviendose6.png" id="9_q75x7"]
+
+[sub_resource type="Animation" id="Animation_q75x7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_yg6r7")]
+}
+
+[sub_resource type="Animation" id="Animation_rmtxj"]
+resource_name = "VentiladorOff"
+length = 0.2
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.099999994, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_ee7in"), ExtResource("5_tolx3"), ExtResource("6_yg6r7")]
+}
+
+[sub_resource type="Animation" id="Animation_5fyr1"]
+resource_name = "ventilador"
+length = 0.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_q2cwo"), ExtResource("8_mvqiw"), ExtResource("9_q75x7")]
+}
+
+[sub_resource type="Animation" id="Animation_kao44"]
+resource_name = "ventiladorOn"
+length = 0.2
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_yg6r7"), ExtResource("5_tolx3"), ExtResource("4_ee7in")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pjk45"]
+_data = {
+&"RESET": SubResource("Animation_q75x7"),
+&"VentiladorOff": SubResource("Animation_rmtxj"),
+&"ventilador": SubResource("Animation_5fyr1"),
+&"ventiladorOn": SubResource("Animation_kao44")
+}
+
+[node name="Station" type="Node2D" unique_id=964574026]
+script = ExtResource("2_n5a8m")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1486920688]
+texture = ExtResource("2_ee7in")
+
+[node name="BaseMarker" type="Marker2D" parent="Sprite2D" unique_id=550025865]
+position = Vector2(-150, 150)
+
+[node name="CenterMarker" type="Marker2D" parent="Sprite2D" unique_id=966371654]
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Sprite2D" unique_id=779950305]
+anchors_preset = -1
+anchor_left = 0.5214592
+anchor_top = 0.5394737
+anchor_right = 0.83476394
+anchor_bottom = 1.0
+offset_left = -188.0
+offset_top = -149.00002
+offset_right = -188.0
+offset_bottom = -149.00002
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Ventilador" type="TextureRect" parent="Sprite2D/AspectRatioContainer" unique_id=165860885]
+layout_mode = 2
+texture = ExtResource("6_yg6r7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D/AspectRatioContainer/Ventilador" unique_id=1063049182]
+libraries/ = SubResource("AnimationLibrary_pjk45")

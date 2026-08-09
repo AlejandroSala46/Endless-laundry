@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://bvvjc3cl4bq7g"]
+
+[ext_resource type="Script" uid="uid://bxjkyrgj3mxoh" path="res://Scripts/Inventory/item_inventory.gd" id="1_aao15"]
+[ext_resource type="Texture2D" uid="uid://dqy25g1xce211" path="res://Sprites/Estaciones/Modo construccion/componentes/caja.png" id="2_ef78x"]
+[ext_resource type="Texture2D" uid="uid://cefsl6sf8gyux" path="res://Sprites/Estaciones/Modo construccion/componentes/pallet.png" id="3_2f0vt"]
+[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="4_0a2wt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n6jgj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l5w84"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_owot2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_800t7"]
+atlas = ExtResource("2_ef78x")
+region = Rect2(21, 23, 214, 169)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yvet"]
+bg_color = Color(0.9499448, 0.7034098, 0.4300167, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.98777753, 0.88458896, 0.78093064, 0.554)
+border_blend = true
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
+corner_detail = 20
+shadow_size = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xn2p"]
+atlas = ExtResource("3_2f0vt")
+region = Rect2(15, 18, 226, 32)
+
+[node name="ItemInventori" type="Button" unique_id=2010453770]
+custom_minimum_size = Vector2(280, 230)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 6
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n6jgj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l5w84")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_owot2")
+script = ExtResource("1_aao15")
+metadata/_edit_use_anchors_ = true
+
+[node name="Box" type="TextureRect" parent="." unique_id=566232306]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.8
+mouse_filter = 2
+texture = SubResource("AtlasTexture_800t7")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Box" unique_id=649241841]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29427084
+anchor_top = 0.27662036
+anchor_right = 0.68177086
+anchor_bottom = 0.8828704
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8yvet")
+metadata/_edit_use_anchors_ = true
+
+[node name="IconItem" type="TextureRect" parent="Box/Panel" unique_id=427960146]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14455445
+anchor_top = 0.09953704
+anchor_right = 0.83960396
+anchor_bottom = 0.849537
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_0a2wt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pallet" type="TextureRect" parent="." unique_id=1579659688]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_0xn2p")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="." to="." method="onClick"]

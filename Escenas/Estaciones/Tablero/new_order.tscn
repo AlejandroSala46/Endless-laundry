@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://6pv1ocq0adxc"]
+
+[ext_resource type="Texture2D" uid="uid://bki04ofvnkka8" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order1.png" id="1_msypb"]
+[ext_resource type="Texture2D" uid="uid://df5bnlpon4rbt" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order10.png" id="2_g1yel"]
+[ext_resource type="Texture2D" uid="uid://b2e0yqiv5elr" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order11.png" id="3_ldfiu"]
+[ext_resource type="Texture2D" uid="uid://c3pbvuomk23q4" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order12.png" id="4_5cjd8"]
+[ext_resource type="Texture2D" uid="uid://dwgta65c3qkvb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order13.png" id="5_5pub1"]
+[ext_resource type="Texture2D" uid="uid://u5lwids5yoh7" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order14.png" id="6_qjvgh"]
+[ext_resource type="Texture2D" uid="uid://ch48vcd6rmblx" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order15.png" id="7_hmuv7"]
+[ext_resource type="Texture2D" uid="uid://1u3ky6q5v5n1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order16.png" id="8_0g7rw"]
+[ext_resource type="Texture2D" uid="uid://c661wejmjxdfv" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order17.png" id="9_13lba"]
+[ext_resource type="Texture2D" uid="uid://gha40hs2cid4" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order18.png" id="10_u8s4o"]
+
+[sub_resource type="Animation" id="Animation_vr6se"]
+resource_name = "NewOrder"
+length = 1.95
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NewOrder:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_msypb"), ExtResource("2_g1yel"), ExtResource("3_ldfiu"), ExtResource("4_5cjd8"), ExtResource("5_5pub1"), ExtResource("6_qjvgh"), ExtResource("7_hmuv7"), ExtResource("8_0g7rw"), ExtResource("9_13lba"), ExtResource("10_u8s4o")]
+}
+
+[sub_resource type="Animation" id="Animation_lhrl6"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b0flo"]
+_data = {
+&"NewOrder": SubResource("Animation_vr6se"),
+&"RESET": SubResource("Animation_lhrl6")
+}
+
+[node name="NewOrder" type="TextureRect" unique_id=1812304687]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_msypb")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="NewOrderAnim" type="AnimationPlayer" parent="." unique_id=1735564903]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_b0flo")

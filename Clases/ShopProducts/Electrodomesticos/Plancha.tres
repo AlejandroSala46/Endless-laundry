@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://c6e3lf5tcbmrk"]
+
+[ext_resource type="Texture2D" uid="uid://c6fc01uvf4o7a" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/Concepts/tabla de planchar vacia.png" id="1_xv4an"]
+[ext_resource type="Script" uid="uid://6jyfpslh1jbq" path="res://Clases/ShopProducts/Electrodomesticos/ElectrodomesticosData.gd" id="2_muymu"]
+
+[resource]
+script = ExtResource("2_muymu")
+id = "3"
+name = "Plancha"
+description = "Ayayayaya que quema manin"
+subCategory = 2
+scenePath = "res://Escenas/Estaciones/Plancha/plancha.tscn"
+icon = ExtResource("1_xv4an")
+price = 39.99
+unlocked = true

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bixfwrhhsikv8"
-path="res://.godot/imported/QueMeCaigo-0004.png-db7b8f1de8c681816482aaa388306be5.ctex"
+path="res://.godot/imported/QueMeCaigo-0004.png-8cf9a92651593f3d217dafcfd7c3c84c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/HUB y escenario/its raining ropa (animacion)/Animacion cayendo/QueMeCaigo-0004.png"
-dest_files=["res://.godot/imported/QueMeCaigo-0004.png-db7b8f1de8c681816482aaa388306be5.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0004.png"
+dest_files=["res://.godot/imported/QueMeCaigo-0004.png-8cf9a92651593f3d217dafcfd7c3c84c.ctex"]
 
 [params]
 

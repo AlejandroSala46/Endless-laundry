@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://du55sae7girlj"]
+
+[ext_resource type="Texture2D" uid="uid://dcst17c4gvt3c" path="res://Sprites/Estaciones/Loop de Trabajo/Tendedero/estados/Tendedero simple/tendedero simple vacio.png" id="1_lk2jw"]
+[ext_resource type="Script" uid="uid://6jyfpslh1jbq" path="res://Clases/ShopProducts/Electrodomesticos/ElectrodomesticosData.gd" id="2_mvg8w"]
+
+[resource]
+script = ExtResource("2_mvg8w")
+id = "2"
+name = "Tendedero"
+description = "Do tendedeho, con sus pinzas carallo"
+subCategory = 1
+scenePath = "res://Escenas/Estaciones/Dryer/Dryer.tscn"
+icon = ExtResource("1_lk2jw")
+price = 5.99
+unlocked = true

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf0er13ptuicn"
-path="res://.godot/imported/its raining ropa 30.png-48e62d8808b01c28d9066b73ce83ee43.ctex"
+path="res://.godot/imported/its raining ropa 30.png-60456048af45e8e5326a146e17634405.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/HUB y escenario/its raining ropa (animacion)/its raining ropa 30.png"
-dest_files=["res://.godot/imported/its raining ropa 30.png-48e62d8808b01c28d9066b73ce83ee43.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Cesto/its raining ropa 30.png"
+dest_files=["res://.godot/imported/its raining ropa 30.png-60456048af45e8e5326a146e17634405.ctex"]
 
 [params]
 

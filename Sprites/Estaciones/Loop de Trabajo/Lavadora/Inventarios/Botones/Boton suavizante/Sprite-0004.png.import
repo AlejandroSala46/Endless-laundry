@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bubigij5ie1by"
-path="res://.godot/imported/Sprite-0004.png-ed2f26f9e2971f1717631fc81613da93.ctex"
+path="res://.godot/imported/Sprite-0004.png-c6149c86599fa654a74cc85e87543fc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estaciones/Lavadora/Inventario/Boton suavizante/Sprite-0004.png"
-dest_files=["res://.godot/imported/Sprite-0004.png-ed2f26f9e2971f1717631fc81613da93.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0004.png"
+dest_files=["res://.godot/imported/Sprite-0004.png-c6149c86599fa654a74cc85e87543fc6.ctex"]
 
 [params]
 

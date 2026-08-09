@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2sa8i6r2uvqt"
-path="res://.godot/imported/Sprite-0020.png-42b07591aa82437d0c1673439db839f2.ctex"
+path="res://.godot/imported/Sprite-0020.png-12de85d64105a1f5a7c6330575452f7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Estaciones/Lavadora/Inventario/Animaciones Niveles/Suavizante rojo/Sprite-0020.png"
-dest_files=["res://.godot/imported/Sprite-0020.png-42b07591aa82437d0c1673439db839f2.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/Suavizante rojo/Sprite-0020.png"
+dest_files=["res://.godot/imported/Sprite-0020.png-12de85d64105a1f5a7c6330575452f7a.ctex"]
 
 [params]
 

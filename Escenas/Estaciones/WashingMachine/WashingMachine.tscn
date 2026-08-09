@@ -1,0 +1,479 @@
+[gd_scene format=3 uid="uid://bxq31f3qw3vmu"]
+
+[ext_resource type="Texture2D" uid="uid://dfwhbfbn3jdsx" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW1.png" id="2_ftm3b"]
+[ext_resource type="Script" uid="uid://bj55cpojmkf07" path="res://Scripts/Estaciones/WashingMachine/washingMachine.gd" id="3_ftm3b"]
+[ext_resource type="Texture2D" uid="uid://67k67fl8jldb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa abierta.png" id="3_iak25"]
+[ext_resource type="Script" uid="uid://cgi26hcd4jwxq" path="res://Scripts/Estaciones/WashingMachine/SlotManagerWashingMachine.gd" id="4_7f0hj"]
+[ext_resource type="Texture2D" uid="uid://cenitbohit61f" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW2.png" id="9_agxh6"]
+[ext_resource type="Texture2D" uid="uid://02g0l56kml40" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW3.png" id="10_byiht"]
+[ext_resource type="Texture2D" uid="uid://cf7pstaljmcnn" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW4.png" id="11_cw71u"]
+[ext_resource type="Texture2D" uid="uid://d0tav58yyhkrl" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW5.png" id="12_a73re"]
+[ext_resource type="Texture2D" uid="uid://brfxw0grwgw4t" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW6.png" id="13_binx4"]
+[ext_resource type="Texture2D" uid="uid://bcrllw6b2h5po" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW7.png" id="14_72hc2"]
+[ext_resource type="Texture2D" uid="uid://g7ouv6pcft7r" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW8.png" id="15_00qcg"]
+[ext_resource type="Texture2D" uid="uid://db67puc2tj3cs" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW9.png" id="16_6f2sq"]
+[ext_resource type="Texture2D" uid="uid://ctr633qe4qn7p" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW10.png" id="17_gj2rl"]
+[ext_resource type="Texture2D" uid="uid://bgm8l3dk4nwmg" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW11.png" id="18_u6tvp"]
+[ext_resource type="Texture2D" uid="uid://b2ovlro10dvuk" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW12.png" id="19_f1cth"]
+[ext_resource type="Texture2D" uid="uid://pevlgwdlmbm1" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW13.png" id="20_epeui"]
+[ext_resource type="Texture2D" uid="uid://wuw24hs8e5se" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW14.png" id="21_36orr"]
+[ext_resource type="Texture2D" uid="uid://b6fgsk2scj0hm" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW15.png" id="22_vsm0j"]
+[ext_resource type="Texture2D" uid="uid://d2wno826ga5xu" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW16.png" id="23_gr0gb"]
+[ext_resource type="Texture2D" uid="uid://dklmcueo12i1o" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW17.png" id="24_164ny"]
+[ext_resource type="Texture2D" uid="uid://sfikwsw24fwc" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW18.png" id="25_yaf2f"]
+[ext_resource type="Texture2D" uid="uid://p6m3ddeqt5oc" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW19.png" id="26_xvs4j"]
+[ext_resource type="Texture2D" uid="uid://ccuprbe7ieqr3" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW20.png" id="27_pv3rh"]
+[ext_resource type="Texture2D" uid="uid://j2xub10uj7cs" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW21.png" id="28_3vn0g"]
+[ext_resource type="Texture2D" uid="uid://iv3iikcig2lt" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW22.png" id="29_2ktcw"]
+[ext_resource type="Texture2D" uid="uid://evujryaret6r" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW23.png" id="30_dm7dn"]
+[ext_resource type="Texture2D" uid="uid://gy87vawv2xxt" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW24.png" id="31_h7y14"]
+[ext_resource type="Texture2D" uid="uid://cdswmj5yvb7wj" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW25.png" id="32_8fqtp"]
+[ext_resource type="Texture2D" uid="uid://byf5n1s12o4hh" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW26.png" id="33_fwlgm"]
+[ext_resource type="Texture2D" uid="uid://dlvg3thhsejpg" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW27.png" id="34_jte07"]
+[ext_resource type="Texture2D" uid="uid://c2ey6dyip30eb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW28.png" id="35_4be5u"]
+[ext_resource type="FontFile" uid="uid://bt3ujeqwnh0k6" path="res://Tipografias/CrayonHandRegular2016Demo.ttf" id="35_gyr77"]
+[ext_resource type="Texture2D" uid="uid://bcjvjyfbeq5fa" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/burbuja.png" id="36_28jqb"]
+[ext_resource type="Texture2D" uid="uid://ba3o0faqdjla1" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW29.png" id="36_eblvj"]
+[ext_resource type="Texture2D" uid="uid://cm40ra72txn6j" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/Suavizante rojo/Sprite-0001.png" id="37_ee4om"]
+[ext_resource type="Texture2D" uid="uid://dnddv82n2gy5l" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW30.png" id="37_efryx"]
+[ext_resource type="Texture2D" uid="uid://dyh3ulamqm6ov" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW31.png" id="38_gyr77"]
+[ext_resource type="Texture2D" uid="uid://ygbdkkw336r8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW32.png" id="39_28jqb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_et1pa"]
+bg_color = Color(0.17254902, 0.54509807, 0.8745098, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fhdo"]
+atlas = ExtResource("37_ee4om")
+region = Rect2(21, 10, 29, 81)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3jup7"]
+bg_color = Color(0.972549, 0.3254902, 0.2, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ee4om"]
+atlas = ExtResource("36_28jqb")
+region = Rect2(82, 82, 860, 860)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jestx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7f0hj"]
+size = Vector2(741.5141, 565)
+
+[sub_resource type="Animation" id="Animation_l0yrg"]
+length = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SlotControl/Slot1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SlotControl/Slot1:offset_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SlotControl/Slot1:offset_bottom")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SlotControl/Slot1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ohq2n"]
+resource_name = "SlotClose"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SlotControl/Slot1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SlotControl/Slot1:offset_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 500.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SlotControl/Slot1:offset_bottom")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 500.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SlotControl/Slot1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_jestx"]
+resource_name = "SlotOpen"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SlotControl/Slot1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SlotControl/Slot1:offset_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [500.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SlotControl/Slot1:offset_bottom")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [500.0, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SlotControl/Slot1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_4i3gj"]
+resource_name = "washingMachine"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.20000002, 0.26666668, 0.33333334, 0.40000004, 0.4666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8000001, 0.86666673, 0.9333334, 1, 1.0666667, 1.1333333, 1.2, 1.2666667, 1.3333334, 1.4, 1.4666667, 1.5333334, 1.6000001, 1.6666666, 1.7333333, 1.8000001, 1.8666668, 1.9333334, 2, 2.0666668, 2.1333337, 2.2, 2.266667, 2.3333335, 2.4, 2.4666665, 2.5333333, 2.6, 2.6666665, 2.733333, 2.8, 2.8666666, 2.9333332, 2.9999998),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_ftm3b"), ExtResource("9_agxh6"), ExtResource("10_byiht"), ExtResource("11_cw71u"), ExtResource("12_a73re"), ExtResource("13_binx4"), ExtResource("14_72hc2"), ExtResource("15_00qcg"), ExtResource("16_6f2sq"), ExtResource("17_gj2rl"), ExtResource("18_u6tvp"), ExtResource("19_f1cth"), ExtResource("20_epeui"), ExtResource("21_36orr"), ExtResource("22_vsm0j"), ExtResource("23_gr0gb"), ExtResource("24_164ny"), ExtResource("25_yaf2f"), ExtResource("26_xvs4j"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("27_pv3rh"), ExtResource("28_3vn0g"), ExtResource("29_2ktcw"), ExtResource("30_dm7dn"), ExtResource("31_h7y14"), ExtResource("32_8fqtp"), ExtResource("33_fwlgm"), ExtResource("34_jte07"), ExtResource("35_4be5u"), ExtResource("36_eblvj"), ExtResource("37_efryx"), ExtResource("38_gyr77"), ExtResource("39_28jqb")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ohq2n"]
+_data = {
+&"RESET": SubResource("Animation_l0yrg"),
+&"SlotClose": SubResource("Animation_ohq2n"),
+&"SlotOpen": SubResource("Animation_jestx"),
+&"washingMachine": SubResource("Animation_4i3gj")
+}
+
+[node name="Station" type="Node2D" unique_id=1835681942]
+script = ExtResource("3_ftm3b")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1459929907]
+scale = Vector2(1.0006553, 1)
+texture = ExtResource("2_ftm3b")
+
+[node name="TapaAbierta" type="Sprite2D" parent="Sprite2D" unique_id=189406947]
+visible = false
+position = Vector2(3.9973805, 6)
+scale = Vector2(0.9993451, 1)
+texture = ExtResource("3_iak25")
+
+[node name="BarrasControl" type="Control" parent="Sprite2D" unique_id=422050122]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 127.916176
+offset_top = -513.0
+offset_right = 208.91617
+offset_bottom = -404.0
+mouse_filter = 2
+
+[node name="Detergente" type="Control" parent="Sprite2D/BarrasControl" unique_id=503479116]
+layout_mode = 1
+anchor_left = 0.037012786
+anchor_right = 0.5370128
+anchor_bottom = 1.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="ColorRect" parent="Sprite2D/BarrasControl/Detergente" unique_id=1740362651]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.04761905
+anchor_right = 0.875
+anchor_bottom = 0.95238096
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Nivel" type="ProgressBar" parent="Sprite2D/BarrasControl/Detergente/Fondo" unique_id=270449839]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0.3254902, 0.2, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_et1pa")
+fill_mode = 3
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="barra" type="TextureRect" parent="Sprite2D/BarrasControl/Detergente" unique_id=1027519133]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_5fhdo")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Suavizante" type="Control" parent="Sprite2D/BarrasControl" unique_id=503421159]
+layout_mode = 1
+anchor_left = 0.51817894
+anchor_right = 1.0181789
+anchor_bottom = 1.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="ColorRect" parent="Sprite2D/BarrasControl/Suavizante" unique_id=1098526534]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.14285715
+anchor_top = 0.04761905
+anchor_right = 0.85714287
+anchor_bottom = 0.95238096
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Nivel" type="ProgressBar" parent="Sprite2D/BarrasControl/Suavizante/Fondo" unique_id=657870981]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0.3254902, 0.2, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_3jup7")
+fill_mode = 3
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="barra" type="TextureRect" parent="Sprite2D/BarrasControl/Suavizante" unique_id=1241523474]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_5fhdo")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="SlotControl" type="Control" parent="Sprite2D" unique_id=699866357]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="Slot1" type="TextureRect" parent="Sprite2D/SlotControl" unique_id=812563809]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -7.6949577
+anchor_top = -16.25
+anchor_right = 7.6699743
+anchor_bottom = -2.875
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+texture = SubResource("AtlasTexture_ee4om")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("4_7f0hj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cloth" type="TextureRect" parent="Sprite2D/SlotControl/Slot1" unique_id=221522288]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16488837
+anchor_top = 0.14760144
+anchor_right = 0.83209825
+anchor_bottom = 0.8555417
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9, 0.9)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Sprite2D/SlotControl/Slot1" unique_id=370275123]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8318249
+anchor_top = -0.10086108
+anchor_right = 1.0038877
+anchor_bottom = 0.1335335
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 13
+theme_override_fonts/font = ExtResource("35_gyr77")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_jestx")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Bubble" type="TextureRect" parent="Sprite2D/SlotControl/Slot1/Label" unique_id=55623682]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07726259
+anchor_top = 0.07054305
+anchor_right = 1.3475329
+anchor_bottom = 1.1705447
+offset_left = -14.392403
+offset_top = -15.72144
+offset_right = -14.392403
+offset_bottom = -15.721443
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("36_28jqb")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Bubble1" type="TextureRect" parent="Sprite2D/SlotControl/Slot1/Label" unique_id=1750912663]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.9726065
+anchor_top = -1.6897317
+anchor_right = 0.29766384
+anchor_bottom = -0.5897301
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("36_28jqb")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="Bubble2" type="TextureRect" parent="Sprite2D/SlotControl/Slot1/Label" unique_id=2119691654]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.4016973
+anchor_top = -0.49327564
+anchor_right = 2.2285736
+anchor_bottom = 0.23939301
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("36_28jqb")
+expand_mode = 1
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="BaseMarker" type="Marker2D" parent="Sprite2D" unique_id=230366021]
+position = Vector2(-381.74985, 600)
+scale = Vector2(0.9993451, 1)
+
+[node name="CenterMarker" type="Marker2D" parent="Sprite2D" unique_id=1911739783]
+scale = Vector2(0.9993451, 1)
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=1606693970]
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=331169378]
+position = Vector2(3.9973614, -303.5)
+shape = SubResource("RectangleShape2D_7f0hj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1910781091]
+libraries/ = SubResource("AnimationLibrary_ohq2n")
+
+[connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_exited"]

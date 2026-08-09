@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://ccavxlyuuwwid"]
+
+[ext_resource type="Script" uid="uid://dninn1yyooe77" path="res://Scripts/Estaciones/Computer/Apps/Shop/productCart.gd" id="1_630pr"]
+[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="2_uaf21"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjrey"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+
+[node name="CartItem" type="Panel" unique_id=248720546]
+custom_minimum_size = Vector2(532, 150)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1388.0
+offset_bottom = -930.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjrey")
+script = ExtResource("1_630pr")
+
+[node name="Control" type="Control" parent="." unique_id=856427228]
+layout_mode = 1
+anchor_left = 0.02
+anchor_top = 0.1
+anchor_right = 0.98
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Icon" type="TextureRect" parent="Control" unique_id=1105431244]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.1
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uaf21")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemName" type="Label" parent="Control" unique_id=2026077727]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_right = 0.4
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Lavadoraqasdfasdfasdfasdf"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+max_lines_visible = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Price" type="Label" parent="Control" unique_id=2139991919]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4
+anchor_right = 0.55
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "70.98$"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonMinus" type="Button" parent="Control" unique_id=286221981]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_top = 0.4
+anchor_right = 0.65
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 20
+text = "-"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuantityLabel" type="Label" parent="Control" unique_id=92922494]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.65
+anchor_right = 0.75
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonPlus" type="Button" parent="Control" unique_id=510167628]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.4
+anchor_right = 0.85
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 20
+text = "+"
+metadata/_edit_use_anchors_ = true
+
+[node name="TotalPrice" type="Label" parent="Control" unique_id=1875398285]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+text = "70.98$"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Control/ButtonMinus" to="." method="_on_minus_button_pressed"]
+[connection signal="pressed" from="Control/ButtonPlus" to="." method="_on_plus_button_pressed"]

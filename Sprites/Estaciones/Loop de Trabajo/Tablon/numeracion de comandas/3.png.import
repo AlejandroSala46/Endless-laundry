@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqvviqho8gwk8"
-path="res://.godot/imported/3.png-b00ee6e7094b3eed0c1a118e16c36160.ctex"
+path="res://.godot/imported/3.png-89e42f200fb0c9d0c9b38677b9d567a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/HUB y escenario/HUD/Inventarios/numeracion de comandas/3.png"
-dest_files=["res://.godot/imported/3.png-b00ee6e7094b3eed0c1a118e16c36160.ctex"]
+source_file="res://Sprites/Estaciones/Loop de Trabajo/Tablon/numeracion de comandas/3.png"
+dest_files=["res://.godot/imported/3.png-89e42f200fb0c9d0c9b38677b9d567a6.ctex"]
 
 [params]
 

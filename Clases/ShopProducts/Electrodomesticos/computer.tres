@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://buyqnusv07ecc"]
+
+[ext_resource type="Texture2D" uid="uid://7rl0relao0ax" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/pc antiguo.png" id="1_qu1l1"]
+[ext_resource type="Script" uid="uid://6jyfpslh1jbq" path="res://Clases/ShopProducts/Electrodomesticos/ElectrodomesticosData.gd" id="2_20hjt"]
+
+[resource]
+script = ExtResource("2_20hjt")
+id = "4"
+name = "Computer"
+Category = 2
+subCategory = 3
+scenePath = "res://Escenas/Estaciones/Computer/Computer.tscn"
+icon = ExtResource("1_qu1l1")
+price = 100.0
+unlocked = true
