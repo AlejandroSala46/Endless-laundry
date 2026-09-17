@@ -1,0 +1,85 @@
+[gd_resource type="Theme" format=3 uid="uid://bm5i55hyt832n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awcjk"]
+region = Rect2(0, 0, 27, 27)
+margin = Rect2(-20, 0, 5, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_crikn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukyk3"]
+content_margin_left = 20.0
+content_margin_top = 200.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.68307734, 0.6830774, 0.68307734, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 20.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jql5g"]
+bg_color = Color(0.5211409, 0.52114046, 0.5211405, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dibji"]
+bg_color = Color(0.47397602, 0.4739756, 0.47397572, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+expand_margin_left = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tvn8t"]
+bg_color = Color(0.32941177, 0.3529412, 0.39215687, 1)
+expand_margin_left = 20.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1ex8"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.75)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[resource]
+VScrollBar/icons/decrement = SubResource("AtlasTexture_awcjk")
+VScrollBar/icons/increment = SubResource("AtlasTexture_crikn")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_ukyk3")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_jql5g")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_dibji")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_tvn8t")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxFlat_c1ex8")

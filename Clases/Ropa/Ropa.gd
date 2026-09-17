@@ -1,5 +1,5 @@
 class_name Ropa
-extends Resource   # 👈 IMPORTANTE (mejor que Node para datos)
+extends Resource  
 
 static var NEXT_ID = 1
 
@@ -9,6 +9,16 @@ enum TipoRopa {
 	CALCETINES,
 	SUJETADOR,
 	CALZONCILLOS
+}
+
+var services_price: Dictionary = {
+	"lavar": 10.0,
+	"secar": 10.0,
+	"planchar": 30.0
+}
+
+var extraServices_price: Dictionary = {
+	"suavizado": 5.0
 }
 
 var id: int
@@ -21,6 +31,7 @@ var states_by_service: Dictionary = {}
 var suavizada
 var multVersionsBool
 var version
+var price: float
 
 func _init(_tipo: TipoRopa, _nombre: String, _spritePath: String, _multVersionsBool):
 	randomize()
@@ -40,6 +51,7 @@ func _init(_tipo: TipoRopa, _nombre: String, _spritePath: String, _multVersionsB
 	_init_servicios()
 	_init_pictures()
 	_init_states_by_service()
+	_init_priceOrder()
 	
 func _init_servicios():
 	# Default (se sobreescribe en hijos)
@@ -48,7 +60,14 @@ func _init_servicios():
 		"secar": false,
 		"planchar": false
 	}
+
+func _init_priceOrder():
+	var priceSum = 0.0
+	for service in servicios:
+		priceSum += services_price[service]
 	
+	price = priceSum
+
 func _init_pictures():
 	# Default
 	pictures = {
@@ -67,3 +86,13 @@ func _init_states_by_service():
 
 func _init_different_versions():
 	return
+
+func update_money_Order():
+	var moneySum = 0.0
+	for service in servicios:
+		if servicios[service]:
+			moneySum += services_price[service]
+	
+	if suavizada:
+		moneySum += extraServices_price["suavizado"]
+	return moneySum

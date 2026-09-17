@@ -1,4 +1,4 @@
-extends Button
+extends Panel
 
 @onready var image = $VBoxContainer/Icon
 @onready var name_label = $VBoxContainer/Name
@@ -9,7 +9,7 @@ var product
 func setup(data):
 	product = data
 
-	image.texture = data.icon
+	image.icon = data.icon
 	name_label.text = data.name
 	price_label.text = "$%.2f" % data.price
 

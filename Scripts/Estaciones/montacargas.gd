@@ -39,6 +39,8 @@ func _drop_data(position, data):
 		if previous_ui != order_ui_data:
 			previous_ui.drop_Confirmation(order_data)
 		clothsIn[order_data] = order_ui_data
+		order_ui_data.update_status_order("Ready for Pickup")
+		
 		updateTexture_cesto()
 
 
@@ -51,6 +53,8 @@ func checks(order_ui, order_data) -> bool:
 
 func completeOrder(order, order_ui):
 	await order_ui.deleteOrder(order)
+	Stats.add_money(order_ui.moneyOrder)
+	
 	order_ui.queue_free()
 
 func show_popup(text):

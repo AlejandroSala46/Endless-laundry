@@ -1,43 +1,43 @@
 [gd_scene format=3 uid="uid://bxq31f3qw3vmu"]
 
-[ext_resource type="Texture2D" uid="uid://dfwhbfbn3jdsx" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW1.png" id="2_ftm3b"]
+[ext_resource type="Texture2D" uid="uid://7uvrpoe7xuuj" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW1.png" id="2_ftm3b"]
 [ext_resource type="Script" uid="uid://bj55cpojmkf07" path="res://Scripts/Estaciones/WashingMachine/washingMachine.gd" id="3_ftm3b"]
-[ext_resource type="Texture2D" uid="uid://67k67fl8jldb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa abierta.png" id="3_iak25"]
+[ext_resource type="Texture2D" uid="uid://dwdgtly1s2wbe" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa abierta.png" id="3_iak25"]
 [ext_resource type="Script" uid="uid://cgi26hcd4jwxq" path="res://Scripts/Estaciones/WashingMachine/SlotManagerWashingMachine.gd" id="4_7f0hj"]
-[ext_resource type="Texture2D" uid="uid://cenitbohit61f" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW2.png" id="9_agxh6"]
-[ext_resource type="Texture2D" uid="uid://02g0l56kml40" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW3.png" id="10_byiht"]
-[ext_resource type="Texture2D" uid="uid://cf7pstaljmcnn" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW4.png" id="11_cw71u"]
-[ext_resource type="Texture2D" uid="uid://d0tav58yyhkrl" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW5.png" id="12_a73re"]
-[ext_resource type="Texture2D" uid="uid://brfxw0grwgw4t" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW6.png" id="13_binx4"]
-[ext_resource type="Texture2D" uid="uid://bcrllw6b2h5po" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW7.png" id="14_72hc2"]
-[ext_resource type="Texture2D" uid="uid://g7ouv6pcft7r" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW8.png" id="15_00qcg"]
-[ext_resource type="Texture2D" uid="uid://db67puc2tj3cs" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW9.png" id="16_6f2sq"]
-[ext_resource type="Texture2D" uid="uid://ctr633qe4qn7p" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW10.png" id="17_gj2rl"]
-[ext_resource type="Texture2D" uid="uid://bgm8l3dk4nwmg" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW11.png" id="18_u6tvp"]
-[ext_resource type="Texture2D" uid="uid://b2ovlro10dvuk" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW12.png" id="19_f1cth"]
-[ext_resource type="Texture2D" uid="uid://pevlgwdlmbm1" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW13.png" id="20_epeui"]
-[ext_resource type="Texture2D" uid="uid://wuw24hs8e5se" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW14.png" id="21_36orr"]
-[ext_resource type="Texture2D" uid="uid://b6fgsk2scj0hm" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW15.png" id="22_vsm0j"]
-[ext_resource type="Texture2D" uid="uid://d2wno826ga5xu" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW16.png" id="23_gr0gb"]
-[ext_resource type="Texture2D" uid="uid://dklmcueo12i1o" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW17.png" id="24_164ny"]
-[ext_resource type="Texture2D" uid="uid://sfikwsw24fwc" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW18.png" id="25_yaf2f"]
-[ext_resource type="Texture2D" uid="uid://p6m3ddeqt5oc" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW19.png" id="26_xvs4j"]
-[ext_resource type="Texture2D" uid="uid://ccuprbe7ieqr3" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW20.png" id="27_pv3rh"]
-[ext_resource type="Texture2D" uid="uid://j2xub10uj7cs" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW21.png" id="28_3vn0g"]
-[ext_resource type="Texture2D" uid="uid://iv3iikcig2lt" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW22.png" id="29_2ktcw"]
-[ext_resource type="Texture2D" uid="uid://evujryaret6r" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW23.png" id="30_dm7dn"]
-[ext_resource type="Texture2D" uid="uid://gy87vawv2xxt" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW24.png" id="31_h7y14"]
-[ext_resource type="Texture2D" uid="uid://cdswmj5yvb7wj" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW25.png" id="32_8fqtp"]
-[ext_resource type="Texture2D" uid="uid://byf5n1s12o4hh" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW26.png" id="33_fwlgm"]
-[ext_resource type="Texture2D" uid="uid://dlvg3thhsejpg" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW27.png" id="34_jte07"]
-[ext_resource type="Texture2D" uid="uid://c2ey6dyip30eb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW28.png" id="35_4be5u"]
+[ext_resource type="Texture2D" uid="uid://hqmvundo1sty" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW2.png" id="9_agxh6"]
+[ext_resource type="Texture2D" uid="uid://dot58uvba6lry" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW3.png" id="10_byiht"]
+[ext_resource type="Texture2D" uid="uid://d0nfxmln0k8r2" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW4.png" id="11_cw71u"]
+[ext_resource type="Texture2D" uid="uid://ckxi3j5ylxe4i" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW5.png" id="12_a73re"]
+[ext_resource type="Texture2D" uid="uid://kb2jgb0pksij" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW6.png" id="13_binx4"]
+[ext_resource type="Texture2D" uid="uid://dwowe1k3wsy1x" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW7.png" id="14_72hc2"]
+[ext_resource type="Texture2D" uid="uid://dlqjvo8kg252o" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW8.png" id="15_00qcg"]
+[ext_resource type="Texture2D" uid="uid://t2m3f16raiot" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW9.png" id="16_6f2sq"]
+[ext_resource type="Texture2D" uid="uid://p6ndkhbtnu0f" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW10.png" id="17_gj2rl"]
+[ext_resource type="Texture2D" uid="uid://cwihfpn67o0os" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW11.png" id="18_u6tvp"]
+[ext_resource type="Texture2D" uid="uid://b6eswg1npms6h" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW12.png" id="19_f1cth"]
+[ext_resource type="Texture2D" uid="uid://dg8a4lkuj3eba" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW13.png" id="20_epeui"]
+[ext_resource type="Texture2D" uid="uid://h4755ja2m4mc" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW14.png" id="21_36orr"]
+[ext_resource type="Texture2D" uid="uid://chkwkpoj5vibu" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW15.png" id="22_vsm0j"]
+[ext_resource type="Texture2D" uid="uid://dj3xork84mi" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW16.png" id="23_gr0gb"]
+[ext_resource type="Texture2D" uid="uid://bgjwp7xqmotfl" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW17.png" id="24_164ny"]
+[ext_resource type="Texture2D" uid="uid://d2cqpiiqiqcj7" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW18.png" id="25_yaf2f"]
+[ext_resource type="Texture2D" uid="uid://cqu0kdobcqnnb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW19.png" id="26_xvs4j"]
+[ext_resource type="Texture2D" uid="uid://c1ihxtxfwjmhb" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW20.png" id="27_pv3rh"]
+[ext_resource type="Texture2D" uid="uid://dqasdfs0tpu2l" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW21.png" id="28_3vn0g"]
+[ext_resource type="Texture2D" uid="uid://dw5blwpbn24tg" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW22.png" id="29_2ktcw"]
+[ext_resource type="Texture2D" uid="uid://5tlsxe028v5h" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW23.png" id="30_dm7dn"]
+[ext_resource type="Texture2D" uid="uid://de82xyh5lpocv" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW24.png" id="31_h7y14"]
+[ext_resource type="Texture2D" uid="uid://l82real2xcj8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW25.png" id="32_8fqtp"]
+[ext_resource type="Texture2D" uid="uid://c0dwcj5mkl0q8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW26.png" id="33_fwlgm"]
+[ext_resource type="Texture2D" uid="uid://bnn7nvpsmhr01" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW27.png" id="34_jte07"]
+[ext_resource type="Texture2D" uid="uid://culunceu5oeha" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW28.png" id="35_4be5u"]
 [ext_resource type="FontFile" uid="uid://bt3ujeqwnh0k6" path="res://Tipografias/CrayonHandRegular2016Demo.ttf" id="35_gyr77"]
-[ext_resource type="Texture2D" uid="uid://bcjvjyfbeq5fa" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/burbuja.png" id="36_28jqb"]
-[ext_resource type="Texture2D" uid="uid://ba3o0faqdjla1" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW29.png" id="36_eblvj"]
+[ext_resource type="Texture2D" uid="uid://n5e723bo6q7p" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/burbuja.png" id="36_28jqb"]
+[ext_resource type="Texture2D" uid="uid://b2yf6obnnn6v0" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW29.png" id="36_eblvj"]
 [ext_resource type="Texture2D" uid="uid://cm40ra72txn6j" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/Suavizante rojo/Sprite-0001.png" id="37_ee4om"]
-[ext_resource type="Texture2D" uid="uid://dnddv82n2gy5l" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW30.png" id="37_efryx"]
-[ext_resource type="Texture2D" uid="uid://dyh3ulamqm6ov" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW31.png" id="38_gyr77"]
-[ext_resource type="Texture2D" uid="uid://ygbdkkw336r8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW32.png" id="39_28jqb"]
+[ext_resource type="Texture2D" uid="uid://cijwv81i5e1k0" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW30.png" id="37_efryx"]
+[ext_resource type="Texture2D" uid="uid://bw6hbup10fhhx" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW31.png" id="38_gyr77"]
+[ext_resource type="Texture2D" uid="uid://cvbh47siqjwbw" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Lavadora Animacion Lavando/Lavadora animación/Lavadora Lavando NEW32.png" id="39_28jqb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_et1pa"]
 bg_color = Color(0.17254902, 0.54509807, 0.8745098, 1)
@@ -111,7 +111,7 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id="Animation_ohq2n"]
 resource_name = "SlotClose"
-length = 0.5
+length = 0.26666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -119,7 +119,7 @@ tracks/0/path = NodePath("Sprite2D/SlotControl/Slot1:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(0, 0)]
@@ -131,7 +131,7 @@ tracks/1/path = NodePath("Sprite2D/SlotControl/Slot1:offset_top")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 500.0]
@@ -143,7 +143,7 @@ tracks/2/path = NodePath("Sprite2D/SlotControl/Slot1:offset_bottom")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 500.0]
@@ -155,7 +155,7 @@ tracks/3/path = NodePath("Sprite2D/SlotControl/Slot1:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0.033333335, 1),
+"times": PackedFloat32Array(0.033333335, 0.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -163,7 +163,7 @@ tracks/3/keys = {
 
 [sub_resource type="Animation" id="Animation_jestx"]
 resource_name = "SlotOpen"
-length = 0.5
+length = 0.26666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -171,7 +171,7 @@ tracks/0/path = NodePath("Sprite2D/SlotControl/Slot1:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(1, 1)]
@@ -183,7 +183,7 @@ tracks/1/path = NodePath("Sprite2D/SlotControl/Slot1:offset_top")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [500.0, 0.0]
@@ -195,7 +195,7 @@ tracks/2/path = NodePath("Sprite2D/SlotControl/Slot1:offset_bottom")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.5),
+"times": PackedFloat32Array(0, 0.26666668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [500.0, 0.0]

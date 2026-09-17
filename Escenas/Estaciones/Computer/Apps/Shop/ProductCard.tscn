@@ -1,65 +1,100 @@
 [gd_scene format=3 uid="uid://bfwmdu55fpjy6"]
 
+[ext_resource type="Theme" uid="uid://lbahs7r3bet3" path="res://Themes/ButtonPc_Theme.tres" id="1_640gp"]
 [ext_resource type="Script" uid="uid://q4iamjnao3yw" path="res://Scripts/Estaciones/Computer/Apps/Shop/product_card.gd" id="1_oumct"]
+[ext_resource type="Texture2D" uid="uid://b5xqa0lxd6mst" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="3_auh2y"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oumct"]
-bg_color = Color(0.42745098, 0.50980395, 0.73333335, 0.22352941)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.13437784, 0.21567988, 0.21234179, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aj22c"]
+bg_color = Color(0.03529412, 0.4745098, 0.47843137, 1)
+border_width_left = 3
+border_width_top = 3
+border_color = Color(0, 0, 0, 1)
 border_blend = true
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
 
-[node name="Control" type="Button" unique_id=1046444525]
-custom_minimum_size = Vector2(250, 250)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_475us"]
+bg_color = Color(0.01085648, 0.25888726, 0.26120108, 1)
+border_width_left = 3
+border_width_top = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wul5g"]
+bg_color = Color(0.019945793, 0.3535138, 0.35652968, 1)
+border_width_left = 3
+border_width_top = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[node name="Control" type="Panel" unique_id=1459819960]
+custom_minimum_size = Vector2(250, 300)
+anchors_preset = -1
+anchor_right = 0.13000001
+anchor_bottom = 0.231
+offset_right = 0.39997864
+offset_bottom = 0.519989
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
 size_flags_vertical = 6
-theme_override_styles/normal = SubResource("StyleBoxFlat_oumct")
+theme = ExtResource("1_640gp")
 script = ExtResource("1_oumct")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=744394502]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 0.1
-anchor_right = 0.9
-anchor_bottom = 0.9
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Icon" type="TextureRect" parent="VBoxContainer" unique_id=1942180804]
-z_index = 2
+[node name="Icon" type="Button" parent="VBoxContainer" unique_id=1697744615]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 size_flags_vertical = 3
-expand_mode = 1
-stretch_mode = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_aj22c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_475us")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wul5g")
+icon = ExtResource("3_auh2y")
+icon_alignment = 1
+expand_icon = true
 
 [node name="Name" type="Label" parent="VBoxContainer" unique_id=1685993775]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-size_flags_vertical = 6
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Lavadora"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Price" type="Label" parent="VBoxContainer" unique_id=282338288]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "89.98$"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BuyButton" type="Button" parent="VBoxContainer" unique_id=1572610934]
-z_index = 2
-custom_minimum_size = Vector2(0, 20)
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-size_flags_vertical = 8
+size_flags_vertical = 3
 mouse_default_cursor_shape = 2
+theme = ExtResource("1_640gp")
 text = "Buy"
 
 [connection signal="pressed" from="VBoxContainer/BuyButton" to="." method="addItemToCart"]

@@ -13,14 +13,14 @@ func _ready() -> void:
 	Signals.buyItemsCart.connect(startEvent_Entregas)
 	entregaDisp = true
 	placingItem = false
-	animation.play("Entregas_out")
 
 func startEvent_Entregas(arrayItemsEntregas):
 	print("Animacion entrada entrega")
 	arriveEntregaSleep(3)
 	while !entregaDisp:
 		await arriveEntregaSleep(3)
-	
+	if !visible:
+		visible = true
 	animation.play("Entregas_in")
 	getQueueEntregas(arrayItemsEntregas)
 	
@@ -37,6 +37,8 @@ func getQueueEntregas(array):
 			await arriveEntregaSleep(1)
 		
 	animation.play("Entregas_out")
+	await animation.animation_finished
+	visible = false
 	entregaDisp = true
 
 func buttonEntrega_action():

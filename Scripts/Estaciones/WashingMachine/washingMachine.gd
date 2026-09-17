@@ -56,7 +56,9 @@ func addCloth(order_data, order_ui):
 	
 	clothsOnTheWashingMachine[order_data] = order_ui
 	order_ui.update_orderLocationUI(self)
+	order_ui.update_status_order("Washing")
 	order_ui.draggable = false
+	
 	for s in slotsAvailable:
 		if slotsAvailable[s] == null:
 			slotsAvailable[s] = order_data

@@ -1,5 +1,6 @@
 extends Control
 
+@onready var money_label: Label = $Paneles/MoneyLabel
 var stations: Dictionary = {}
 var idStation := 0
 
@@ -13,8 +14,7 @@ enum StionTypes {
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Signals.create_new_station.connect(add_station_buldingMode)
-	# startStationDryer()
-	# startStationPlancha()
+
 	set_highlight_tilemap()
 	set_floor_tiles_array()
 	MouseCursor.setDefaultMouseImages()
@@ -28,6 +28,9 @@ func _ready() -> void:
 	await start_stations(secadora, 16, 1)
 	await start_stations(plancha, 25, 1)
 	await start_stations(computer, 0, 3)
+	
+	Stats.money_changed.connect(update_money)
+	update_money(Stats.money)
 	
 	for b in $Paneles.get_children():
 		if b is Button:
@@ -87,8 +90,6 @@ func add_station_buldingMode(stationProduct: ProductData):
 	var station = stations[idStation]["Instance"]
 	station.building_mode()
 	
-	
-
 func add_station_button(type):
 	print("Creando estacion ", type)
 	if type == "Button":
@@ -100,5 +101,6 @@ func add_station_button(type):
 	
 	station.building_mode()
 	
-
+func update_money(new_money):
+	money_label.text = "%d$" % new_money
 	

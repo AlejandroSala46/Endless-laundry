@@ -1,10 +1,30 @@
 extends Node
+signal money_changed(new_money)
+# =========================================================
+# GENERAL STATS
+# =========================================================
+var money: float = 0.0
 
+func add_money(amount: float):
+	money += amount
+	money_changed.emit(money)
+
+
+func remove_money(amount: float):
+	money -= amount
+	money_changed.emit(money)
+
+
+func set_money(amount: float):
+	money = amount
+	money_changed.emit(money)
+
+# STADISTICS BY TIME
+# =========================================================
 
 # =========================================================
 # MESES
 # =========================================================
-
 const MONTHS: Array[String] = [
 	"Jan",
 	"Feb",
@@ -19,7 +39,6 @@ const MONTHS: Array[String] = [
 	"Nov",
 	"Dec"
 ]
-
 
 # =========================================================
 # ESTADÍSTICAS

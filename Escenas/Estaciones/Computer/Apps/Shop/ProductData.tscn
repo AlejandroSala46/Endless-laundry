@@ -1,42 +1,146 @@
 [gd_scene format=3 uid="uid://ccavxlyuuwwid"]
 
 [ext_resource type="Script" uid="uid://dninn1yyooe77" path="res://Scripts/Estaciones/Computer/Apps/Shop/productCart.gd" id="1_630pr"]
-[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="2_uaf21"]
+[ext_resource type="Texture2D" uid="uid://b5xqa0lxd6mst" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="2_uaf21"]
+[ext_resource type="StyleBox" uid="uid://b81dqbfaijoin" path="res://Themes/SpinBox_Style.tres" id="3_uaf21"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjrey"]
-border_width_left = 1
-border_width_top = 1
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_630pr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
 border_width_right = 1
 border_width_bottom = 2
 border_color = Color(0, 0, 0, 1)
-border_blend = true
+corner_detail = 3
 
-[node name="CartItem" type="Panel" unique_id=248720546]
-custom_minimum_size = Vector2(532, 150)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uaf21"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 2
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sjrey"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 1
+border_width_top = 2
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vn83b"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kluy5"]
+bg_color = Color(0.27703366, 0.28704447, 0.2903779, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mepof"]
+bg_color = Color(0.49803922, 0.5137255, 0.5176471, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6gwwm"]
+bg_color = Color(0.32941177, 0.3372549, 0.34117648, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbnny"]
+bg_color = Color(0.2784314, 0.28627452, 0.2901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_47sry"]
+bg_color = Color(0.4988641, 0.5122259, 0.5166754, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6p02q"]
+bg_color = Color(0.32822055, 0.33896613, 0.3425428, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="Theme" id="Theme_0oap6"]
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_vn83b")
+SpinBox/styles/down_background = ExtResource("3_uaf21")
+SpinBox/styles/down_background_disabled = SubResource("StyleBoxFlat_kluy5")
+SpinBox/styles/down_background_hovered = SubResource("StyleBoxFlat_mepof")
+SpinBox/styles/down_background_pressed = SubResource("StyleBoxFlat_6gwwm")
+SpinBox/styles/up_background = ExtResource("3_uaf21")
+SpinBox/styles/up_background_disabled = SubResource("StyleBoxFlat_tbnny")
+SpinBox/styles/up_background_hovered = SubResource("StyleBoxFlat_47sry")
+SpinBox/styles/up_background_pressed = SubResource("StyleBoxFlat_6p02q")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q786k"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[node name="CartItem" type="HBoxContainer" unique_id=190288077]
+custom_minimum_size = Vector2(532.301, 100)
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1388.0
+offset_left = -0.1505127
+offset_right = -1387.8495
 offset_bottom = -930.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_sjrey")
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
 script = ExtResource("1_630pr")
 
-[node name="Control" type="Control" parent="." unique_id=856427228]
-layout_mode = 1
-anchor_left = 0.02
-anchor_top = 0.1
-anchor_right = 0.98
-anchor_bottom = 0.9
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Item" type="Panel" parent="." unique_id=544143869]
+custom_minimum_size = Vector2(222, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_630pr")
 
-[node name="Icon" type="TextureRect" parent="Control" unique_id=1105431244]
+[node name="Icon" type="TextureRect" parent="Item" unique_id=1105431244]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.1
+anchor_right = 0.3
 anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_uaf21")
@@ -44,14 +148,18 @@ expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
-[node name="ItemName" type="Label" parent="Control" unique_id=2026077727]
+[node name="ItemName" type="Label" parent="Item" unique_id=2026077727]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1
-anchor_right = 0.4
+anchor_left = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Lavadoraqasdfasdfasdfasdf"
 horizontal_alignment = 1
@@ -61,75 +169,76 @@ text_overrun_behavior = 2
 max_lines_visible = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="Price" type="Label" parent="Control" unique_id=2139991919]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.4
-anchor_right = 0.55
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 20
-text = "70.98$"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+[node name="Price" type="Panel" parent="." unique_id=250085568]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_uaf21")
 
-[node name="ButtonMinus" type="Button" parent="Control" unique_id=286221981]
+[node name="PriceLabel" type="Label" parent="Price" unique_id=2139991919]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.55
-anchor_top = 0.4
-anchor_right = 0.65
-anchor_bottom = 0.6
-grow_horizontal = 2
-grow_vertical = 2
-mouse_default_cursor_shape = 2
-theme_override_font_sizes/font_size = 20
-text = "-"
-metadata/_edit_use_anchors_ = true
-
-[node name="QuantityLabel" type="Label" parent="Control" unique_id=92922494]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.65
-anchor_right = 0.75
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 20
-text = "100"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="ButtonPlus" type="Button" parent="Control" unique_id=510167628]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.75
-anchor_top = 0.4
-anchor_right = 0.85
-anchor_bottom = 0.6
-grow_horizontal = 2
-grow_vertical = 2
-mouse_default_cursor_shape = 2
-theme_override_font_sizes/font_size = 20
-text = "+"
-metadata/_edit_use_anchors_ = true
-
-[node name="TotalPrice" type="Label" parent="Control" unique_id=1875398285]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.85
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 15
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
 text = "70.98$"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="Control/ButtonMinus" to="." method="_on_minus_button_pressed"]
-[connection signal="pressed" from="Control/ButtonPlus" to="." method="_on_plus_button_pressed"]
+[node name="Quantity" type="Panel" parent="." unique_id=1965448430]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_sjrey")
+
+[node name="SpinBox" type="SpinBox" parent="Quantity" unique_id=436869288]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.25
+offset_top = -18.0
+offset_right = 43.25
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = SubResource("Theme_0oap6")
+theme_override_colors/up_icon_modulate = Color(0, 0, 0, 1)
+theme_override_colors/up_hover_icon_modulate = Color(0.50928587, 0.5092861, 0.509287, 1)
+theme_override_colors/up_pressed_icon_modulate = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/down_icon_modulate = Color(0, 0, 0, 1)
+theme_override_colors/down_hover_icon_modulate = Color(0.50980395, 0.50980395, 0.50980395, 1)
+theme_override_colors/down_pressed_icon_modulate = Color(0.9490196, 0.9490196, 0.9490196, 1)
+theme_override_constants/buttons_vertical_separation = 1
+theme_override_constants/buttons_width = 20
+allow_greater = true
+alignment = 1
+
+[node name="TotalPrice" type="Panel" parent="." unique_id=1106649973]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_q786k")
+
+[node name="TotalPriceLabel" type="Label" parent="TotalPrice" unique_id=1875398285]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "70.98$"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="value_changed" from="Quantity/SpinBox" to="." method="_on_spin_box_value_changed"]

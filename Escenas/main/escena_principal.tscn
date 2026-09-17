@@ -2,30 +2,30 @@
 
 [ext_resource type="Script" uid="uid://leme311cgc6e" path="res://Scripts/toggleMenus.gd" id="1_lghfr"]
 [ext_resource type="Script" uid="uid://bl81fo5tjbfm7" path="res://Scripts/MainScript/MainScript.gd" id="1_vpoi7"]
-[ext_resource type="Script" uid="uid://d0kxxeqndhk4s" path="res://Scripts/Generar_order.gd" id="1_wmjee"]
+[ext_resource type="Script" uid="uid://d0kxxeqndhk4s" path="res://Scripts/Order/Generar_order.gd" id="1_wmjee"]
 [ext_resource type="Texture2D" uid="uid://bmkebj4wu2j0b" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/pared.png" id="3_2fpae"]
-[ext_resource type="Texture2D" uid="uid://bnug0yxt3tpd4" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Buzon/buzon default vacio.png" id="3_s8rtn"]
-[ext_resource type="Texture2D" uid="uid://1ymual4xpakr" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/calendario/calendario 2 .png" id="4_im7a6"]
-[ext_resource type="Texture2D" uid="uid://epabha28yxkp" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero1.png" id="4_y0dkq"]
-[ext_resource type="Texture2D" uid="uid://b6ric2hij1q3g" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero3.png" id="5_6prrp"]
-[ext_resource type="Texture2D" uid="uid://hyh261akmosv" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Reloj y brazo/brazo mas reloj.png" id="5_jst3s"]
+[ext_resource type="Texture2D" uid="uid://53ybx5df47o" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Buzon/Buzon Default.png" id="3_132vf"]
+[ext_resource type="Texture2D" uid="uid://bl7r3yuel6gld" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/calendario/calendario 2 .png" id="4_im7a6"]
+[ext_resource type="Texture2D" uid="uid://b4lm310jm2sgb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero1.png" id="4_y0dkq"]
+[ext_resource type="Texture2D" uid="uid://bnx6r6nkft308" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion Onda de interaccion/Onda Tablero3.png" id="5_6prrp"]
+[ext_resource type="Texture2D" uid="uid://dpvkxurgufw0h" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/Reloj y brazo/brazo mas reloj.png" id="5_jst3s"]
 [ext_resource type="Script" uid="uid://dkymkmktq431m" path="res://Scripts/Estaciones/cestaOrders.gd" id="6_io4tg"]
-[ext_resource type="Texture2D" uid="uid://bjpqhds5mv3dc" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/cartera y cartilla/pantalon/pantalon bolsillos llenos.png" id="6_sevjg"]
-[ext_resource type="Texture2D" uid="uid://bs470bfke4bux" path="res://Sprites/HUD superior, Decoracion y Eventos/Eventos/Personajes/referencia actual con personaje.png" id="7_cmu8w"]
-[ext_resource type="Texture2D" uid="uid://bki04ofvnkka8" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order1.png" id="7_jmtjy"]
-[ext_resource type="Texture2D" uid="uid://df5bnlpon4rbt" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order10.png" id="8_xf20b"]
-[ext_resource type="Texture2D" uid="uid://b2e0yqiv5elr" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order11.png" id="9_ctmxg"]
-[ext_resource type="Texture2D" uid="uid://c3pbvuomk23q4" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order12.png" id="10_5ix5f"]
-[ext_resource type="Texture2D" uid="uid://dwgta65c3qkvb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order13.png" id="11_teepr"]
-[ext_resource type="Texture2D" uid="uid://u5lwids5yoh7" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order14.png" id="12_te5ia"]
-[ext_resource type="Texture2D" uid="uid://ch48vcd6rmblx" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order15.png" id="13_1hpky"]
-[ext_resource type="Texture2D" uid="uid://1u3ky6q5v5n1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order16.png" id="14_es1pb"]
-[ext_resource type="Texture2D" uid="uid://c661wejmjxdfv" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order17.png" id="15_fb3eu"]
-[ext_resource type="Texture2D" uid="uid://fxcxcmx1isop" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico barras.png" id="16_l6pdd"]
-[ext_resource type="Texture2D" uid="uid://cj2pg6x4utw88" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico de puntos.png" id="17_s8rtn"]
-[ext_resource type="Texture2D" uid="uid://d221r0pqpfqwk" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it(vacio).png" id="18_im7a6"]
-[ext_resource type="Texture2D" uid="uid://i1u3uxb1336y" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it.png" id="19_jst3s"]
-[ext_resource type="Texture2D" uid="uid://dlth0tyt42ag3" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/cubo animacion/cesto llenandose1.png" id="20_sevjg"]
+[ext_resource type="Texture2D" uid="uid://bjeycv4ayw1q3" path="res://Sprites/HUD superior, Decoracion y Eventos/HUD/cartera y cartilla/pantalon/pantalon bolsillos llenos.png" id="6_sevjg"]
+[ext_resource type="Texture2D" uid="uid://b26j5pqv3pf37" path="res://Sprites/HUD superior, Decoracion y Eventos/Eventos/Personajes/referencia actual con personaje.png" id="7_cmu8w"]
+[ext_resource type="Texture2D" uid="uid://bsgo4tnn8tkic" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order1.png" id="7_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://cbh7s3dn41dq7" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order10.png" id="8_xf20b"]
+[ext_resource type="Texture2D" uid="uid://bgv8x1xs0oibj" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order11.png" id="9_ctmxg"]
+[ext_resource type="Texture2D" uid="uid://bkexvcn57v68b" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order12.png" id="10_5ix5f"]
+[ext_resource type="Texture2D" uid="uid://dg0mm2pql84yt" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order13.png" id="11_teepr"]
+[ext_resource type="Texture2D" uid="uid://b6ainw0qmkltd" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order14.png" id="12_te5ia"]
+[ext_resource type="Texture2D" uid="uid://dh84h7400p5do" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order15.png" id="13_1hpky"]
+[ext_resource type="Texture2D" uid="uid://0escf6a764g1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order16.png" id="14_es1pb"]
+[ext_resource type="Texture2D" uid="uid://cvy7esh144rck" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Animacion New Order/New Order17.png" id="15_fb3eu"]
+[ext_resource type="Texture2D" uid="uid://bnd6gyodxvbdt" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico barras.png" id="16_l6pdd"]
+[ext_resource type="Texture2D" uid="uid://drqwhy8l6nruo" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Grafico de puntos.png" id="17_s8rtn"]
+[ext_resource type="Texture2D" uid="uid://b3gl1nqjfflig" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it(vacio).png" id="18_im7a6"]
+[ext_resource type="Texture2D" uid="uid://djb27dontw3ib" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Decoracion/Post it.png" id="19_jst3s"]
+[ext_resource type="Texture2D" uid="uid://b0r401vyc3ibq" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/cubo animacion/cesto llenandose1.png" id="20_sevjg"]
 [ext_resource type="Texture2D" uid="uid://dgsbxk35jmy8f" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0001.png" id="21_cmu8w"]
 [ext_resource type="Texture2D" uid="uid://cf6o21ok0ce58" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0002.png" id="22_iift3"]
 [ext_resource type="Texture2D" uid="uid://dck8chvr11v13" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0003.png" id="23_sh2c6"]
@@ -36,62 +36,62 @@
 [ext_resource type="Texture2D" uid="uid://ny01mxq4lybm" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0008.png" id="28_kqh3y"]
 [ext_resource type="Texture2D" uid="uid://dat81b8d1bgt0" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0009.png" id="29_bc7is"]
 [ext_resource type="Texture2D" uid="uid://r6adtd80rox1" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/Animacion cayendo/QueMeCaigo-0010.png" id="30_qjuwq"]
-[ext_resource type="Texture2D" uid="uid://dj3drqa3v1ocx" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/ducto solo.png" id="32_iy0j5"]
-[ext_resource type="Texture2D" uid="uid://c6bwhllcaxmbp" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/Planta baja sin suelo.png" id="34_f52rh"]
+[ext_resource type="Texture2D" uid="uid://05hmaj3co5ne" path="res://Sprites/Estaciones/Loop de Trabajo/Cesto/ducto solo.png" id="32_iy0j5"]
+[ext_resource type="Texture2D" uid="uid://dbqc80sumuf6h" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/Planta baja sin suelo.png" id="34_f52rh"]
 [ext_resource type="Texture2D" uid="uid://dp43klwjo2uk4" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/Estados ropa/palo con ropa0.png" id="35_jmtjy"]
-[ext_resource type="Texture2D" uid="uid://cp4vg6b1ag75q" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/suelo luz y lampara.png" id="35_kjym6"]
-[ext_resource type="Texture2D" uid="uid://c0axt5nlo8mjf" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta.png" id="37_n07oa"]
-[ext_resource type="Texture2D" uid="uid://5j8xjdisps3p" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta con ONDA.png" id="37_y0dkq"]
-[ext_resource type="Texture2D" uid="uid://dgjjlegj60jyn" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/el suelo.png" id="38_j6pyv"]
-[ext_resource type="Texture2D" uid="uid://be4cvbds2diss" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta cerrada.png" id="38_jmtjy"]
-[ext_resource type="Texture2D" uid="uid://dhfe8hyrspgb4" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/alfombra amarilla.png" id="41_p53fh"]
+[ext_resource type="Texture2D" uid="uid://d1j1jm0oalcn" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/suelo luz y lampara.png" id="35_kjym6"]
+[ext_resource type="Texture2D" uid="uid://rc4ng3nq8lbj" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta.png" id="37_n07oa"]
+[ext_resource type="Texture2D" uid="uid://t1tf0acxdc3v" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta abierta con ONDA.png" id="37_y0dkq"]
+[ext_resource type="Texture2D" uid="uid://bamg1yx4nm0br" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/el suelo.png" id="38_j6pyv"]
+[ext_resource type="Texture2D" uid="uid://jatqt6c5xxlk" path="res://Sprites/Estaciones/Loop de Trabajo/Entregas/Monta cargas/componentes/puerta cerrada.png" id="38_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://bvn2h14xmbqu8" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/alfombra amarilla.png" id="41_p53fh"]
 [ext_resource type="Texture2D" uid="uid://ubvuqhyb4aj" path="res://Sprites/Estaciones/Mesa/MESA.png" id="41_te5ia"]
-[ext_resource type="Texture2D" uid="uid://b3v8u6k36qmr1" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/comida gato.png" id="42_demfi"]
-[ext_resource type="Texture2D" uid="uid://c80xf58bwl3sh" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/gato naranja.png" id="43_fjpio"]
-[ext_resource type="Texture2D" uid="uid://bqrym5dwjn7up" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 1.png" id="45_demfi"]
+[ext_resource type="Texture2D" uid="uid://8npcudm3xye6" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/comida gato.png" id="42_demfi"]
+[ext_resource type="Texture2D" uid="uid://vf6etmo40ixm" path="res://Sprites/HUD superior, Decoracion y Eventos/Decoracion/gato naranja.png" id="43_fjpio"]
+[ext_resource type="Texture2D" uid="uid://dxi5g16fwql81" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 1.png" id="45_demfi"]
 [ext_resource type="Script" uid="uid://tvnvbhcjft35" path="res://Scripts/Estaciones/Orders/boardOrders.gd" id="45_hqb0a"]
-[ext_resource type="Texture2D" uid="uid://bbmcpa7188nca" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 2.png" id="46_fjpio"]
-[ext_resource type="Texture2D" uid="uid://dilxhf1loeg1d" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Tablon.png" id="46_rxux7"]
-[ext_resource type="Texture2D" uid="uid://denk88inl7ad2" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/cartel de Ordenes/cartel+celo.png" id="47_e6y1u"]
-[ext_resource type="Texture2D" uid="uid://bf5op68l5q8wo" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 3.png" id="47_rxux7"]
+[ext_resource type="Texture2D" uid="uid://brrmfupieflwc" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 2.png" id="46_fjpio"]
+[ext_resource type="Texture2D" uid="uid://blixai0o3de53" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/Tablon.png" id="46_rxux7"]
+[ext_resource type="Texture2D" uid="uid://1jjr58henhj5" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/Tablon/cartel de Ordenes/cartel+celo.png" id="47_e6y1u"]
+[ext_resource type="Texture2D" uid="uid://m8njhh8vnkv5" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 3.png" id="47_rxux7"]
 [ext_resource type="Script" uid="uid://bss8ja05ocjsf" path="res://Scripts/Estaciones/Plancha/plancha_menu.gd" id="48_2fpae"]
 [ext_resource type="FontFile" uid="uid://dpia6vn2x23jt" path="res://Tipografias/Chalkiez-Regular.otf" id="48_54ank"]
-[ext_resource type="Texture2D" uid="uid://vhp7w4evghkr" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 4.png" id="48_e6y1u"]
-[ext_resource type="Texture2D" uid="uid://byn6kl4ocokvs" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/fondo minjuego planchar.png" id="49_0i1av"]
-[ext_resource type="Texture2D" uid="uid://be1fxsx1xcbon" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 5.png" id="49_dg016"]
-[ext_resource type="Texture2D" uid="uid://bnosjtboje6eu" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda1.png" id="50_te5ia"]
-[ext_resource type="Texture2D" uid="uid://bjy4srkp66ykq" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/esquina.png" id="50_wqrbv"]
-[ext_resource type="Texture2D" uid="uid://tn2rbrso21t1" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda4.png" id="51_1hpky"]
-[ext_resource type="Texture2D" uid="uid://baabxjo6i200c" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Inventario/Antiguo/Cuadro Invenatario.png" id="51_dg016"]
-[ext_resource type="Texture2D" uid="uid://y3dxq47iqbap" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 1.png" id="51_s3wxp"]
+[ext_resource type="Texture2D" uid="uid://b62lh1od5q7uv" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 4.png" id="48_e6y1u"]
+[ext_resource type="Texture2D" uid="uid://dxinitm3peb1u" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/fondo minjuego planchar.png" id="49_0i1av"]
+[ext_resource type="Texture2D" uid="uid://c1ssgc6mjb5md" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/vertical 5.png" id="49_dg016"]
+[ext_resource type="Texture2D" uid="uid://pchsctob01k3" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda1.png" id="50_te5ia"]
+[ext_resource type="Texture2D" uid="uid://bbl8ctw03ae54" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/esquina.png" id="50_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://cjw1vuyui8hig" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/hojas comanda/Animacion Onda de interaccion/Animacion Onda4.png" id="51_1hpky"]
+[ext_resource type="Texture2D" uid="uid://dnrotw8sholq1" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Inventario/Antiguo/Cuadro Invenatario.png" id="51_dg016"]
+[ext_resource type="Texture2D" uid="uid://cumttkhfifjil" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 1.png" id="51_s3wxp"]
 [ext_resource type="FontFile" uid="uid://bt3ujeqwnh0k6" path="res://Tipografias/CrayonHandRegular2016Demo.ttf" id="52_6prrp"]
-[ext_resource type="Texture2D" uid="uid://7ikd0ux15yjb" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/check.png" id="52_es1pb"]
-[ext_resource type="Texture2D" uid="uid://c7iqoqgq4ebon" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 2.png" id="52_kgko8"]
-[ext_resource type="Texture2D" uid="uid://cstit041chd7p" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/burbuja FIFO/burbuja FIFO plancha fuego.png" id="52_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://5dcg3tfg0orc" path="res://Sprites/Estaciones/Loop de Trabajo/Tablon/check.png" id="52_es1pb"]
+[ext_resource type="Texture2D" uid="uid://dmdg6amidp6as" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 2.png" id="52_kgko8"]
+[ext_resource type="Texture2D" uid="uid://cmagismr7bht" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Inventario/burbuja FIFO/burbuja FIFO plancha fuego.png" id="52_wqrbv"]
 [ext_resource type="Texture2D" uid="uid://cfopi1mi8rbqs" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha sola.png" id="53_s3wxp"]
-[ext_resource type="Texture2D" uid="uid://vsyn0ef4qcx3" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 3.png" id="53_sra2k"]
+[ext_resource type="Texture2D" uid="uid://b15uhr6nvuy8q" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 3.png" id="53_sra2k"]
 [ext_resource type="Script" uid="uid://scnyl7lqhupa" path="res://Scripts/Estaciones/WashingMachine/washing_machine_menu.gd" id="54_a1vdb"]
-[ext_resource type="Texture2D" uid="uid://b5aj1p7fk0yhl" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 4.png" id="54_hcqax"]
-[ext_resource type="Texture2D" uid="uid://cg3oyeebnc4gh" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/plancha cursor/plancha cursor.png" id="54_kgko8"]
-[ext_resource type="Texture2D" uid="uid://dvdjgfr4xwdjy" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 5.png" id="55_74fj6"]
+[ext_resource type="Texture2D" uid="uid://bd4lbr8b7jory" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 4.png" id="54_hcqax"]
+[ext_resource type="Texture2D" uid="uid://cb5cimkmoq4ji" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/Minijuego planchar/plancha cursor/plancha cursor.png" id="54_kgko8"]
+[ext_resource type="Texture2D" uid="uid://bjmyelhr4so7k" path="res://Sprites/HUD superior, Decoracion y Eventos/escenario/Pintura en el suelo/horizontal 5.png" id="55_74fj6"]
 [ext_resource type="Texture2D" uid="uid://nav12jxb2mba" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/lavadora tapadera abierta0.png" id="56_sra2k"]
-[ext_resource type="Texture2D" uid="uid://blew1rg8pbk6q" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa cerrada.png" id="58_6prrp"]
+[ext_resource type="Texture2D" uid="uid://bsaqvhtckiv28" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/tapa cerrada.png" id="58_6prrp"]
 [ext_resource type="Texture2D" uid="uid://cm40ra72txn6j" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Animaciones Niveles/Suavizante rojo/Sprite-0001.png" id="58_74fj6"]
 [ext_resource type="Texture2D" uid="uid://dmwasqkaln6ph" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0001.png" id="59_4nopa"]
-[ext_resource type="Texture2D" uid="uid://bl3d4dktw8tjf" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/onda tapadera lavadora.png" id="59_jmtjy"]
-[ext_resource type="Texture2D" uid="uid://dk6cs4c8jdvac" path="res://Sprites/Estaciones/Entregas/carretillas.png" id="60_dg016"]
-[ext_resource type="Texture2D" uid="uid://bonrcxtud6rsd" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha.png" id="60_fb3eu"]
+[ext_resource type="Texture2D" uid="uid://di8ho1fbsko4t" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora llenandose/abierta/onda tapadera lavadora.png" id="59_jmtjy"]
+[ext_resource type="Texture2D" uid="uid://bwfmdui4klbf2" path="res://Sprites/Estaciones/Entregas/carretillas.png" id="60_dg016"]
+[ext_resource type="Texture2D" uid="uid://ca1mqr1gcunaw" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha.png" id="60_fb3eu"]
 [ext_resource type="Texture2D" uid="uid://b51rpebs07sr8" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0004.png" id="60_ui7nk"]
 [ext_resource type="Script" uid="uid://cycwm3wtgjho" path="res://Scripts/Estaciones/Entregas/entregas.gd" id="60_wqrbv"]
 [ext_resource type="Texture2D" uid="uid://dhxlor5rqs1hf" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0002.png" id="61_22kop"]
-[ext_resource type="Texture2D" uid="uid://dd4v46uflulyt" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha onda.png" id="61_l6pdd"]
-[ext_resource type="Texture2D" uid="uid://8lkxr8ool2q6" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="61_sra2k"]
-[ext_resource type="Texture2D" uid="uid://bq5uidhqw7j73" path="res://Sprites/Estaciones/Entregas/carretilla de lado.png" id="61_wqrbv"]
+[ext_resource type="Texture2D" uid="uid://b3umm16ojmctg" path="res://Sprites/Estaciones/Loop de Trabajo/Plancha/estados/articulos separados/plancha onda.png" id="61_l6pdd"]
+[ext_resource type="Texture2D" uid="uid://b5xqa0lxd6mst" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/lavadora default.png" id="61_sra2k"]
+[ext_resource type="Texture2D" uid="uid://cytpsja74mj0j" path="res://Sprites/Estaciones/Entregas/carretilla de lado.png" id="61_wqrbv"]
 [ext_resource type="Texture2D" uid="uid://xd6wq3lu1350" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton detergente/Sprite-0003.png" id="62_132vf"]
-[ext_resource type="Texture2D" uid="uid://doe76quyah22v" path="res://Sprites/Estaciones/Entregas/caja abierta.png" id="62_s3wxp"]
+[ext_resource type="Texture2D" uid="uid://c1qibvhmjnwtp" path="res://Sprites/Estaciones/Entregas/caja abierta.png" id="62_s3wxp"]
 [ext_resource type="Texture2D" uid="uid://erm6awsuhuv4" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0001.png" id="63_tqits"]
 [ext_resource type="Texture2D" uid="uid://bubigij5ie1by" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0004.png" id="64_s6ls7"]
-[ext_resource type="Texture2D" uid="uid://doo4gu0tgxyay" path="res://Sprites/Estaciones/Entregas/carretilla de pie.png" id="65_hcqax"]
+[ext_resource type="Texture2D" uid="uid://dj6ylmbp4njf8" path="res://Sprites/Estaciones/Entregas/carretilla de pie.png" id="65_hcqax"]
 [ext_resource type="Texture2D" uid="uid://cut57030lclm2" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0002.png" id="65_jkfeb"]
 [ext_resource type="Texture2D" uid="uid://bnum1g7f2hp88" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Botones/Boton suavizante/Sprite-0003.png" id="66_kstcu"]
 [ext_resource type="Texture2D" uid="uid://cviknhvu2fvda" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0004.png" id="67_ivsh6"]
@@ -99,24 +99,27 @@
 [ext_resource type="Texture2D" uid="uid://xi7nul0gxqng" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0012.png" id="69_ghoq6"]
 [ext_resource type="Texture2D" uid="uid://bwtl73krajc3u" path="res://Sprites/Estaciones/Loop de Trabajo/Lavadora/Inventarios/Luz verde prueba/Sprite-0013.png" id="70_nm7tr"]
 [ext_resource type="Script" uid="uid://fmrekvfcx5sj" path="res://Scripts/Estaciones/montacargas.gd" id="75_7q0k4"]
-[ext_resource type="Texture2D" uid="uid://gcb00ydj8oc7" path="res://Sprites/Estaciones/Mesa/Mesa/Vision Mesa Cerca.png" id="84_cmu8w"]
+[ext_resource type="Texture2D" uid="uid://ch4sp4c60jj3o" path="res://Sprites/Estaciones/Mesa/Mesa/Vision Mesa Cerca.png" id="84_cmu8w"]
 [ext_resource type="Script" uid="uid://00om35dskvaa" path="res://Scripts/Estaciones/Computer/computerMenuGeneral.gd" id="84_jfh6g"]
-[ext_resource type="Texture2D" uid="uid://7rl0relao0ax" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/pc antiguo.png" id="86_kqh3y"]
-[ext_resource type="Texture2D" uid="uid://ddhnx80jy1ueh" path="res://Sprites/Estaciones/Mesa/Telefono/telefono.png" id="86_sh2c6"]
+[ext_resource type="Texture2D" uid="uid://dbtpn8w8yyovx" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/pc antiguo.png" id="86_kqh3y"]
+[ext_resource type="Texture2D" uid="uid://bfw2mv4nxiy7y" path="res://Sprites/Estaciones/Mesa/Telefono/telefono.png" id="86_sh2c6"]
 [ext_resource type="Texture2D" uid="uid://d3xagk1p5dv2e" path="res://Sprites/Estaciones/Mesa/Apps-Assets pc/windows-start-button-logo.png" id="88_08o7r"]
-[ext_resource type="Texture2D" uid="uid://dof2lbbvoskco" path="res://Sprites/Estaciones/Mesa/contadora/contadora 2.png" id="88_bc7is"]
+[ext_resource type="Texture2D" uid="uid://bxypfoy76dsnc" path="res://Sprites/Estaciones/Mesa/contadora/contadora 2.png" id="88_bc7is"]
 [ext_resource type="Script" uid="uid://dogocw8x6q8f2" path="res://Scripts/Estaciones/Computer/computer_pc.gd" id="89_qjuwq"]
 [ext_resource type="FontFile" uid="uid://bcyhmn32wccy5" path="res://Tipografias/FiveFontsatFreddy's-Regular.ttf" id="89_qp240"]
 [ext_resource type="Texture2D" uid="uid://cvhwbxq7rkmy0" path="res://Sprites/Estaciones/Mesa/Fondos de pantalla/Fondo windows.jpg" id="90_jfh6g"]
 [ext_resource type="Script" uid="uid://drpb0mifiipt1" path="res://Scripts/Estaciones/Computer/Apps/Shop/shopButtonWallpaper.gd" id="92_qjuwq"]
-[ext_resource type="Texture2D" uid="uid://0wctb7v2nheb" path="res://Sprites/Estaciones/Mesa/portatil/Apps/cariito.png" id="93_7q0k4"]
-[ext_resource type="Texture2D" uid="uid://dtspgrbexjbu" path="res://Sprites/Estaciones/Mesa/portatil/Sistema de ventanas/marco vacio.png" id="94_iy0j5"]
-[ext_resource type="Texture2D" uid="uid://bhnlp11q333uf" path="res://Sprites/Estaciones/Entregas/caja carton 2 cerrada.png" id="94_rxux7"]
+[ext_resource type="Texture2D" uid="uid://c6resolh37hqm" path="res://Sprites/Estaciones/Mesa/portatil/Apps/cariito.png" id="93_7q0k4"]
+[ext_resource type="Texture2D" uid="uid://bulmdjbvsutf0" path="res://Sprites/Estaciones/Mesa/portatil/Sistema de ventanas/marco vacio.png" id="94_iy0j5"]
+[ext_resource type="Texture2D" uid="uid://dpcwx2rfxr3lm" path="res://Sprites/Estaciones/Entregas/caja carton 2 cerrada.png" id="94_rxux7"]
 [ext_resource type="Shader" uid="uid://m5xpo444bsv8" path="res://Scripts/Shaders/crt.gdshader" id="95_bc7is"]
-[ext_resource type="Texture2D" uid="uid://bbxwachxkm121" path="res://Sprites/Estaciones/Entregas/caja carton 2.png" id="95_e6y1u"]
+[ext_resource type="Texture2D" uid="uid://bbw63oxphvc4" path="res://Sprites/Estaciones/Entregas/caja carton 2.png" id="95_e6y1u"]
 [ext_resource type="Script" uid="uid://c7x3fq8tk0ytf" path="res://Scripts/Inventory/inventario_mainScript.gd" id="98_kgko8"]
-[ext_resource type="Texture2D" uid="uid://cji1hac78fsd6" path="res://Sprites/Estaciones/Modo construccion/componentes/rack vacio.png" id="101_sra2k"]
-[ext_resource type="Texture2D" uid="uid://cemm0mahbtfuf" path="res://Sprites/Estaciones/Mesa/portatil/Apps/stats.png" id="113_74fj6"]
+[ext_resource type="Texture2D" uid="uid://bmn77pnwiscqq" path="res://Sprites/Estaciones/Modo construccion/componentes/rack vacio.png" id="101_sra2k"]
+[ext_resource type="Texture2D" uid="uid://buxfbfuvxep0q" path="res://Sprites/Estaciones/Mesa/portatil/pc antiguo/Animacion Pc encendiendose/Pc iniciandose7.png" id="107_132vf"]
+[ext_resource type="Texture2D" uid="uid://ddgl3diy8il6g" path="res://Sprites/Estaciones/Mesa/portatil/Pantalla Inicio/Logo cuadrado SOAP.png" id="110_22kop"]
+[ext_resource type="Texture2D" uid="uid://d16g3r8mfdma5" path="res://Sprites/Estaciones/Mesa/portatil/Pantalla Inicio/SopaOS.png" id="111_132vf"]
+[ext_resource type="Texture2D" uid="uid://b04yq8ww82qsm" path="res://Sprites/Estaciones/Mesa/portatil/Apps/stats.png" id="113_74fj6"]
 [ext_resource type="Script" uid="uid://hexb2fmtgwik" path="res://Scripts/Estaciones/Computer/Apps/Stats/statsButtonWallpaper.gd" id="114_4nopa"]
 
 [sub_resource type="Theme" id="Theme_iift3"]
@@ -857,9 +860,24 @@ region = Rect2(92, 632, 1246, 280)
 atlas = ExtResource("86_kqh3y")
 region = Rect2(59, 55, 1179, 1143)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkfeb"]
+atlas = ExtResource("107_132vf")
+region = Rect2(59, 55, 1179, 1143)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjym6"]
 atlas = ExtResource("88_bc7is")
 region = Rect2(120, 220, 1001, 799)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqits"]
+atlas = ExtResource("110_22kop")
+region = Rect2(463, 97, 645, 649)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6ls7"]
+atlas = ExtResource("111_132vf")
+region = Rect2(86, 66, 433, 111)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkfeb"]
+bg_color = Color(0.8745098, 0.3529412, 0.5254902, 1)
 
 [sub_resource type="Theme" id="Theme_6f3mp"]
 
@@ -911,6 +929,38 @@ shader_parameter/roll_strength = 0.0
 shader_parameter/glow_strength = 0.0
 shader_parameter/glow_threshold = 0.0
 
+[sub_resource type="Animation" id="Animation_kstcu"]
+resource_name = "Close_Table"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Preview:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 500.0]
+}
+
+[sub_resource type="Animation" id="Animation_ivsh6"]
+resource_name = "Open_Table"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Preview:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [500.0, 0.0]
+}
+
 [sub_resource type="Animation" id="Animation_wqrbv"]
 resource_name = "PC_Close"
 length = 0.3
@@ -925,6 +975,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1000.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PC Screen/Windows:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PC Screen/task bar:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_s3wxp"]
@@ -943,6 +1017,46 @@ tracks/0/keys = {
 "values": [1000.0, 0.0]
 }
 
+[sub_resource type="Animation" id="Animation_msm21"]
+resource_name = "PC_START"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PC Screen/Windows:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PC Screen/task bar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PC Screen/StartPC/ProgressBar:value")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.8666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 100.0]
+}
+
 [sub_resource type="Animation" id="Animation_kgko8"]
 length = 0.001
 tracks/0/type = "value"
@@ -957,11 +1071,62 @@ tracks/0/keys = {
 "update": 1,
 "values": [0.0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PC Screen/Windows:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PC Screen/task bar:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PC Screen/StartPC/ProgressBar:value")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [50.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Preview:position:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sra2k"]
 _data = {
+&"Close_Table": SubResource("Animation_kstcu"),
+&"Open_Table": SubResource("Animation_ivsh6"),
 &"PC_Close": SubResource("Animation_wqrbv"),
 &"PC_Open": SubResource("Animation_s3wxp"),
+&"PC_START": SubResource("Animation_msm21"),
 &"RESET": SubResource("Animation_kgko8")
 }
 
@@ -981,6 +1146,7 @@ metadata/_edit_use_anchors_ = true
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="Paneles" unique_id=1760836133]
 layout_mode = 0
@@ -996,6 +1162,7 @@ layout_mode = 0
 offset_right = 100.0
 offset_bottom = 54.0
 text = "Crear lav"
+metadata/_edit_use_anchors_ = true
 
 [node name="Dryer" type="Button" parent="Paneles" unique_id=1127858624]
 layout_mode = 0
@@ -1003,6 +1170,7 @@ offset_top = 54.0
 offset_right = 100.0
 offset_bottom = 108.0
 text = "Crear tend"
+metadata/_edit_use_anchors_ = true
 
 [node name="Plancha" type="Button" parent="Paneles" unique_id=2138458125]
 layout_mode = 0
@@ -1011,15 +1179,17 @@ offset_right = 100.0
 offset_bottom = 162.0
 text = "Crear plan
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="Buzon" type="TextureRect" parent="Paneles" unique_id=531680817]
 layout_mode = 0
 offset_left = 939.0
 offset_right = 1411.0
 offset_bottom = 217.0
-texture = ExtResource("3_s8rtn")
+texture = ExtResource("3_132vf")
 expand_mode = 1
 stretch_mode = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Calendario" type="TextureRect" parent="Paneles" unique_id=184889965]
 layout_mode = 0
@@ -1029,6 +1199,7 @@ offset_bottom = 217.0
 texture = ExtResource("4_im7a6")
 expand_mode = 1
 stretch_mode = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Brazo-reloj" type="TextureRect" parent="Paneles" unique_id=1553360755]
 layout_mode = 0
@@ -1038,6 +1209,7 @@ offset_bottom = 217.0
 texture = ExtResource("5_jst3s")
 expand_mode = 1
 stretch_mode = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Culo" type="TextureRect" parent="Paneles" unique_id=911655070]
 layout_mode = 0
@@ -1049,6 +1221,7 @@ theme = SubResource("Theme_iift3")
 texture = ExtResource("6_sevjg")
 expand_mode = 1
 stretch_mode = 6
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel-Lateral" type="TextureRect" parent="Paneles" unique_id=22635553]
 layout_mode = 0
@@ -1059,6 +1232,15 @@ offset_bottom = 1081.0
 texture = SubResource("AtlasTexture_sh2c6")
 expand_mode = 1
 stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MoneyLabel" type="Label" parent="Paneles" unique_id=1707270609]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 13.0
+offset_right = 564.0
+offset_bottom = 48.0
+text = "0.00"
 
 [node name="Pared" type="TextureRect" parent="." unique_id=1653978717]
 layout_mode = 1
@@ -1072,6 +1254,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_2fpae")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tablero" type="TextureButton" parent="Pared" unique_id=1644301831]
 layout_mode = 1
@@ -1411,14 +1594,17 @@ metadata/_edit_lock_ = true
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Entregas" type="Control" parent="Floor/Eventos" unique_id=1684997743]
+visible = false
 clip_contents = true
 anchors_preset = 0
 offset_left = 1392.0
 offset_right = 1535.0
 offset_bottom = 247.0
 script = ExtResource("60_wqrbv")
+metadata/_edit_use_anchors_ = true
 
 [node name="ButtonEntregas" type="Button" parent="Floor/Eventos/Entregas" unique_id=1134152657]
 layout_mode = 1
@@ -1443,7 +1629,7 @@ anchors_preset = -1
 anchor_top = 0.40890688
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -0.00018310547
+offset_right = -0.00024414063
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -1980,6 +2166,7 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchor_right = 0.8
 anchor_bottom = 1.0
+offset_bottom = 0.0007324219
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
@@ -2011,6 +2198,7 @@ rotation = -0.0017259592
 pivot_offset_ratio = Vector2(0.5, 0.5)
 mouse_default_cursor_shape = 2
 texture_normal = SubResource("AtlasTexture_jfh6g")
+texture_hover = SubResource("AtlasTexture_jkfeb")
 ignore_texture_size = true
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
@@ -2061,10 +2249,11 @@ stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 
 [node name="PC Window" type="Control" parent="wallpaper/Computer" unique_id=1606536869]
+visible = false
 layout_mode = 1
 anchor_right = 0.8
 anchor_bottom = 1.0
-offset_bottom = -0.0029296875
+offset_bottom = -0.0045166016
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
@@ -2080,7 +2269,67 @@ grow_vertical = 2
 script = ExtResource("89_qjuwq")
 metadata/_edit_use_anchors_ = true
 
+[node name="StartPC" type="Control" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=1710026360]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="wallpaper/Computer/PC Window/PC Screen/StartPC" unique_id=1725198378]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="OS Texture" type="TextureRect" parent="wallpaper/Computer/PC Window/PC Screen/StartPC" unique_id=10086252]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.41526103
+anchor_top = 0.16641618
+anchor_right = 0.5744177
+anchor_bottom = 0.45529923
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_tqits")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="SopaOs" type="TextureRect" parent="wallpaper/Computer/PC Window/PC Screen/StartPC" unique_id=1312893062]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35
+anchor_top = 0.5
+anchor_right = 0.64979917
+anchor_bottom = 0.65
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_s6ls7")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="wallpaper/Computer/PC Window/PC Screen/StartPC" unique_id=1945160066]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30682728
+anchor_top = 0.71861196
+anchor_right = 0.69799197
+anchor_bottom = 0.82753825
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_jkfeb")
+value = 50.0
+metadata/_edit_use_anchors_ = true
+
 [node name="Windows" type="Control" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=450589769]
+visible = false
 layout_mode = 1
 anchor_right = 1.0
 anchor_bottom = 0.95
@@ -2161,6 +2410,7 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="task bar" type="Panel" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=1336238991]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.95
@@ -2168,6 +2418,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kqh3y")
 metadata/_edit_use_anchors_ = true
 

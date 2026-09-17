@@ -2,8 +2,9 @@ extends Control
 
 var cart: Dictionary = {}
 
-@onready var items_container: VBoxContainer = $VScrollBar/VBoxContainer
+@onready var items_container: VBoxContainer = $Control/VScrollBar/VBoxContainer
 @onready var total_label: Label = $"Total Price2"
+var total_price: float
 
 func _ready() -> void:
 	Signals.addItemToCart.connect(add_to_cart)
@@ -53,25 +54,25 @@ func _on_delete_requested(cart_item):
 	update_total()
 
 func update_total():
-	var total := 0.0
+	total_price = 0.0
 
 	for item in cart.values():
-		total += item.product.price * item.quantity
+		total_price += item.product.price * item.quantity
 
-	total_label.text = "%.2f €" % total
+	total_label.text = "%.2f €" % total_price
 
 func buy_button():
-	if cart.size() > 0:
+	if cart.size() > 0 && total_price <= Stats.money:
 		var arrayItemsBought: Array = []
 
 		for itemId in cart:
 			var quantity = cart[itemId].quantity
 			for x in quantity:
 				arrayItemsBought.append(cart[itemId].product)
-
+		
+		Stats.remove_money(total_price)
 		cart.clear()
 		update_cart()
-
 		Signals.buyItemsCart.emit(arrayItemsBought)
 	
 	else:

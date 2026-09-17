@@ -1,4 +1,4 @@
-extends Panel
+extends HBoxContainer
 
 signal quantity_changed
 signal delete_requested
@@ -6,15 +6,14 @@ signal delete_requested
 var product: ProductData
 var quantity: int = 1
 
-@onready var icon: TextureRect = $Control/Icon
-@onready var name_label: Label = $Control/ItemName
-@onready var price_label: Label = $Control/Price
+@onready var icon: TextureRect = $Item/Icon
+@onready var name_label: Label = $Item/ItemName
+@onready var price_label: Label = $Price/PriceLabel
 
-@onready var quantity_label: Label = $Control/QuantityLabel
-@onready var total_label: Label = $Control/TotalPrice
+@onready var quantity_label: SpinBox = $Quantity/SpinBox
+@onready var total_label: Label = $TotalPrice/TotalPriceLabel
 
-@onready var minus_button: Button = $Control/ButtonMinus
-@onready var plus_button: Button = $Control/ButtonPlus
+
 
 
 func setup(product_data: ProductData, amount: int = 1):
@@ -24,24 +23,17 @@ func setup(product_data: ProductData, amount: int = 1):
 	icon.texture = product.icon
 	name_label.text = product.name
 	price_label.text = "%.2f €" % product.price
+	quantity_label.value = quantity
 	
 	update_ui()
 
 
 func update_ui():
-	quantity_label.text = str(quantity)
-	total_label.text = "%.2f €" % (product.price * quantity)
+	total_label.text = "%.2f €" % (product.price * quantity_label.value)
 
 
-func _on_plus_button_pressed():
-	quantity += 1
-	update_ui()
-	quantity_changed.emit()
-
-
-func _on_minus_button_pressed():
-	if quantity > 1:
-		quantity -= 1
+func _on_spin_box_value_changed(value: float) -> void:
+	if quantity_label.value > 1:
 		update_ui()
 		quantity_changed.emit()
 	else:

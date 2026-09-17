@@ -1,7 +1,7 @@
 extends Control
 
 var last_button_pressed: ProductData.ProductCategory
-@onready var create_list_shop = $List
+@onready var create_list_shop = $Panel/List
 
 func _ready() -> void:
 	last_button_pressed = ProductData.ProductCategory.Electrodomestico

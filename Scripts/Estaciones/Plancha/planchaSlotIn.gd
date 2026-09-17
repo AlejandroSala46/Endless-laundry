@@ -33,6 +33,8 @@ func _drop_data(position, data):
 	if checks(order_ui, order_data): 
 		previous_ui.drop_Confirmation(order_data)
 		order_ui_data.update_orderLocationUI(self)
+		order_ui_data.update_status_order("Ironing")
+		
 		order = order_data
 		order_ui = order_ui_data
 		clothsIn[order] = order_ui
