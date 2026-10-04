@@ -1,85 +1,69 @@
 [gd_scene format=3 uid="uid://b3xpiqvfocypi"]
 
 [ext_resource type="Script" uid="uid://cid15201m75fb" path="res://Scripts/Estaciones/Computer/Apps/Stats/statsApp.gd" id="1_87xlh"]
-[ext_resource type="Texture2D" uid="uid://cemm0mahbtfuf" path="res://Sprites/Estaciones/Mesa/portatil/Apps/stats.png" id="2_87xlh"]
+[ext_resource type="Theme" uid="uid://lbahs7r3bet3" path="res://Themes/ButtonPc_Theme.tres" id="1_mri1h"]
+[ext_resource type="Texture2D" uid="uid://b04yq8ww82qsm" path="res://Sprites/Estaciones/Mesa/portatil/Apps/stats.png" id="2_87xlh"]
 [ext_resource type="Script" uid="uid://bp8s1myofynbp" path="res://Scripts/Estaciones/Computer/Apps/Stats/graph.gd" id="3_mri1h"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0gald"]
-bg_color = Color(0.80049086, 0.80049074, 0.80049074, 1)
+[sub_resource type="Gradient" id="Gradient_efnpi"]
+offsets = PackedFloat32Array(0, 0, 1)
+colors = PackedColorArray(0.43252003, 0.66, 0.039600004, 1, 0.32868665, 0.47, 0.0846, 1, 0.54567, 0.81, 0.08910001, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdhwb"]
-bg_color = Color(0.50534403, 0.5053441, 0.50534385, 0.6039216)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.48962224, 0.48962224, 0.48962218, 1)
-border_blend = true
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8pc3t"]
+gradient = SubResource("Gradient_efnpi")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d28uk"]
-bg_color = Color(0.2784314, 0.2784314, 0.2784314, 0.7647059)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.56078434, 0.56078434, 0.56078434, 1)
-border_blend = true
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3j8qv"]
-bg_color = Color(0.6913568, 0.69135684, 0.6913566, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.55295557, 0.5529556, 0.5529553, 1)
-border_blend = true
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mri1h"]
+texture = SubResource("GradientTexture2D_8pc3t")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bvtgc"]
+bg_color = Color(0.69803923, 0.69411767, 0.7019608, 1)
 border_width_left = 2
 border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.13319641, 0.13319641, 0.13319638, 1)
-border_blend = true
-shadow_color = Color(0.13319641, 0.13319641, 0.13319638, 0.6)
-shadow_size = 1
+border_color = Color(1, 1, 1, 1)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j4uqd"]
-bg_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
-expand_margin_top = 10.0
+bg_color = Color(0.69803923, 0.69411767, 0.7019608, 1)
+border_width_left = 5
+border_width_top = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+expand_margin_top = 5.0
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyrx7"]
+bg_color = Color(0.69803923, 0.69411767, 0.7019608, 1)
+border_width_left = 5
+border_width_top = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+expand_margin_top = 5.0
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4g8b"]
+bg_color = Color(0.69803923, 0.69411767, 0.7019608, 1)
+border_width_left = 5
+border_width_top = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+expand_margin_top = 5.0
+shadow_offset = Vector2(2, 2)
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_bvtgc"]
 allow_unpress = true
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyrx7"]
-bg_color = Color(0.6901961, 0.6901961, 0.6901961, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
-border_blend = true
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+[sub_resource type="Gradient" id="Gradient_j4uqd"]
+offsets = PackedFloat32Array(0, 0.45544556, 0.8019802, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.85943663, 0.96106994, 0.6838881, 0.79320586, 0.60282665, 0.89, 0.106800005, 0.41568628, 0.52156866, 0.76862746, 0.09411765, 0.5529412)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e4g8b"]
-bg_color = Color(1, 1, 1, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
-border_blend = true
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_gyrx7"]
+gradient = SubResource("Gradient_j4uqd")
+fill_from = Vector2(0.53418803, 0)
+fill_to = Vector2(0.517094, 0.97863245)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e4g8b"]
+texture = SubResource("GradientTexture2D_gyrx7")
 
 [node name="ShopApp" type="Control" unique_id=511187831]
 z_index = 2
@@ -89,6 +73,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_mri1h")
 script = ExtResource("1_87xlh")
 metadata/_edit_use_anchors_ = true
 
@@ -99,13 +84,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_0gald")
+theme = ExtResource("1_mri1h")
 
-[node name="TopActionsBar" type="Control" parent="Panel" unique_id=434792711]
+[node name="TopActionsBar" type="Panel" parent="Panel" unique_id=2074662857]
 layout_mode = 1
+anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 0.1
+anchor_bottom = 0.07
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
 grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mri1h")
 
 [node name="Logo" type="TextureRect" parent="Panel/TopActionsBar" unique_id=782405053]
 layout_mode = 1
@@ -122,37 +112,36 @@ anchors_preset = -1
 anchor_left = 0.1
 anchor_right = 0.4
 anchor_bottom = 1.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 65
+theme = ExtResource("1_mri1h")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 46
 text = "StaTITStics"
 vertical_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TopActionsBar" unique_id=244480267]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.85
-anchor_top = 0.1
-anchor_right = 0.98
-anchor_bottom = 0.9
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 10.0
+offset_right = -20.0
+offset_bottom = -20.0
 grow_horizontal = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="minimizeButton" type="Button" parent="Panel/TopActionsBar/HBoxContainer" unique_id=681598279]
+custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_rdhwb")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_d28uk")
+theme = ExtResource("1_mri1h")
 text = "_"
 
 [node name="closeButton" type="Button" parent="Panel/TopActionsBar/HBoxContainer" unique_id=365768359]
+custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_rdhwb")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_d28uk")
+theme = ExtResource("1_mri1h")
 text = "X"
 
 [node name="App" type="Panel" parent="Panel" unique_id=945533134]
@@ -162,12 +151,15 @@ anchor_left = 0.01
 anchor_top = 0.1
 anchor_right = 0.99
 anchor_bottom = 0.98
-theme_override_styles/panel = SubResource("StyleBoxFlat_3j8qv")
+theme = ExtResource("1_mri1h")
 
 [node name="Menu" type="Control" parent="Panel/App" unique_id=258482376]
 layout_mode = 1
 anchor_right = 1.0
 anchor_bottom = 0.1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
 grow_horizontal = 2
 metadata/_edit_use_anchors_ = true
 
@@ -176,8 +168,6 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 10.0
-offset_right = -0.00012207031
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
@@ -186,6 +176,7 @@ theme_override_constants/separation = 0
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_default_cursor_shape = 2
+theme = ExtResource("1_mri1h")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_bvtgc")
@@ -197,10 +188,10 @@ text = "Resumen"
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_default_cursor_shape = 2
+theme = ExtResource("1_mri1h")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_bvtgc")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_j4uqd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gyrx7")
 toggle_mode = true
 text = "Detalles"
 
@@ -208,10 +199,10 @@ text = "Detalles"
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 mouse_default_cursor_shape = 2
+theme = ExtResource("1_mri1h")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_bvtgc")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_j4uqd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e4g8b")
 toggle_mode = true
 button_group = SubResource("ButtonGroup_bvtgc")
 text = "Historial
@@ -240,7 +231,7 @@ anchor_right = 0.35
 anchor_bottom = 0.95
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_gyrx7")
+theme = ExtResource("1_mri1h")
 metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/App/Stats-Data/Resumen/Panel" unique_id=618102067]
@@ -260,7 +251,7 @@ anchor_right = 0.99
 anchor_bottom = 0.95
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e4g8b")
+theme_override_styles/panel = SubResource("StyleBoxTexture_e4g8b")
 script = ExtResource("3_mri1h")
 metadata/_edit_use_anchors_ = true
 

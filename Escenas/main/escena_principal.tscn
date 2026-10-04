@@ -121,6 +121,8 @@
 [ext_resource type="Texture2D" uid="uid://d16g3r8mfdma5" path="res://Sprites/Estaciones/Mesa/portatil/Pantalla Inicio/SopaOS.png" id="111_132vf"]
 [ext_resource type="Texture2D" uid="uid://b04yq8ww82qsm" path="res://Sprites/Estaciones/Mesa/portatil/Apps/stats.png" id="113_74fj6"]
 [ext_resource type="Script" uid="uid://hexb2fmtgwik" path="res://Scripts/Estaciones/Computer/Apps/Stats/statsButtonWallpaper.gd" id="114_4nopa"]
+[ext_resource type="Texture2D" uid="uid://ben154kro1uj2" path="res://Sprites/Estaciones/Mesa/portatil/Apps/banco.png" id="118_tqits"]
+[ext_resource type="Script" uid="uid://bdth3xnp4636v" path="res://Scripts/Estaciones/Computer/Apps/Bank/bankwallpaperButton.gd" id="122_nm7tr"]
 
 [sub_resource type="Theme" id="Theme_iift3"]
 default_font_size = 0
@@ -2270,7 +2272,6 @@ script = ExtResource("89_qjuwq")
 metadata/_edit_use_anchors_ = true
 
 [node name="StartPC" type="Control" parent="wallpaper/Computer/PC Window/PC Screen" unique_id=1710026360]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -2405,6 +2406,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "TIENDA"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Bank" type="TextureButton" parent="wallpaper/Computer/PC Window/PC Screen/Windows/Wallpaper/Apps" unique_id=618843847]
+custom_minimum_size = Vector2(40, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+size_flags_stretch_ratio = 20.0
+theme = SubResource("Theme_6f3mp")
+texture_normal = ExtResource("118_tqits")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("122_nm7tr")
+
+[node name="Label" type="Label" parent="wallpaper/Computer/PC Window/PC Screen/Windows/Wallpaper/Apps/Bank" unique_id=1228611042]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "BANCO"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
