@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Escenas/CartelPausa/cartel_pausa.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://Escenas/CartelPausa/cartel_open.png" id="2_open"]
+[ext_resource type="Texture2D" path="res://Escenas/CartelPausa/fondo_piedra.png" id="3_fondo"]
+[ext_resource type="Script" path="res://Escenas/CartelPausa/cuerdas.gd" id="4_cuerdas"]
+
+[node name="CartelPausa" type="Control"]
+process_mode = 3
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 240.0
+offset_bottom = 216.0
+mouse_filter = 2
+script = ExtResource("1_script")
+
+[node name="Contenido" type="Control" parent="."]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 216.0
+mouse_filter = 2
+
+[node name="Fondo" type="TextureRect" parent="Contenido"]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 216.0
+mouse_filter = 2
+texture = ExtResource("3_fondo")
+
+[node name="Cuerdas" type="Control" parent="Contenido"]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 216.0
+mouse_filter = 2
+script = ExtResource("4_cuerdas")
+
+[node name="Placa" type="TextureButton" parent="Contenido"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 50.0
+offset_right = 210.0
+offset_bottom = 185.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("2_open")
+ignore_texture_size = true
+stretch_mode = 0
